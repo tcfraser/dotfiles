@@ -51,8 +51,4 @@ if [ -f "${HOME}/.bash_functions" ] ; then
   source "${HOME}/.bash_functions"
 fi
 
-# alias cd=cd_func
-
-# Strict Native Windows Symlinks
-CYGWIN="winsymlinks:native"
-
+alias cd=cd_func
