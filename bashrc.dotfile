@@ -2,7 +2,9 @@
 [[ "$-" != *i* ]] && return
 
 # Don't put duplicate lines in the history.
-export HISTCONTROL=$HISTCONTROL${HISTCONTROL+,}ignoredups
+HISTCONTROL=ignoredups:erasedups
+shopt -s histappend
+PROMPT_COMMAND="history -n; history -w; history -c; history -r; $PROMPT_COMMAND"
 
 # Interactive operation...
 alias rm='rm -i'

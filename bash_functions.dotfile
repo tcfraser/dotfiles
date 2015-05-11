@@ -1,6 +1,6 @@
 # Petar Marinov, http:/geocities.com/h2428, this is public domain
 # Modified to allow up to 20 stored entires
-cd_func ()
+function cd_func ()
 {
   local x2 the_new_dir adir index
   local -i cnt
@@ -50,4 +50,22 @@ cd_func ()
   done
 
   return 0
+}
+
+# Opens the github page for the current git repository in your browser
+function github() {
+  giturl=$(git config --get remote.origin.url)
+  if [ "$giturl" == "" ]
+    then
+     echo "Not a git repository or no remote.origin.url set"
+     exit 1;
+  fi
+
+  giturl=${giturl/git\@github\.com\:/https://github.com/}
+  giturl=${giturl/\.git/\/tree/}
+  branch="$(git symbolic-ref HEAD 2>/dev/null)" ||
+  branch="(unnamed branch)"     # detached HEAD
+  branch=${branch##refs/heads/}
+  giturl=$giturl/$branch
+  cygstart $giturl
 }
