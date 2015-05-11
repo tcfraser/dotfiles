@@ -1,112 +1,3 @@
-git push
-git status
-git add README.md 
-git commit -m "Fix broken README link"
-git push
-git status
-git add README.md
-gi tstatus
-git status
-git commit -m "https ->  http mistake"
-git push
-cd Git
-cd Github/tcfraser.github.io/
-jekyll serve
-$PATH
-PATH
-$PATH
-$PATH
-gem uninstall pygments.rb -- version ">0,5,0"
-gem uninstall pygments.rb -- version ">0.5.0"
-gem list
-gem cleanup --dryrun
-gem cleanup
-gem list
-gem uninstall pygments.rb -- version ">0.5.0"
-gem dependency
-jekyll serve
-jekyll serve
-jekyll serve
-jekyll serve
-jekyll serve
-cd MCDS
-git status
-cd ../Github/
-cd tcfraser.github.io/
-git status
-git git status
-git status
-git add -u .
-git status
-git add images/
-git status
-git commit -m "CSS nearly complete"
-git status
-git push
-cd Github/tcfraser.github.io/
-jekyll serve
-cd Github/tcfraser.github.io/
-jekyll serve
-jekyll serve
-jekyll serve
-jekyll serve
-jekyll serve
-netstat -abo
-cd ..
-cd ..
-netstat -abo
-netstat -abno
-cygstart --action=runas netstat -abno
-cygstart --action=runas netstat -abno
-cygstart --action=runas netstat -abno
-jekyll serve
-cd Github/tcfraser.github.io/
-jekyll serve
-lsof -wni tcp:4000
-fg
-cd Github/tcfraser.github.io/
-jekyll serve
-jekyll serve
-resmon.exe
-jekyll serve
-jekyll serve
-fg
-ping -t google.com
-ping -t google.com
-jekyll serve
-jekyll serve
-cygwin --version
---version
---help
-cygwin --help
-uname -r
-git status
-git add .
-git status
-git commit -m "Added mathjax, centred main content"
-git push
-ls
-gem
-cd Github/tcfraser.github.io/
-jekyll version
-jekyll --version
-echo $PATHEXT
-which
-which gem
-cd $(which gem)
-cd cowq
-echo 
-echo $PATH
-echo $PATH | tr ":" "\n"
-ls
-echo $PATH | tr ":" "\n"
-ls
-echo $PATH
-tc$PATH
-tc_path
-tc_path
-type tc_path
-aliasz
 alias
 which pyhton
 python
@@ -497,4 +388,113 @@ bash MakeLinks.sh
 ls
 la
 cd dotfiles/
+ls
+cd dotfiles/
+ls
+source ~/.bashrc
+ls
+ls
+minttyrc.dotfile
+ls
+run minttyrc.dotfile 
+ls
+ls
+RemoveLinks.sh
+./RemoveLinks.sh 
+./MakeLinks.sh 
+ls
+ls
+./RemoveLinks.sh 
+ls
+./MakeLinks.sh 
+ls
+ls
+ls -a
+git status
+ls
+git init
+ls
+la
+ls
+git status
+git add .
+git sttaus
+git status
+git commit -m "Initial commit, added make and remove bash scripts"
+ls
+ls
+git push -u origin/dotfiles
+git push --set-upstream origin/dotfiles
+git push --set-upstream origin/dotfiles master
+git remote add origin https://github.com/tcfraser/dotfiles.git
+ls
+git push
+git push --set-upstream origin master
+mk README.md
+subl README.md
+ls
+git sttaus
+git status
+git add .
+git status
+git commit -m "Added readme"
+git status
+git push
+ls
+ls
+ls
+git st
+git aa
+ls
+git status
+git st
+git go
+git go
+git go
+git go
+git go
+git go "Added the git go alias"
+git go "Added the git go alias"
+git go
+git go "Added the git go alias"
+git go "Added the git go alias"
+git go "Added the git go alias"
+git go "Added the git go alias"
+git go "Added the git go alias"
+git go
+git st
+git go
+git go "Added the git go alias"
+git st
+git go "Added the git go alias"
+git go "Added the git go alias"
+git go "Added the git go alias"
+git go "Added the git go alias"
+git go "Added the git go alias"
+git go "Added the git go alias"
+git go "Added the git go alias"
+git help pull
+git go "Added the git go alias"
+git go "Added the git go alias"
+git go "Added the git go alias"
+git st
+git go "Added the git go alias"
+git go "Added the git go alias"
+git help pull
+git status
+ls
+ls
+git sta
+git st
+git go
+git go "Changes tabs and space"
+path
+cd Media/
+ls
+cd dotfiles/
+ls
+cd dotfiles/
+ls
+./RemoveLinks.sh 
+./MakeLinks.sh 
 ls
