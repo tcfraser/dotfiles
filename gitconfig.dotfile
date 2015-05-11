@@ -3,3 +3,19 @@
 [user]
 	email = tcfraser237@gmail.com
 	name = TC Fraser
+[alias]
+    st = status
+    co = checkout
+    ci = commit
+    br = branch
+    df = diff
+    ad = add
+    aa = !git add -u && git add . && git status
+
+    go = "!f() { git add -u . && git add . && git commit -m '$1' && git pull && git push; }; f"
+
+    undo-commit = reset --soft HEAD^
+[color]
+    ui = auto
+[help]
+    autocorrect = 1
