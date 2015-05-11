@@ -12,7 +12,7 @@
     ad = add
     aa = !git add -u && git add . && git status
 
-    go = "!f() { git add -u . && git add . && git commit -m '$1' && git pull && git push; }; f"
+    go = "!f() { git add -u . && git add . && git commit -m \"$1\" && git pull && git push; }; f"
 
     undo-commit = reset --soft HEAD^
 [color]
