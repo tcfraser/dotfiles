@@ -1,8 +1,8 @@
 [push]
-	default = simple
+    default = simple
 [user]
-	email = tcfraser237@gmail.com
-	name = TC Fraser
+    email = tcfraser237@gmail.com
+    name = TC Fraser
 [alias]
     st = status
     co = checkout
