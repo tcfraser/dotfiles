@@ -28,3 +28,8 @@ la
 cd dotfiles/
 .2
 .1
+git status
+cd dotfiles/
+ls
+git go "Preventing bash history from over writing symlink"
+git st

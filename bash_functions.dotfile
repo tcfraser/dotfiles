@@ -69,3 +69,15 @@ function github() {
   giturl=$giturl/$branch
   cygstart $giturl
 }
+
+# cd and list contends
+function cl() {
+  cd $1 && ls
+}
+
+# resource dotfiles
+function dotsource() {
+  if [ -f "${HOME}/.bashrc" ] ; then
+    source "${HOME}/.bashrc"
+  fi
+}
