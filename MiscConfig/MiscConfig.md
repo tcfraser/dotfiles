@@ -12,3 +12,6 @@ regedit.exe
 ### Opening Mintty In Full Screen
 Shortcut Target needs to be *T:\Packages\Cygwin\bin\mintty.exe -i /Cygwin-Terminal.ico -w full -*.
 The ending '-' is important otherwise cygwin doesn't load properly.
+
+### Sublime Text 3
+See extra files
