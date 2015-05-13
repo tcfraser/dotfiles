@@ -1,0 +1,16 @@
+{
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"AdvancedNewFile",
+		"BracketHighlighter",
+		"LaTeXTools",
+		"Package Control",
+		"Predawn",
+		"Predawn Monokai",
+		"SCSS",
+		"SideBarEnhancements"
+	]
+}
