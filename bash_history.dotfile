@@ -33,3 +33,45 @@ cd dotfiles/
 ls
 git go "Preventing bash history from over writing symlink"
 git st
+d fjlkdsa;lf kds
+fds afds
+fdsafd s
+a fdsa fdsa
+f dsafd sa
+a fdsa fdsa
+f dsafd sa
+fdsa fds ads
+ fdsa fds
+ad saf dsa
+ldsalfdslalfdsla
+cd 
+git
+cd
+.2
+.1
+git go "Preventing bash history from over writing symlink"
+cd GitProjects/
+cd ..
+cd fot
+cd dotfiles/
+subl
+subl .
+source ~/.bashrc
+cl
+dotsource
+cl GitProjects/
+cl pd2report/
+makeindex.exe -s report.ist -t report.glg -o report.glo 
+pdflatex report.tex 
+makeindex report.tex
+subl report.ilg
+git go "Added cl command and dotsource to re-source dotfile"
+git status
+git push
+cl ..
+cd t
+cl .
+la
+cl dotfiles/
+ls
+git st
