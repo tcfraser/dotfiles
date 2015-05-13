@@ -110,3 +110,50 @@ dotsource
 dot source
 dotsource
 path
+l
+git
+git
+git clone https://github.com/tcfraser/dotfiles.git
+./MakeLinks.sh 
+source ~/.bashrc 
+cl
+git clone https://github.com/tcfraser/dotfiles.git
+source ~/.bashrc 
+cl
+mkdir MiscConfig
+mv MiscConfig.md MiscConfig/
+cl MiscConfig/
+./RemoveLinks.sh 
+./MakeLinks.sh 
+dotsource 
+dot source
+path
+cd dotfiles
+cd MiscConfig/
+subl MiscConfig.md 
+.1
+git go "Added path dotfiles to bash profile"
+subl .
+git go "Set up for desktop config"
+git pull
+cl ..
+cl dotfiles/
+git st
+git df
+git statsu
+git status
+git go "no transparency"
+la
+gitub
+github
+cd ..
+cd GitProjects/
+mkdir HackLand
+cd HackLand/
+subl
+cd ~
+cd dotfiles/
+ls
+subl bash_path.dotfile 
+dotsource
+path

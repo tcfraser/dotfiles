@@ -15,3 +15,6 @@ The ending '-' is important otherwise cygwin doesn't load properly.
 
 ### Sublime Text 3
 See extra files 
+
+### Fonts
+Inconsolata.ttf seems to have less problems than inconsolata.otf.
