@@ -157,3 +157,9 @@ ls
 subl bash_path.dotfile 
 dotsource
 path
+SumatraPDF.exe 
+cl dotfiles/
+subl .
+git st
+git go "Added fonts and more configurations"
+ls
