@@ -27,3 +27,4 @@ BoldWhite=253,246,227
 ForegroundColour=238,232,213
 BackgroundColour=0,0,0
 CursorColour=133,153,0
+Scrollbar=none

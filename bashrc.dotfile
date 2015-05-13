@@ -45,7 +45,7 @@ done
 alias jekyll='jekyll.bat'
 alias path='echo $PATH | tr ":" "\n"'
 
-# source the bash functions if it exicd sts
+# source the bash functions if it exists
 if [ -f "${HOME}/.bash_functions" ] ; then
   source "${HOME}/.bash_functions"
 fi

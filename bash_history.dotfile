@@ -75,3 +75,38 @@ la
 cl dotfiles/
 ls
 git st
+l
+l
+git
+git
+git status
+git clone https://github.com/tcfraser/dotfiles.git
+cd dotfiles
+./MakeLinks.sh 
+source ~/.bashrc 
+ls
+cl
+cl dotfiles/
+ls
+la
+ls
+git clone https://github.com/tcfraser/dotfiles.git
+cd dotfiles
+source ~/.bashrc 
+cl
+cl dotfiles/
+la
+cd dotfiles/
+git st
+mkdir MiscConfig
+mv MiscConfig.md MiscConfig/
+cl MiscConfig/
+ls
+subl MiscConfig.md 
+.1
+./RemoveLinks.sh 
+./MakeLinks.sh 
+dotsource 
+dot source
+dotsource
+path

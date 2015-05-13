@@ -1,0 +1,3 @@
+# Extra path localtions added on top of windows and cygwin
+
+export PATH="~/Programs/Sublime Text 3/":$PATH # For subl.exe
