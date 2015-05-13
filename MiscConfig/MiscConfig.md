@@ -14,4 +14,4 @@ Shortcut Target needs to be *T:\Packages\Cygwin\bin\mintty.exe -i /Cygwin-Termin
 The ending '-' is important otherwise cygwin doesn't load properly.
 
 ### Sublime Text 3
-See extra files
+See extra files 
