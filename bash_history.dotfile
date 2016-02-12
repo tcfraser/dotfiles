@@ -1,31 +1,3 @@
-cd Git
-cd GitProjects/
-cd course-notes/
-cd ../latex-packages/
-subl .
-mo.exe
-git go "tilde"
-cd --
-cd -1
-git go "GR Lecture"
-cd ..
-git clone git@github.com:tcfraser/pd2report.git
-cd pd2report/
-git branch --list
-git checkout acoustic-modelling
-git pull
-git st
-ls
-cd pd2report/
-git branch --list
-git checkout acoustic-modelling
-git pull
-git st
-cd GitProjects/
-cd tcfraser.github.io/
-ll
-cd --
-cd ..
 cd dotfiles/
 ls
 subl .
@@ -498,3 +470,31 @@ cd ../dotfiles/
 ls
 git st
 which git
+cd .gen
+cd .gem/ruby/
+cd gems/
+cd ffi-1.9.10/
+cd ext/
+cd ffi_c/
+ruby extconf.rb 
+gem install jekyll 2.40
+gem install jekyll -v 2.40
+gem install jekyll:2.40
+gem install jekyll
+gem install jekyll -v 2.4.0
+dpkg --get-selections>  installedPackagesDate.txt
+cygcheck -c -d | sed -e "1,2d" -e 's/ .*$//' > packagelist
+git diff
+rm -rf dotfiles/
+git st
+git clone git@github.com:tcfraser/dotfiles.get
+git clone git@github.com:tcfraser/dotfiles.git
+cd dotfiles/
+cd MiscConfig/
+cd cygwinpackages/
+which awk
+cd ..
+cd Packages/
+cd Cygwin/
+ls
+./setup-x86_64 -P `awk 'NR==1{printf $1}{printf ",%s", $1}' ~/dotfiles/MiscConfig/cygwinpackages/packagelist`
