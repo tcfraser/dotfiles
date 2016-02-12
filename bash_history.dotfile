@@ -1,26 +1,3 @@
-cd ../latex-packages/
-git go "Bra kets"
-cd ../course-notes/
-ls
-git commit -m "Change to subsection"
-git push 
-git commit -m "Typoes"
-git go "Typoes"
-git st
-git aa
-git commit -m "Better plot"
-git push
-git go "Typo"
-git go "Typoes"
-git commit -m "Better plot"
-git go "Typo"
-cd GitProjects/
-cd course-notes/
-cd notes/
-;s
-cd stat-mech/
-ls
-git st
 git aa
 git commit -m "Stat mech course"
 git push
@@ -498,3 +475,26 @@ cd dotfiles/
 subl .
 ./RemoveLinks.sh 
 ./MakeLinks.sh 
+subl .
+./RemoveLinks.sh 
+./MakeLinks.sh 
+cd ..
+gem install touge
+gem install rouge
+subl .
+./RemoveLinks.sh 
+./MakeLinks.sh 
+gem install jekyll
+which jekyll
+cd dotfiles/
+./dotlink 
+./dotlink -make
+./dotlink --make
+./dotlink -rml
+./dotlink -r
+./dotlink -m
+./dotlink -r -m
+./dotlink -l
+ls
+./dotlink
+path

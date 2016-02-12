@@ -55,15 +55,6 @@ fi
 
 if [ "$isLoading" = true ] ; then
     echo "----- Loading new links ------"
-    source ~/.bashrc
-    for filename in $DOT_FILES
-    do
-        noext=${filename%.*}    # Removes extension
-        basename=${noext##*/}   # Removes path
-        targetdotfile=$filename
-        linkname=${HOME}/.$basename
-
-        source $linkname
-        echo "Sourced "$linkname
-    done
+    source "${HOME}/.bash_profile"
+    echo "Sourced .bash_profile"
 fi
