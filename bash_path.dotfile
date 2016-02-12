@@ -1,3 +1,4 @@
 # Extra path localtions added on top of windows and cygwin
 
 export PATH="~/Programs/Sublime Text 3/":$PATH # For subl.exe
+export PATH=$PATH:~/.gem/ruby/gems/jekyll-3.0.1/bin/

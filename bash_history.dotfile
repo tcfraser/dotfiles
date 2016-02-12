@@ -1,165 +1,500 @@
-cd dotfiles/
-./Re
-./RemoveLinks.sh 
-./MakeLinks.sh 
-cd 
-ls
-la
-github
-ls
-fdslkjhaf lj;kdsa
-d fjlkdsa;lf kds
-fds afds
-fdsafd s
-a fdsa fdsa
-f dsafd sa
-a fdsa fdsa
-f dsafd sa
-fdsa fds ads
- fdsa fds
-ad saf dsa
-ldsalfdslalfdsla
-cd ..
-cd 
-git
-cd
-ls
-la
-cd dotfiles/
-.2
-.1
-git status
-cd dotfiles/
-ls
-git go "Preventing bash history from over writing symlink"
-git st
-d fjlkdsa;lf kds
-fds afds
-fdsafd s
-a fdsa fdsa
-f dsafd sa
-a fdsa fdsa
-f dsafd sa
-fdsa fds ads
- fdsa fds
-ad saf dsa
-ldsalfdslalfdsla
-cd 
-git
-cd
-.2
-.1
-git go "Preventing bash history from over writing symlink"
+cd Git
 cd GitProjects/
+cd course-notes/
+cd ../latex-packages/
+subl .
+mo.exe
+git go "tilde"
+cd --
+cd -1
+git go "GR Lecture"
 cd ..
-cd fot
-cd dotfiles/
-subl
-subl .
-source ~/.bashrc
-cl
-dotsource
-cl GitProjects/
-cl pd2report/
-makeindex.exe -s report.ist -t report.glg -o report.glo 
-pdflatex report.tex 
-makeindex report.tex
-subl report.ilg
-git go "Added cl command and dotsource to re-source dotfile"
-git status
-git push
-cl ..
-cd t
-cl .
-la
-cl dotfiles/
-ls
-git st
-l
-l
-git
-git
-git status
-git clone https://github.com/tcfraser/dotfiles.git
-cd dotfiles
-./MakeLinks.sh 
-source ~/.bashrc 
-ls
-cl
-cl dotfiles/
-ls
-la
-ls
-git clone https://github.com/tcfraser/dotfiles.git
-cd dotfiles
-source ~/.bashrc 
-cl
-cl dotfiles/
-la
-cd dotfiles/
-git st
-mkdir MiscConfig
-mv MiscConfig.md MiscConfig/
-cl MiscConfig/
-ls
-subl MiscConfig.md 
-.1
-./RemoveLinks.sh 
-./MakeLinks.sh 
-dotsource 
-dot source
-dotsource
-path
-l
-git
-git
-git clone https://github.com/tcfraser/dotfiles.git
-./MakeLinks.sh 
-source ~/.bashrc 
-cl
-git clone https://github.com/tcfraser/dotfiles.git
-source ~/.bashrc 
-cl
-mkdir MiscConfig
-mv MiscConfig.md MiscConfig/
-cl MiscConfig/
-./RemoveLinks.sh 
-./MakeLinks.sh 
-dotsource 
-dot source
-path
-cd dotfiles
-cd MiscConfig/
-subl MiscConfig.md 
-.1
-git go "Added path dotfiles to bash profile"
-subl .
-git go "Set up for desktop config"
+git clone git@github.com:tcfraser/pd2report.git
+cd pd2report/
+git branch --list
+git checkout acoustic-modelling
 git pull
-cl ..
-cl dotfiles/
 git st
-git df
-git statsu
-git status
-git go "no transparency"
-la
-gitub
-github
-cd ..
+ls
+cd pd2report/
+git branch --list
+git checkout acoustic-modelling
+git pull
+git st
 cd GitProjects/
-mkdir HackLand
-cd HackLand/
-subl
-cd ~
+cd tcfraser.github.io/
+ll
+cd --
+cd ..
 cd dotfiles/
 ls
-subl bash_path.dotfile 
-dotsource
-path
-SumatraPDF.exe 
-cl dotfiles/
+subl .
+ls
+cd --
+cd ..
+cd dotfiles/
+cd GitProjects/
+cd course-notes/
+subl .
+git rm notes/stat-mech/stat-mech.pgf-plot.gnuplot 
+rm -rf notes/stat-mech/stat-mech.pgf-plot.gnuplot 
+ls
+git st
+git aa
+git commit -m "Stat mech lecture"
+git push
+git commit -m "Stat mech lecture"
+cd ..
+cd ~
+cd GitProjects/course-notes/
+ls
+subl .
+git aa
+git commit -m "Filled out table"
+git push
+git st
+cd ..
+cd dotfiles/
+git rm notes/stat-mech/stat-mech.pgf-plot.gnuplot 
+rm -rf notes/stat-mech/stat-mech.pgf-plot.gnuplot 
+git commit -m "Stat mech lecture"
+git commit -m "Stat mech lecture"
+cd ..
+cd ~
+cd GitProjects/course-notes/
+git commit -m "Filled out table"
+cd GitProjects/
+cd sco
+cd course-notes/
+subl .
+git go "GR lecture"
+cd ../latex-packages/
+git go "Bra kets"
+cd ../course-notes/
+ls
+git commit -m "Change to subsection"
+git push 
+git commit -m "Typoes"
+git go "Typoes"
+git st
+git aa
+git commit -m "Better plot"
+git push
+git go "Typo"
+git go "Typoes"
+git commit -m "Better plot"
+git go "Typo"
+cd GitProjects/
+cd course-notes/
+cd notes/
+;s
+cd stat-mech/
+ls
+git st
+git aa
+git commit -m "Stat mech course"
+git push
+git push 
+git commit -m "Typoes"
+git go "Typoes"
+git commit -m "Better plot"
+git push
+git go "Typo"
+git go "Typoes"
+git commit -m "Better plot"
+git go "Typo"
+cd course-notes/
+cd notes/
+;s
+cd stat-mech/
+git commit -m "Stat mech course"
+git push
+cd GitProjects/
+ls
+git pull
+git checkout acoustic-modelling
+sed -i 's/[^[:print:]]//g' report.tex
+sed -i 's/[^[:print:]]//g' PDReport.sty
+mo.exe
+git diff
+git checkout -- report.tex 
+cd ../course-notes/
+cd ..
+cd pd2report/
 subl .
 git st
-git go "Added fonts and more configurations"
+git aa
+git commit -m "Checkpoint"
+git commit -m "Checkpoint"
+mo.exe
+git st
+cd GitProjects/
+cd course-notes/
+git go "GR Lecture"
+cd ../latex-packages/
+git go "fancy vectors"
+cd ../pd2report/
 ls
+git go "Complete"
+git go "Complete"
+cd GitProjects/latex-packages/
+ls
+git pull
+git go "Complete"
+cd GitProjects/course-notes/
+ls
+git st
+git aa
+git commit -m "GR lecture"
+git push
+cd ~/Google\ Drive/School/Assignments/
+subl .
+git pull
+cd Google\ Drive/School/Assignments/
+subl .\
+subl .
+cd Google\ Drive/School/Assignments/
+subl .
+cd Google\ Drive/School/Assignments/
+subl .
+subl .\
+cd Google\ Drive/School/Assignments/
+ cd ~/GitProjects/tcfraser.github.io/
+ls
+subl .
+jekyll serve
+git st
+git aa
+git commit -m "Residue Beams"
+git push
+cd GitProjects/
+cd course-notes/
+subl .
+git go "lecture"
+jekyll serve
+git st
+git aa
+git commit -m "Residue Beams"
+git push
+cd GitProjects/
+cd course-notes/
+git go "lecture"
+cd Google\ Drive/
+cd Resume/
+s
+cd School/
+cd Resume/Source/
+ls
+cd ..
+subl .
+jekyll serve
+git commit -m "Residue Beams"
+git go "lecture"
+cd Google\ Drive/
+cd Resume/
+s
+cd School/
+cd Resume/Source/
+cd ..
+cd GitProjects/
+cd course-notes/
+cd ../latex-packages/
+git commit -m "Suff"
+git pull
+git st
+git aa
+git commit 
+git push
+ls
+subl .
+git go "Merge mess up"
+cd -1
+git go "GR lecture"
+git go "GR lecture"
+cd Google\ Drive/School/Assignments/
+cd ~/GitProjects/course-notes/
+subl .
+git go "Claire mistake"
+cd Google\ Drive/
+cd School/Assignments/
+subl .
+cd Google\ Drive/School/Assignments/
+subl .
+cd Google\ Drive/
+cd School/Assignments/
+cd Google\ Drive/School/Assignments/
+cd GitProjects/course-notes/
+git go "GR"
+path
+which grep
+ls
+ll
+cd ../../Google\ Drive/School/Assignments/
+subl .
+path
+which grep
+ll
+cd ../../Google\ Drive/School/Assignments/
+cd GitProjects/
+cd ..
+cd Google\ Drive/
+cd School/
+ls
+cd Assignments/
+explorer.exe
+subl .
+cd Google\ Drive/School/Assignments/
+subl .
+cd Amath\ 373/Assignment\ 2/
+cd GitProjects/
+cd course-notes
+subl .
+git go "GR Lectures"
+cd Amath\ 373/Assignment\ 2/
+cd course-notes
+git go "GR Lectures"
+cd GitProjects/
+cd course-notes/
+ls
+subl .
+cd ../latex-packages/
+git go "arrows half way"
+git st
+git st
+cd GitProjects/
+ls
+cd course-notes/
+subl .
+git go "Half way through lecture"
+git go "Part way through SM"
+got git "SM lecture"
+git git "SM lecture"
+git go "SM lecture"
+git go "SM lecture type"
+cd GitProjects/
+cd course-notes/
+ls
+git st
+subl .
+git go "GR lecture"
+git go "fixes"
+git go "updates"
+git push
+git go "fixes"
+git go "updates"
+git push
+cd GitProjects/tcfraser.github.io/
+ls
+subl .
+git go "Dumb bug"
+jekyll serve
+git st
+git go "beta mathjax"
+cd dotfiles/
+subl .l
+subl .
+ls
+scipython
+cd Google\ Drive/School/Assignments/Phys\ 375/Assignment\ 2/code/
+scipython code_4.py
+git go "Dumb bug"
+jekyll serve
+git go "beta mathjax"
+cd dotfiles/
+subl .l
+scipython
+cd Google\ Drive/School/Assignments/Phys\ 375/Assignment\ 2/code/
+cd GitProjects/
+cd ..
+cd Google\ Drive/School/Assignments/
+cd Cod
+cd Phys\ 375/
+cd Assignment\ 2
+cd code/
+scipython code_4.py
+cd ~/GitProjects/
+ls
+cd course-notes/
+subl .
+git st
+git go "GR lecture"
+ls
+cd GitProjects/
+cd latex-packages/
+cd tex/latex/
+rm tegmarkrelations.sty 
+git st
+git aa
+git commit -m "deleted tegmark"
+git push
+cd GitProjects/course-notes/
+ls
+subl .
+rm tegmarkrelations.sty 
+git st
+git aa
+git commit -m "deleted tegmark"
+git push
+cd GitProjects/course-notes/
+cd GitProjects/
+cd copu\
+cd course-notes/
+subl .
+cd ../latex-packages/
+git go "disclaimer"
+cd -1
+git checkout .
+ls
+git diff
+git go "SM"
+$ git checkout .
+$ ls
+notes/  readme.md*
+$ git diff
+TC@TC-Laptop ~/GitProjects/course-notes
+$ git go "SM"
+[master 5e46078] SM
+ 2 files changed, 172 insertions(+), 1 deletion(-)
+Already up-to-date.
+Counting objects: 6, done.
+Delta compression using up to 4 threads.
+cd Google\ Drive/School/Assignments/
+subl .
+cd Google\ Drive/School/Assignments/
+subl .
+cd Google\ Drive/School/Assignments/
+subl .
+ 2 files changed, 172 insertions(+), 1 deletion(-)
+Already up-to-date.
+Counting objects: 6, done.
+Delta compression using up to 4 threads.
+cd Google\ Drive/School/Assignments/
+cd ~/GitProjects/latex-packages/
+git go "vectors"
+cd ~/GitProjects/tcfraser.github.io/
+git pull
+git go "typo"
+cd ~/
+cd Google\ Drive/
+cd School/
+cd Assignments/
+ls
+subl .
+Delta compression using up to 4 threads.
+cd Google\ Drive/School/Assignments/
+cd ..
+cd GitProjects/course-notes/
+ls
+subl .
+git go "SM lecture"
+git st
+git go "Typos by jake"
+git st
+git go "Typos by jake"
+cd Google\ Drive/School/Assignments/
+cd ..
+cd GitProjects/
+cd latex-packages/
+git go "fancy vec"
+cd ~/GitProjects/course-notes/
+ls
+subl .
+git go "GR lecture"
+cd latex-packages/
+git go "fancy vec"
+git go "GR lecture"
+cd Google\ Drive/
+cd School/
+ls
+cd Assignments/
+cd ~/GitProjects/course-notes/
+git go "SM lecture"
+cd ~/Google\ Drive/School/Assignments/
+subl .
+cd ~/Google\ Drive/School/Assignments/
+cd GitProjects/course-notes/
+subl .
+git go "GR lecture"
+ls
+cd ../las
+cd ../latex-packages/
+git st
+git go "Stuff"
+git go "Stuff"
+cd Google\ Drive/School/Assignments/
+cd ~/GitProjects/latex-packages/
+git pull
+cd ../course-notes/
+subl .
+git go "HUUUUUUUGEEE mistake"
+cd ../latex-packages/
+git go "Stuff"
+git go "Stuff"
+cd ~/GitProjects/latex-packages/
+git pull
+cd ../course-notes/
+git go "HUUUUUUUGEEE mistake"
+cd Google\ Drive/School/Assignments/
+ls
+git st
+cd ~/GitProjects/tcfraser.github.io/
+git go "link"
+cd -1
+git go "GR lecture"
+git go "typo"
+cd ~/GitProjects/course-notes/
+cd ~/Google\ Drive/School/Assignments/
+subl .
+cd ~/Google\ Drive/School/Assignments/
+subl .
+cd ~/Google\ Drive/School/Assignments/
+subl .
+cd ~/Google\ Drive/School/Assignments/
+cd Google\ Drive/School/Assignments/
+cd ~/GitProjects/course-notes/
+ls
+subl .
+git st
+git go "Dan contribution"
+git go "better pic"
+cd GitProjects/course-notes/
+ls
+subl .
+git go "Jake fixes"
+git go "better pic"
+cd GitProjects/course-notes/
+git go "GR lecture"
+cd ~/GitProjects/tcfraser.github.io/
+subl .
+git pull
+jekyll serve
+cd Google\ Drive/School/Assignments/
+ls
+cd Phys\ 359/
+subl .
+git go "Jake fixes"
+cd GitProjects/course-notes/
+git go "SM lecture"
+cd ~fdsafds
+cd GitProjects/
+ls
+cd tcfraser.github.io/sdfsfds
+subl .
+jekyll serve
+cd tcfraser.github.io/sdfsfds
+subl .
+jekyll serve
+which ruby
+ruby -v
+which gem
+gem -v
+gem list
+gem install jekyll
+cd Packages/
+cd ..
+cygcheck -c -d | sed -e "1,2d" -e 's/ .*$//' > packagelist
+cd GitProjects/
+cd ../dotfiles/
+ls
+git st
+which git
