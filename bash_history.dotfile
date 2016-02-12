@@ -1,45 +1,3 @@
-cd dotfiles/
-ls
-subl .
-ls
-cd --
-cd ..
-cd dotfiles/
-cd GitProjects/
-cd course-notes/
-subl .
-git rm notes/stat-mech/stat-mech.pgf-plot.gnuplot 
-rm -rf notes/stat-mech/stat-mech.pgf-plot.gnuplot 
-ls
-git st
-git aa
-git commit -m "Stat mech lecture"
-git push
-git commit -m "Stat mech lecture"
-cd ..
-cd ~
-cd GitProjects/course-notes/
-ls
-subl .
-git aa
-git commit -m "Filled out table"
-git push
-git st
-cd ..
-cd dotfiles/
-git rm notes/stat-mech/stat-mech.pgf-plot.gnuplot 
-rm -rf notes/stat-mech/stat-mech.pgf-plot.gnuplot 
-git commit -m "Stat mech lecture"
-git commit -m "Stat mech lecture"
-cd ..
-cd ~
-cd GitProjects/course-notes/
-git commit -m "Filled out table"
-cd GitProjects/
-cd sco
-cd course-notes/
-subl .
-git go "GR lecture"
 cd ../latex-packages/
 git go "Bra kets"
 cd ../course-notes/
@@ -498,3 +456,45 @@ cd Packages/
 cd Cygwin/
 ls
 ./setup-x86_64 -P `awk 'NR==1{printf $1}{printf ",%s", $1}' ~/dotfiles/MiscConfig/cygwinpackages/packagelist`
+which awk
+cd Packages/
+cd Cygwin/
+./setup-x86_64 -P `awk 'NR==1{printf $1}{printf ",%s", $1}' ~/dotfiles/MiscConfig/cygwinpackages/packagelist`
+cd dotfiles/misc_config/
+cd cygwinpackages/
+cygcheck -c -d | sed -e "1,2d" -e 's/ .*$//' > packagelist-test.csv
+which git
+gem install jekyll
+git st
+git go "New cygwin transfer protocol"
+jekyll
+cd ..
+ls
+ls
+cd GitProjects/tcfraser.github.io/
+gem env
+jekyll
+which jekyll
+gem env
+gem install jekyll
+cd dotfiles/
+ls
+subl .
+./RemoveLinks.sh 
+./MakeLinks.sh 
+subl .
+gem install jekyll
+which jekyll
+path
+cd dotfiles/
+./RemoveLinks.sh 
+./MakeLinks.sh 
+cd ..
+gem install jekyll
+gem install touge
+gem install rouge
+which jekyll
+cd dotfiles/
+subl .
+./RemoveLinks.sh 
+./MakeLinks.sh 

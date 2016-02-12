@@ -1,0 +1,69 @@
+#!/bin/bash
+if [ $# -eq 0 ] ; then
+    echo "No arguments detected. Assuming 'dotlink -r -m -l'"
+    isRemoving=true
+    isMaking=true
+    isLoading=true
+fi
+
+for key in "$@"
+do
+case $key in
+    -r|--remove)
+    isRemoving=true
+    shift
+    ;;
+    -m|--make)
+    isMaking=true
+    shift
+    ;;
+    -l|--load)
+    isLoading=true
+    shift
+    ;;
+esac
+done
+
+export CYGWIN="winsymlinks:native"
+DOT_FILES=${HOME}/dotfiles/*.dotfile
+
+if [ "$isRemoving" = true ] ; then
+    echo "----- Removing old links -----"
+    for filename in $DOT_FILES
+    do
+        noext=${filename%.*}    # Removes extension
+        basename=${noext##*/}   # Removes path
+        targetdotfile=$filename
+        linkname=${HOME}/.$basename
+        rm -f $linkname
+        echo "Removing alias /."$basename "from /dotfiles/"$basename".dotfile"
+    done
+fi
+
+if [ "$isMaking" = true ] ; then
+    echo "----- Making new links -------"
+    for filename in $DOT_FILES
+    do
+        noext=${filename%.*}    # Removes extension
+        basename=${noext##*/}   # Removes path
+        targetdotfile=$filename
+        linkname=${HOME}/.$basename
+        ln -sf $targetdotfile $linkname
+        echo "Gave /dotfiles/"$basename".dotfile the alias /."$basename
+    done
+fi
+
+if [ "$isLoading" = true ] ; then
+    echo "----- Loading new links ------"
+    source ~/.bashrc
+    for filename in $DOT_FILES
+    do
+        noext=${filename%.*}    # Removes extension
+        basename=${noext##*/}   # Removes path
+        targetdotfile=$filename
+        linkname=${HOME}/.$basename
+
+        source $linkname
+        echo "Sourced "$linkname
+    done
+fi
