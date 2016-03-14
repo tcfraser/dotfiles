@@ -1,4 +1,5 @@
 # Extra path locations added on top of windows and cygwin
 
 export PATH="~/Programs/Sublime Text 3/":$PATH # For subl.exe
+alias scipython="~/Packages/SciPython/WinPython-64bit-3.4.3.7/python-3.4.3.amd64/python.exe -u"
 export PATH="/bin/rubygems/bin":$PATH # For ruby gems like jekyll
