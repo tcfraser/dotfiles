@@ -1,42 +1,3 @@
-ls
-git diff
-git go "SM"
-$ git checkout .
-$ ls
-notes/  readme.md*
-$ git diff
-TC@TC-Laptop ~/GitProjects/course-notes
-$ git go "SM"
-[master 5e46078] SM
- 2 files changed, 172 insertions(+), 1 deletion(-)
-Already up-to-date.
-Counting objects: 6, done.
-Delta compression using up to 4 threads.
-cd Google\ Drive/School/Assignments/
-subl .
-cd Google\ Drive/School/Assignments/
-subl .
-cd Google\ Drive/School/Assignments/
-subl .
- 2 files changed, 172 insertions(+), 1 deletion(-)
-Already up-to-date.
-Counting objects: 6, done.
-Delta compression using up to 4 threads.
-cd Google\ Drive/School/Assignments/
-cd ~/GitProjects/latex-packages/
-git go "vectors"
-cd ~/GitProjects/tcfraser.github.io/
-git pull
-git go "typo"
-cd ~/
-cd Google\ Drive/
-cd School/
-cd Assignments/
-ls
-subl .
-Delta compression using up to 4 threads.
-cd Google\ Drive/School/Assignments/
-cd ..
 cd GitProjects/course-notes/
 ls
 subl .
@@ -498,3 +459,42 @@ scipython code2.py
 cd dotfiles/
 subl .
 ./dotlink 
+cd ~/Google\ Drive/School/Assignments/Phys\ 375/Assignment\ 4/code/
+scipython code2.py
+cd ~/GitProjects/course-notes/
+subl .
+git go "SM correction"
+cd ../../dotfiles/
+git st
+git go "dotfile change"
+cd Google\ Drive/School/Assignments/
+subl .
+cd GitProjects/
+cd course-notes/
+subl .
+git go "GR lecture"
+git go "GR lecture"
+cd Google\ Drive/School/Assignments/
+cd ~/GitProjects/course-notes/
+git st
+subl .
+git go "SM lecture"
+cd GitProjects/course-notes/
+subl .
+git go "SM lecture"
+cd Google\ Drive/School/Assignments/
+subl .
+git go "SM lecture"
+git go "SM lecture"
+cd GitProjects/course-notes/
+cd ..
+cd Google\ Drive/School/Assignments/
+cd ~/GitProjects/course-notes/
+git st
+git go "GR lecture"
+cd ~/Google\ Drive/School/Assignments/
+subl .
+cd GitProjects/course-notes/
+subl.
+subl .
+git go "Doug fix"
