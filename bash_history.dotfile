@@ -1,500 +1,500 @@
-git st
-git push
-cd Google\ Drive/School/Assignments/
-subl .
-cd ~/Google\ Drive/School/Assignments/
-git go "SM fix"
-git st
-git push
-cd GitProjects/course-notes/
-git go "GR fix?"
-git go "SM lecture TODO"
-cd ~/Google\ Drive/School/
-cd Assignments/
-cd ~/GitProjects/course-notes/
-git go "Changed plots in SM lectures to be faster"
-subl .
-git go "typo"
-cd GitProjects/course-notes/
-subl .
-git go "GR lecture"
-git go "GR lecture"
-cd Google\ Drive/School/Assignments/
-cd ~/GitProjects/course-notes/
-subl .
-git go "Jake changes"
-cd Google\ Drive/School/Assignments/
-subl .
-cd dotfiles/
-subl .
-./dotlink 
-cd Google\ Drive/School/Assignments/
-subl .
-cd Phys\ 375/Assignment\ 4/
-cd code/
-scipython code2.py
-scipython
-cd ~/Google\ Drive/School/Assignments/Phys\ 375/Assignment\ 4/code/
-scipython code2.py
-cd dotfiles/
-subl .
-./dotlink 
-cd ~/Google\ Drive/School/Assignments/Phys\ 375/Assignment\ 4/code/
-scipython code2.py
-cd ~/GitProjects/course-notes/
-subl .
-git go "SM correction"
-cd ../../dotfiles/
-git st
-git go "dotfile change"
-cd Google\ Drive/School/Assignments/
-subl .
-cd GitProjects/
-cd course-notes/
-subl .
-git go "GR lecture"
-git go "GR lecture"
-cd Google\ Drive/School/Assignments/
-cd ~/GitProjects/course-notes/
-git st
-subl .
-git go "SM lecture"
-cd GitProjects/course-notes/
-subl .
-git go "SM lecture"
-cd Google\ Drive/School/Assignments/
-subl .
-git go "SM lecture"
-git go "SM lecture"
-cd GitProjects/course-notes/
-cd ..
-cd Google\ Drive/School/Assignments/
-cd ~/GitProjects/course-notes/
-git st
-git go "GR lecture"
-cd ~/Google\ Drive/School/Assignments/
-subl .
-cd GitProjects/course-notes/
-subl.
-subl .
-git go "Doug fix"
-cd dotfiles/
-subl .
-git st
-git aa
-git commit -m "python2"
-git push
-cd Google\ Drive/School/Assignments/
-cd ~/GitProjects/course-notes/
-git go "GR lecture"
-cd ~/Google\ Drive/School/Assignments/
-cd GitProjects/course-notes/
-subl.
-git go "Doug fix"
-cd GitProjects/
-git clone git@github.com:Tiasa/StellarModellingMetallicity.git
-cd StellarModellingMetallicity/
-git aa
-git commit -m "First commit with git ignore"
-git push
-git st 
-git pull
-git st
-subl .
-scipython -v
-cd code/
-ls
-scipython stellar_generator.py 
-python -v
-python stellar_generator.py 
-pip install numpy
-which pip
-which python
-python2
-python2 stellar_generator.py 
-which easy_install
-ssh -y tcfraser@linux.student.cs.uwaterloo.ca
-which easy_install
-ssh -y tcfraser@linux.student.cs.uwaterloo.ca
-cd GitProjects/
-cd StellarModellingMetallicity/
-cd code/
-ls
-scipython 2 stellar_generator.py 
-scipython2 stellar_generator.py 
-git st
-git go "First file"
-git go "Better testing file"
-git go "rkf"
-git go "rkf"
-cd 
-cd Google\ Drive/
-ls
-cd School/
-cd ~/GitProjects/StellarModellingMetallicity/
-git st
-git pull
-cd code/
-subl ..
-scipython2 stellar_generator.py 
-scipython2 rkt.py 
-scipython2 rkf.py 
-git pull
-subl ..
-scipython2 rkt.py 
-cd GitProjects/course-notes/
-git go "graph"
-git st
-git push
-cd ~
-cd GitProjects/
-cd StellarModellingMetallicity/
-subl .
-cd code/
-ls
-scipython2 rkf.py 
-git go "added stopping conditions"
-scipython2 stellar_generator.py 
-cd Google\ Drive/School/Assignments/
-subl .
-cd Google\ Drive/School/Assignments/
-cd GitProjects//StellarModellingMetallicity/
-subl .
-cd code/
-[A
-scipython2 stellar_generator.py 
-cd code/
-[A
-scipython2 stellar_generator.py 
-cd GitProjects/StellarModellingMetallicity/code/
-scipython2 main_sequence.py 
-git aa
-git commit -m "Merge"
-git push
-git go "bb -> rkf"
-git st
-git pul
-git pull
-cd GitProjects/course-notes/
-git st
-git pull
-subl .
-git go "GR lecture"
-cd GitProjects/
-cd StellarModellingMetallicity/
-ls
-scipython2 rkf.py 
-git go "added stopping conditions"
-scipython2 stellar_generator.py 
-cd Google\ Drive/School/Assignments/
-cd Google\ Drive/School/Assignments/
-cd GitProjects//StellarModellingMetallicity/
-scipython2 stellar_generator.py 
-scipython2 stellar_generator.py 
-cd GitProjects/StellarModellingMetallicity/code/
-git commit -m "Merge"
-git go "bb -> rkf"
-git pul
-cd GitProjects/course-notes/
-git go "GR lecture"
-cd Ste
-cd GitProjects/StellarModellingMetallicity/
-git pull
-cd code/
-[A
-git commit -m "fixes to roberts code"
-git branch tc_branch
-git commit -s
-git push -u origin/tc_branch
-git push -u origin tc_branch
-git checkout 1390bc883c88aa9260d4fc6274889bc04f036022
-subl .
-git checkout tc_branch
-scipython2 stellar_plotter.py 
-git aa
-git commit -m "Fix for my mistake"
-git checkout master
-git merge tc_branch
-git st
-git push
-scipython2 main_sequence.py 
-scipython2 stellar_plotter.py 
-git commit -m "Fix for my mistake"
-git checkout master
-git merge tc_branch
-git push
-scipython2 main_sequence.py 
-cd GitProjects/StellarModellingMetallicity/code
-git diff
-q
-git aa
-git stash
-git st
-git pull
-cd ..
-git go "fixed plotter"
-cd ~/GitProjects/course-notes/
-git go "SM lecture"
-cd ~/GitProjects/StellarModellingMetallicity/
-subl .
-cd code/
-scipython2 stellar_plotter.py
-cd GitProjects/StellarModellingMetallicity/code/
-scipython2 stellar_plotter.py
-cd GitProjects/course-notes/
-subl .
-cd GitProjects/course-notes/
-subl .
-git go "SM notes"
-git st
-git aa
-git commit -m "SM lecture"
-git push
-git go "SM lectures"
-git go "SM lecture"
-git go "SM lecture"
-cd Google\ Drive/School/Assignments/
-cd Amath\ 373/
-cd~
-cd ~/GitProjects/course-notes/
-subl .
-git go "GR lecture"
-cd GitProjects/course-notes/
-subl .
-cd Google\ Drive/School/Assignments/
-subl 
-subl .
-cd GitProjects/course-notes/
-subl .
-git go "typos"
-cd GitProjects/course-notes/
-subl .
-cd GitProjects/course-notes/
-cd Google\ Drive/School/Assignments/
-subl 
-cd GitProjects/course-notes/
-git go "typos"
-cd GitProjects/course-notes/
-mo.exe
-cd GitProjects/latex-packages/
-subl .
-git commit -m "new paper package"
-cd ../StellarModellingMetallicity/
-git st
-git aa
-git commit -m "report"
-git push
-git commit -m "report"
-git push
-cd GitProjects/latex-packages/
-git pull
-cd ../StellarModellingMetallicity/
-git pyll
-git st
-cd Google\ Drive/School/Assignments/
-subl .
-cd GitProjects/course-notes/
-subl .
-git st
-git go "Dan fixes"
-git go "typos"
-cd GitProjects/course-notes/
-subl .
-SumatraPDF.exe 
-path
-git go "chunky typo"
- git go "typo"
-mo.exe
-cd GitProjects/latex-packages/
-git commit -m "new paper package"
-cd ../StellarModellingMetallicity/
-git aa
-git commit -m "report"
-git push
-git commit -m "report"
-git push
-cd GitProjects/latex-packages/
-git pull
-cd ../StellarModellingMetallicity/
-git pyll
-cd Google\ Drive/School/Assignments/
-cd GitProjects/course-notes/
-git go "Dan fixes"
-git go "typos"
-cd GitProjects/course-notes/
-SumatraPDF.exe 
-path
-git go "chunky typo"
- git go "typo"
-cd Google\ Drive/Academics/Quantum\ PI\ Research/Matt_GDAG/
-cython
-scipython2 closure_examples.pyx
-cd semi_graphoid_closure_procedure/
-cd ../SGCP
-scipython3 closure_examples.pyx
-scipython3 SGCP
-scipython3 -m SGCP.closure_examples.pyx
-scipython3 -m SGCP/closure_examples
-scipython3 closure_examples.pyx 
-scipython3 -m SGCP.closure_examples.pyx 
-scipython3 -m SGCP 
-cd
-cd -1
-scipython3 -m SGCP.closure_examples 
-scipython3 -m SGCP
-scipython3 -m SGCP closure_examples.pyx
-scipython3 -m SGCP closure_examples
-scipython3 -m SGCP.closure_examples
-scipython3 main.py 
-scipython3 main.py \
-scipython3 main.py
-cd SGCP/
-cd ..
-subl .
-gcc
-python closure_examples.py 
-scipython2 closure_examples.py 
-scipython3 closure_examples.py 
-cmd.exe
-ls
-git st
-git
-cd --
-ls
-cd dotfiles/misc_config/cygwinpackages/
-./setup-x86_64 -P `awk 'NR==1{printf $1}{printf ",%s", $1}' packagelist.csv`
-awk 'NR==1{printf $1}{printf ",%s", $1}' packagelist.csv
-awk 'NR==1{printf $1}{printf ",%s", $1}' packagelist_test.csv
-awk 'NR==1{printf $1}{printf ",%s", $1}' packagelist_test.csv
-mingw
-gcc
-ls
-cd SGCP/
-cd ..
-python closure_examples.py 
-scipython2 closure_examples.py 
-cmd.exe
-git st
-cd dotfiles/misc_config/cygwinpackages/
-./setup-x86_64 -P `awk 'NR==1{printf $1}{printf ",%s", $1}' packagelist.csv`
-awk 'NR==1{printf $1}{printf ",%s", $1}' packagelist.csv
-awk 'NR==1{printf $1}{printf ",%s", $1}' packagelist_test.csv
-awk 'NR==1{printf $1}{printf ",%s", $1}' packagelist_test.csv
-cd
-cd --
-git
-gcc
-cd ~
-cd Google\ Drive/Academics/Quantum\ PI\ Research/SGCP/
-subl .
-mingw
-scipython3 closure_examples.py 
-CC
-CC=gcc
-CC=gcc scipython3 setup.py build_ext --inplace
-rm bitfuncs.c
-CC=gcc & scipython3 setup.py build_ext --inplace
-gcc closure.c
-ls
-scipython3 setup.py build_ext --inplace
-scipython3 setup.py build_ext --inplace -c mingw64
-scipython3 setup.py build_ext --inplace -c gcc
-cd dotfiles/
-subl .
-./dotlink 
-CC=gcc & scipython3 setup.py build_ext --inplace
-gcc closure.c
-scipython3 setup.py build_ext --inplace -c mingw64
-which python
-cd --
-cd Google\ Drive/Academics/Quantum\ PI\ Research/SGCP/
-ls
-scipython3 setup.py build_ext --inplace -c gcc
-CC=gcc scipython3 setup.py build_ext --inplace
-scipython setup.py build_ext --inplace
-scipython3 setup.py build_ext --inplace
-find /cygdrive/c -iname 'vcvarsall.bat'
-cd Google\ Drive/Academics/Quantum\ PI\ Research/SGCP/
-ls
-scipython3 setup.py build_ext --inplace
-VS90COMNTOOLS
-exort VS90COMNTOOLS
-$VS90COMNTOOLS
-cd Google\ Drive/Academics/Quantum\ PI\ Research/SGCP/
-$VS90COMNTOOLS
-${VS90COMNTOOLS}
-cd Google\ Drive/Academics/Quantum\ PI\ Research/SGCP/
-${VS90COMNTOOLS}
-$VS90COMNTOOLS
-cd $VS90COMNTOOLS
-cd /cygdrive/c/Users/TC/AppData/Local/Programs/Common/Microsoft/Visual\ C++\ for\ Python/9.0/
-cd -1
-cd Google\ Drive/Academics/Quantum\ PI\ Research/SGCP/
-scipython3 setup.py build_ext --inplace
-cd Google\ Drive/Academics/Quantum\ PI\ Research/SGCP/
-scipython3 setup.py build_ext --inplace
-$VS90COMNTOOLS 
-cd Google\ Drive/Academics/Quantum\ PI\ Research/SGCP/
-scipython3 setup.py build_ext --inplace
-path
-$VS90COMNTOOLS/
-find /cygdrive/c -iname 'vcvarsall.bat'
-cd dotfiles/
-SET
-./dotlink 
-path
-cd Google\ Drive/Academics/Quantum\ PI\ Research/SGCP/
-scipython3 setup.py build_ext --inplace
-$VS90COMNTOOLS/
-$VS90COMNTOOLS
-$VS90COMNTOOLS/
-path
-ENV
-echo VSCOMNTOOLS
-echo $VSCOMNTOOLS
-echo ${VSCOMNTOOLS}
-ENV VSCOMNTOOLS
-ls
-scipython3
-echo ${VSCOMNTOOLS}
-ENV VSCOMNTOOLS
-cd Google\ Drive/Academics/Quantum\ PI\ Research/SGCP/
-cd ..
-cd TriangleScenario/
-ls
-subl .
-
-scipython3 triangle_scenario.py 
-whch python
-which python
-python -v
-python --version
-mingw
-which pip
-pip
 python
-scipython
-scipython3
-scipython3 
-scipython triangle_scenario.py 
-scipython3
-scipython3 
-scipython triangle_scenario.py 
-cd Google\ Drive/Academics/Quantum\ PI\ Research/TriangleScenario/
-scipython3 triangle_scenario.py 
-chcp 65001
-which chcp
-echo '\u227d'
-scipython3 picos_optimization.py 
-echo -e '\u227d'
-echo '\u227d'
-echo -e '\u227d'
-cd --
-cd Google\ Drive/Academics/Quantum\ PI\ Research/TriangleScenario/
+scipython3 triangle_violation_restricted.py
+cd Google\ Drive/Academics/Quantum\ PI\ Research/Triangle_Violation/
 ls
+scipython3 triangle_violation_restricted.py
+cd --
+cd Google\ Drive/Academics/Quantum\ PI\ Research/Triangle_Violation/
+scipython3 triangle_violation_restricted.py
+scipython3 job_queuer.py
+python
+ls
+cd --
+cd Google\ Drive/Academics/Quantum\ PI\ Research/Triangle_Violation/
+scipython3 -m cProfile triangle_violation_restricted.py
+scipython3 -m cProfile -s time triangle_violation_restricted.py
+scipython3 triangle_violation_restricted.py
+git st
+git aa
+git commit -m "work"
+git push
 PYTHONIOENCODING="utf-8"
 scipython3 picos_optimization.py 
 PYTHONIOENCODING="utf-8" scipython3 picos_optimization.py 
 cd ~/dotfiles/
-subl .
 ./dotlink 
+cd Google\ Drive/Academics/Quantum\ PI\ Research/TriangleScenario/
+1
+scipython3 projective_measurements_violation.py 
+cd ..
+cd Trin
+cd Triangle
+cd Triangle_Violation/
+scipython3 violation
+scipython3 violation.py
+cd --
+scipython3 job_queuer.py
+python
+cd --
+scipython3 job_queuer.py
+python
+cd --
+scipython3 -m cProfile triangle_violation_restricted.py
+scipython3 -m cProfile -s time triangle_violation_restricted.py
+git commit -m "work"
+git push
+cd Google\ Drive/Academics/Quantum\ PI\ Research/Triangle_Violation/
+ls
+ssh
+ssh Compute.pi.local
+scipython3 triangle_violation_restricted.py
+git aa
+git commit -m "more work"
+git st
+git remote add origin git@github.com:tcfraser/quantum_triangle_scenario.git
+git push -u origin master
+scipython3 utils.py
+subl .
+scipython3 plotter.py
+scipython3 deterministic_correlator.py
+scipython3 triangle_violation.py
+cd Google\ Drive/Academics/Quantum\ PI\ Research/Triangle_Violation/
+scipython3 triangle_violation.py
+git push
+ls
+ssh
+ssh Compute.pi.local
+scipython3 triangle_violation_restricted.py
+git aa
+git commit -m "more work"
+git st
+git remote add origin git@github.com:tcfraser/quantum_triangle_scenario.git
+git push -u origin master
+scipython3 utils.py
+scipython3 deterministic_correlator.py
+cd Google\ Drive/Academics/Quantum\ PI\ Research/Triangle_Violation/
+scipython triangle_violation.py
+scipython3 -m cProfile -s time triangle_violation.py
+subl .
+scipython3 plotter.py
+scipython3 triangle_violation.py
+ssh tfraser@compute.pi.local
+ssh tfraser@compute.pi.local
+cd GitProjects/
+cd quantum_triangle_scenario/
+cd code/
+ls
+scipython quantum_pd.py 
+scipython rmt.py 
+git st
+git aa
+git go "rmt"
+cd Google\ Drive/Academics/Quantum\ PI\ Research/TriangleScenario/
+1
+scipython3 projective_measurements_violation.py 
+cd Trin
+cd Triangle
+cd Triangle_Violation/
+scipython3 violation
+scipython3 violation.py
+cd --
+scipython3 job_queuer.py
+python
+cd --
+scipython3 job_queuer.py
+python
+cd --
+scipython3 -m cProfile triangle_violation_restricted.py
+scipython3 -m cProfile -s time triangle_violation_restricted.py
+git commit -m "work"
+cd Google\ Drive/Academics/Quantum\ PI\ Research/Triangle_Violation/
+ls
+ssh
+ssh Compute.pi.local
+scipython3 triangle_violation_restricted.py
+git commit -m "more work"
+git remote add origin git@github.com:tcfraser/quantum_triangle_scenario.git
+scipython3 utils.py
+scipython3 plotter.py
+scipython3 deterministic_correlator.py
+scipython3 triangle_violation.py
+cd Google\ Drive/Academics/Quantum\ PI\ Research/Triangle_Violation/
+scipython3 triangle_violation.py
+ls
+ssh
+ssh Compute.pi.local
+scipython3 triangle_violation_restricted.py
+git commit -m "more work"
+git remote add origin git@github.com:tcfraser/quantum_triangle_scenario.git
+scipython3 utils.py
+scipython3 deterministic_correlator.py
+cd Google\ Drive/Academics/Quantum\ PI\ Research/Triangle_Violation/
+scipython triangle_violation.py
+scipython3 -m cProfile -s time triangle_violation.py
+scipython3 plotter.py
+scipython3 triangle_violation.py
+ssh tfraser@compute.pi.local
+cd GitProjects/quantum_triangle_scenario/
+scipython2 variable.py 
+scipython3 Fooset.py 
+scipython3 probability.py.py 
+scipython3 variable.py 
+scipython3 probability.py 
+cd ../minimizer
+cd ../minimizers/
+scipython3 triangle_entropy_minimizer.py 
+git commit -m "refactor"
+git checkout -b backuptriangle
+git pul
+git pull
+cd ..
+git checkout -b back_up_triangle
+git push -u origin master
+git push -u origin back_up_triange
+git push -u origin back_up_triangle
+git fetch upstream
+git merge back_up_triangle
+git reset --hard ORIG_HEAD
+git checkout multimeasure
+git merge -s ours master
+git checkout master
+git merge multimeasure
+git push
+subl .
+cd code/
+scipython3 -m cProfile -s time quantum_pd.py 
+scipython3 -m cProfile -s cumtime -l 20 quantum_pd.py 
+scipython3 -m cProfile
+scipython3 -m cProfile -h
+scipython3 -m cProfile -s cumtime quantum_pd.py 
+scipython3 -m cProfile -s cumtime quantum_pd.py -o ../solutions/profile.txt 
+scipython3 -m cProfile -s cumtime -o ../solutions/profile.txt quantum_pd.py
+scipython3 -m cProfile -s cumtime -o ../solutions/profile.csv quantum_pd.py
+scipython3 -m cProfile -s time quantum_pd.py
+scipython3 quantum_pd.py 
+git st
+git aa
+git go "updates"
+ssh tcfraser@compute.pi.local
+ssh tcfraser@compute5.pi.local
+ssh tfraser@compute5.pi.local
+git reset --hard ORIG_HEAD
+git checkout multimeasure
+git merge -s ours master
+git checkout master
+git merge multimeasure
+scipython3 -m cProfile -s time quantum_pd.py 
+scipython3 -m cProfile -s cumtime -l 20 quantum_pd.py 
+scipython3 -m cProfile
+scipython3 -m cProfile -h
+scipython3 -m cProfile -s cumtime quantum_pd.py 
+scipython3 -m cProfile -s cumtime quantum_pd.py -o ../solutions/profile.txt 
+scipython3 -m cProfile -s cumtime -o ../solutions/profile.txt quantum_pd.py
+scipython3 -m cProfile -s cumtime -o ../solutions/profile.csv quantum_pd.py
+scipython3 -m cProfile -s time quantum_pd.py
+ssh tcfraser@compute.pi.local
+ssh tcfraser@compute5.pi.local
+ssh tfraser@compute5.pi.local
+cd GitProjects/quantum_triangle_scenario/
+subl ,
+subl .
+cd code/
+scipython3 rmt.py
+git go "rmt updates, seesaw sampling implemented"
+scipython3 probability.py
+scipython3 quantum_pd.py
+git go "updates"
+scipython3 measurements 
+scipython3 measurements.py
+scipython3 measurement.py 
+scipython3 quantum_pd.py 
+scipython3 triangle_entropy_minimizer.py
+scipython3 -m cProfile -s time marginal_equality_inflation.py 
+git st
+git aa
+git commit -m "linprog"
+git push
+scipython3 marginal_equality_inflation.py 
+cd Google\ Drive/Academics/Quantum\ PI\ Research/TriangleScenario_cvx_trials/
+ls
+subl .
+ls
+cd OneDrive/quantum_tools/
+subl .
+git diff
+git st
+git go "print"
+scipython3 triangle_violation.py
+ssh tfraser@compute.pi.local
+cd GitProjects/quantum_triangle_scenario/
+scipython2 variable.py 
+scipython3 Fooset.py 
+scipython3 probability.py.py 
+scipython3 variable.py 
+scipython3 probability.py 
+cd ../minimizer
+cd ../minimizers/
+scipython3 triangle_entropy_minimizer.py 
+git commit -m "refactor"
+git checkout -b backuptriangle
+git pul
+cd ..
+git checkout -b back_up_triangle
+git push -u origin master
+git push -u origin back_up_triange
+git push -u origin back_up_triangle
+git fetch upstream
+git merge back_up_triangle
+git reset --hard ORIG_HEAD
+git checkout multimeasure
+git merge -s ours master
+git checkout master
+git merge multimeasure
+scipython3 -m cProfile -s time quantum_pd.py 
+scipython3 -m cProfile -s cumtime -l 20 quantum_pd.py 
+scipython3 -m cProfile
+scipython3 -m cProfile -h
+scipython3 -m cProfile -s cumtime quantum_pd.py 
+scipython3 -m cProfile -s cumtime quantum_pd.py -o ../solutions/profile.txt 
+scipython3 -m cProfile -s cumtime -o ../solutions/profile.txt quantum_pd.py
+scipython3 -m cProfile -s cumtime -o ../solutions/profile.csv quantum_pd.py
+scipython3 -m cProfile -s time quantum_pd.py
+scipython3 quantum_pd.py 
+git go "updates"
+ssh tcfraser@compute.pi.local
+ssh tcfraser@compute5.pi.local
+ssh tfraser@compute5.pi.local
+git reset --hard ORIG_HEAD
+git checkout multimeasure
+git merge -s ours master
+git checkout master
+git merge multimeasure
+scipython3 -m cProfile -s time quantum_pd.py 
+scipython3 -m cProfile -s cumtime -l 20 quantum_pd.py 
+scipython3 -m cProfile
+scipython3 -m cProfile -h
+scipython3 -m cProfile -s cumtime quantum_pd.py 
+scipython3 -m cProfile -s cumtime quantum_pd.py -o ../solutions/profile.txt 
+scipython3 -m cProfile -s cumtime -o ../solutions/profile.txt quantum_pd.py
+scipython3 -m cProfile -s cumtime -o ../solutions/profile.csv quantum_pd.py
+scipython3 -m cProfile -s time quantum_pd.py
+ssh tcfraser@compute.pi.local
+ssh tcfraser@compute5.pi.local
+ssh tfraser@compute5.pi.local
+cd GitProjects/quantum_triangle_scenario/
+subl ,
+scipython3 rmt.py
+git go "rmt updates, seesaw sampling implemented"
+scipython3 probability.py
+scipython3 quantum_pd.py
+git go "updates"
+scipython3 measurements 
+scipython3 measurements.py
+scipython3 measurement.py 
+scipython3 quantum_pd.py 
+scipython3 triangle_entropy_minimizer.py
+scipython3 -m cProfile -s time marginal_equality_inflation.py 
+git commit -m "linprog"
+scipython3 marginal_equality_inflation.py 
+cd Google\ Drive/Academics/Quantum\ PI\ Research/TriangleScenario_cvx_trials/
+cd OneDrive/quantum_tools/
+git diff
+git go "print"
+cd OneDrive
+ls
+cd quan
+cd quantum_tools/
+git pull
+subl .
+cd code/
+scipython3 -m cProfile -s time -m quantum_tools.inflation.uniform_violator
+scipython3 -m quantum_tools.
+scipython3 -m quantum_tools.inflation.uniform_violator
+git commit -m "huge performance increase"
+scipython3 -m quantum_tools.inflation.positive_linear_Solve
+scipython3 -m quantum_tools.inflation.positive_linear_solve
+scipython3 -m quantum_tools.examples.thirty_eight
+scipython3 -m quantum_tools.inflation.big_inflation_stress_test.py
+[A
+scipython3 -m quantum_tools.examples.prob_dist
+scipython3 -m quantum_tools.examples.prob_dists
+scipython3 -m quantum_tools.utilities.integer_map
+git go "scalability"
+scipython3 -m quantum_tools.inflation.fritz_inflation
+git st
+git aa
+git commit -m "updates"
+git push
+scipython3 -m quantum_tools.inflation.big_inflation_stress_test
+scipython3 -m cProfile -s cumtime quantum_pd.py 
+scipython3 -m cProfile -s cumtime quantum_pd.py -o ../solutions/profile.txt 
+scipython3 -m cProfile -s cumtime -o ../solutions/profile.txt quantum_pd.py
+scipython3 -m cProfile -s cumtime -o ../solutions/profile.csv quantum_pd.py
+scipython3 -m cProfile -s time quantum_pd.py
+ssh tcfraser@compute.pi.local
+ssh tcfraser@compute5.pi.local
+ssh tfraser@compute5.pi.local
+cd GitProjects/quantum_triangle_scenario/
+subl ,
+scipython3 rmt.py
+git go "rmt updates, seesaw sampling implemented"
+scipython3 probability.py
+scipython3 quantum_pd.py
+git go "updates"
+scipython3 measurements 
+scipython3 measurements.py
+scipython3 measurement.py 
+scipython3 quantum_pd.py 
+scipython3 triangle_entropy_minimizer.py
+scipython3 -m cProfile -s time marginal_equality_inflation.py 
+git commit -m "linprog"
+scipython3 marginal_equality_inflation.py 
+cd Google\ Drive/Academics/Quantum\ PI\ Research/TriangleScenario_cvx_trials/
+git go "print"
+cd OneDrive
+cd quan
+cd quantum_tools/
+git pull
+subl .
+scipython3 -m cProfile -s time -m quantum_tools.inflation.uniform_violator
+scipython3 -m quantum_tools.
+git commit -m "huge performance increase"
+scipython3 -m quantum_tools.inflation.positive_linear_Solve
+scipython3 -m quantum_tools.inflation.positive_linear_solve
+scipython3 -m quantum_tools.inflation.big_inflation_stress_test.py
+[A
+scipython3 -m quantum_tools.examples.prob_dist
+scipython3 -m quantum_tools.utilities.integer_map
+git go "scalability"
+scipython3 -m quantum_tools.inflation.fritz_inflation
+git commit -m "updates"
+cd OneDrive/quantum_tools/
+git go "compatibilirt"
+git go "cluster machines"
+git go "removing imports"
+git go "compatibility"
+scipython3 -m quantum_tools.inflation.big_inflation_stress_test
+cd code/
+git go "update"
+git go "again"
+scipython3 -m quantum_tools.examples.big_inflation_stress_test
+scipython3 -m quantum_tools.examples.big_inflation_stress_test -s 'small' -p True
+scipython3 -m quantum_tools.examples.big_inflation_stress_test -s 'small' -p 'True'
+scipython3 -m quantum_tools.examples.big_inflation_stress_test -s
+scipython3 -m quantum_tools.examples.big_inflation_stress_test -s -p
+scipython3 -m quantum_tools.examples.big_inflation_stress_test -s 'small'
+scipython3 -m quantum_tools.examples.big_inflation_stress_test -p 'true' -s 'small'
+scipython3 -m quantum_tools.examples.big_inflation_stress_test -p 0 -s 'small'
+git commit -m "command line options"
+git go "changes"
+git go "better pruning"
+git go "csr desired"
+git go "what"
+git go "coo is best here"
+git go "test"
+git go "final"
+scipython3 -m quantum_tools.examples.big_inflation_stress_test -p False -s small
+scipython3 -m quantum_tools.examples.big_inflation_stress_test -p True -s small
+git go "What"
+ls
+scipython3 -m quantum_tools.examples.thirty_eight
+git diff
+git commit -m "more work"
+git aa
+git commit -m "added solutions to the marginal problem"
+git push
+scipython3 -m quantum_tools.examples.prob_dists
+scipython3 -m quantum_tools.inflation.uniform_violator
+scipython3 -m quantum_tools.examples.bell_scenario_inflation
+scipython3 -m quantum_tools.examples.fritz_
+scipython3 -m quantum_tools.examples.fritz_inflation
+git st
+git go "end of day"
+ssh tfraser@compute5.pi.local
+scipython3 -m quantum_tools.utilities.integer_map
+git go "scalability"
+git aa
+git commit -m "updates"
+git push
+cd OneDrive/quantum_tools/
+cd code/
+subl .
+ls
+scipython3 -m quantum_tools.inflation.big_inflation_stress_test
+scipython3 -m quantum_tools.inflation.fritz_inflation
+scipython3 -m quantum_tools.examples.fritz_inflation
+git go "visualization"
+scipython3 -m quantum_tools.examples.big_inflation_stress_test
+git st
+ssh tfraser@compute5.pi.local
+ssh tfraser@compute5.pi.local
+scipython3 -m quantum_tools.utilities.integer_map
+git go "scalability"
+git aa
+git commit -m "updates"
+git push
+cd OneDrive/quantum_tools/
+cd code/
+subl .
+scipython3 -m quantum_tools.inflation.big_inflation_stress_test
+scipython3 -m quantum_tools.inflation.fritz_inflation
+scipython3 -m quantum_tools.examples.fritz_inflation
+git go "visualization"
+scipython3 -m quantum_tools.examples.big_inflation_stress_test
+git st
+ssh tfraser@compute5.pi.local
+cd dotfiles/
+cd mi
+cd misc_config/
+cd cygwinpackages/
+cygcheck -c -d | sed -e "1,2d" -e 's/ .*$//' > packagelist.csv
+which python
+which python3
+which easy_install-3.4
+easy_install-3.4 pip
+pip -list
+pip --list
+pip freeze
+which pip
+which pip3
+pip3 numpy
+python3
+which gcc
+which gfortran
+which mingw64
+which mingw64-i686-gcc-core
+which mingww-64
+which mingw-w64
+pip3 uninstall numpy
+pip3 install numpy
+pip3 install scipy
+cd /usr/lib
+ls
+which grep
+grep lapack
+grep . lapack
+which lapack
+which openblas
+grep lapack
+grep . lapack
+which openblas
+cd dotfiles/misc_config/
+cd cygwinpackages/
+cygcheck -c -d | sed -e "1,2d" -e 's/ .*$//' > packagelist.csv
+pip3 install scipy
+which gcc
+which g77
+pip3 install --upgrade pip
+cd /usr/lib
+find openblas
+find lapack
+which lapack
+which libm
+path
+cd ~/dotfiles/
+ls
+subl .
+gcc --version
+gcc
+gcc ==help
+gcc --help

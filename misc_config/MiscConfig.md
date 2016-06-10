@@ -18,3 +18,6 @@ See extra files
 
 ### Fonts
 Inconsolata.ttf seems to have less problems than inconsolata.otf.
+
+### Python
+https://www.scipy.org/scipylib/building/windows.html
