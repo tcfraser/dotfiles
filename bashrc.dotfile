@@ -5,8 +5,8 @@
 export HISTCONTROL=ignoredups:erasedups
 shopt -s histappend
 
-# Scipython
-alias scipython='T:/Packages/SciPython/WinPython-64bit-3.4.3.7/python-3.4.3.amd64/python.exe'
+# DISPLAY
+export DISPLAY=:0.0
 
 # Interactive operation...
 alias rm='rm -i'

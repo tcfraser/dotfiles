@@ -1,404 +1,3 @@
-scipython3 projective_measurements_violation.py 
-cd Trin
-cd Triangle
-cd Triangle_Violation/
-scipython3 violation
-scipython3 violation.py
-cd --
-scipython3 job_queuer.py
-python
-cd --
-scipython3 job_queuer.py
-python
-cd --
-scipython3 -m cProfile triangle_violation_restricted.py
-scipython3 -m cProfile -s time triangle_violation_restricted.py
-git commit -m "work"
-cd Google\ Drive/Academics/Quantum\ PI\ Research/Triangle_Violation/
-ls
-ssh
-ssh Compute.pi.local
-scipython3 triangle_violation_restricted.py
-git commit -m "more work"
-git remote add origin git@github.com:tcfraser/quantum_triangle_scenario.git
-scipython3 utils.py
-scipython3 plotter.py
-scipython3 deterministic_correlator.py
-scipython3 triangle_violation.py
-cd Google\ Drive/Academics/Quantum\ PI\ Research/Triangle_Violation/
-scipython3 triangle_violation.py
-ls
-ssh
-ssh Compute.pi.local
-scipython3 triangle_violation_restricted.py
-git commit -m "more work"
-git remote add origin git@github.com:tcfraser/quantum_triangle_scenario.git
-scipython3 utils.py
-scipython3 deterministic_correlator.py
-cd Google\ Drive/Academics/Quantum\ PI\ Research/Triangle_Violation/
-scipython triangle_violation.py
-scipython3 -m cProfile -s time triangle_violation.py
-scipython3 plotter.py
-scipython3 triangle_violation.py
-ssh tfraser@compute.pi.local
-cd GitProjects/quantum_triangle_scenario/
-scipython2 variable.py 
-scipython3 Fooset.py 
-scipython3 probability.py.py 
-scipython3 variable.py 
-scipython3 probability.py 
-cd ../minimizer
-cd ../minimizers/
-scipython3 triangle_entropy_minimizer.py 
-git commit -m "refactor"
-git checkout -b backuptriangle
-git pul
-git pull
-cd ..
-git checkout -b back_up_triangle
-git push -u origin master
-git push -u origin back_up_triange
-git push -u origin back_up_triangle
-git fetch upstream
-git merge back_up_triangle
-git reset --hard ORIG_HEAD
-git checkout multimeasure
-git merge -s ours master
-git checkout master
-git merge multimeasure
-git push
-subl .
-cd code/
-scipython3 -m cProfile -s time quantum_pd.py 
-scipython3 -m cProfile -s cumtime -l 20 quantum_pd.py 
-scipython3 -m cProfile
-scipython3 -m cProfile -h
-scipython3 -m cProfile -s cumtime quantum_pd.py 
-scipython3 -m cProfile -s cumtime quantum_pd.py -o ../solutions/profile.txt 
-scipython3 -m cProfile -s cumtime -o ../solutions/profile.txt quantum_pd.py
-scipython3 -m cProfile -s cumtime -o ../solutions/profile.csv quantum_pd.py
-scipython3 -m cProfile -s time quantum_pd.py
-scipython3 quantum_pd.py 
-git st
-git aa
-git go "updates"
-ssh tcfraser@compute.pi.local
-ssh tcfraser@compute5.pi.local
-ssh tfraser@compute5.pi.local
-git reset --hard ORIG_HEAD
-git checkout multimeasure
-git merge -s ours master
-git checkout master
-git merge multimeasure
-scipython3 -m cProfile -s time quantum_pd.py 
-scipython3 -m cProfile -s cumtime -l 20 quantum_pd.py 
-scipython3 -m cProfile
-scipython3 -m cProfile -h
-scipython3 -m cProfile -s cumtime quantum_pd.py 
-scipython3 -m cProfile -s cumtime quantum_pd.py -o ../solutions/profile.txt 
-scipython3 -m cProfile -s cumtime -o ../solutions/profile.txt quantum_pd.py
-scipython3 -m cProfile -s cumtime -o ../solutions/profile.csv quantum_pd.py
-scipython3 -m cProfile -s time quantum_pd.py
-ssh tcfraser@compute.pi.local
-ssh tcfraser@compute5.pi.local
-ssh tfraser@compute5.pi.local
-cd GitProjects/quantum_triangle_scenario/
-subl ,
-subl .
-cd code/
-scipython3 rmt.py
-git go "rmt updates, seesaw sampling implemented"
-scipython3 probability.py
-scipython3 quantum_pd.py
-git go "updates"
-scipython3 measurements 
-scipython3 measurements.py
-scipython3 measurement.py 
-scipython3 quantum_pd.py 
-scipython3 triangle_entropy_minimizer.py
-scipython3 -m cProfile -s time marginal_equality_inflation.py 
-git st
-git aa
-git commit -m "linprog"
-git push
-scipython3 marginal_equality_inflation.py 
-cd Google\ Drive/Academics/Quantum\ PI\ Research/TriangleScenario_cvx_trials/
-ls
-subl .
-ls
-cd OneDrive/quantum_tools/
-subl .
-git diff
-git st
-git go "print"
-scipython3 triangle_violation.py
-ssh tfraser@compute.pi.local
-cd GitProjects/quantum_triangle_scenario/
-scipython2 variable.py 
-scipython3 Fooset.py 
-scipython3 probability.py.py 
-scipython3 variable.py 
-scipython3 probability.py 
-cd ../minimizer
-cd ../minimizers/
-scipython3 triangle_entropy_minimizer.py 
-git commit -m "refactor"
-git checkout -b backuptriangle
-git pul
-cd ..
-git checkout -b back_up_triangle
-git push -u origin master
-git push -u origin back_up_triange
-git push -u origin back_up_triangle
-git fetch upstream
-git merge back_up_triangle
-git reset --hard ORIG_HEAD
-git checkout multimeasure
-git merge -s ours master
-git checkout master
-git merge multimeasure
-scipython3 -m cProfile -s time quantum_pd.py 
-scipython3 -m cProfile -s cumtime -l 20 quantum_pd.py 
-scipython3 -m cProfile
-scipython3 -m cProfile -h
-scipython3 -m cProfile -s cumtime quantum_pd.py 
-scipython3 -m cProfile -s cumtime quantum_pd.py -o ../solutions/profile.txt 
-scipython3 -m cProfile -s cumtime -o ../solutions/profile.txt quantum_pd.py
-scipython3 -m cProfile -s cumtime -o ../solutions/profile.csv quantum_pd.py
-scipython3 -m cProfile -s time quantum_pd.py
-scipython3 quantum_pd.py 
-git go "updates"
-ssh tcfraser@compute.pi.local
-ssh tcfraser@compute5.pi.local
-ssh tfraser@compute5.pi.local
-git reset --hard ORIG_HEAD
-git checkout multimeasure
-git merge -s ours master
-git checkout master
-git merge multimeasure
-scipython3 -m cProfile -s time quantum_pd.py 
-scipython3 -m cProfile -s cumtime -l 20 quantum_pd.py 
-scipython3 -m cProfile
-scipython3 -m cProfile -h
-scipython3 -m cProfile -s cumtime quantum_pd.py 
-scipython3 -m cProfile -s cumtime quantum_pd.py -o ../solutions/profile.txt 
-scipython3 -m cProfile -s cumtime -o ../solutions/profile.txt quantum_pd.py
-scipython3 -m cProfile -s cumtime -o ../solutions/profile.csv quantum_pd.py
-scipython3 -m cProfile -s time quantum_pd.py
-ssh tcfraser@compute.pi.local
-ssh tcfraser@compute5.pi.local
-ssh tfraser@compute5.pi.local
-cd GitProjects/quantum_triangle_scenario/
-subl ,
-scipython3 rmt.py
-git go "rmt updates, seesaw sampling implemented"
-scipython3 probability.py
-scipython3 quantum_pd.py
-git go "updates"
-scipython3 measurements 
-scipython3 measurements.py
-scipython3 measurement.py 
-scipython3 quantum_pd.py 
-scipython3 triangle_entropy_minimizer.py
-scipython3 -m cProfile -s time marginal_equality_inflation.py 
-git commit -m "linprog"
-scipython3 marginal_equality_inflation.py 
-cd Google\ Drive/Academics/Quantum\ PI\ Research/TriangleScenario_cvx_trials/
-cd OneDrive/quantum_tools/
-git diff
-git go "print"
-cd OneDrive
-ls
-cd quan
-cd quantum_tools/
-git pull
-subl .
-cd code/
-scipython3 -m cProfile -s time -m quantum_tools.inflation.uniform_violator
-scipython3 -m quantum_tools.
-scipython3 -m quantum_tools.inflation.uniform_violator
-git commit -m "huge performance increase"
-scipython3 -m quantum_tools.inflation.positive_linear_Solve
-scipython3 -m quantum_tools.inflation.positive_linear_solve
-scipython3 -m quantum_tools.examples.thirty_eight
-scipython3 -m quantum_tools.inflation.big_inflation_stress_test.py
-[A
-scipython3 -m quantum_tools.examples.prob_dist
-scipython3 -m quantum_tools.examples.prob_dists
-scipython3 -m quantum_tools.utilities.integer_map
-git go "scalability"
-scipython3 -m quantum_tools.inflation.fritz_inflation
-git st
-git aa
-git commit -m "updates"
-git push
-scipython3 -m quantum_tools.inflation.big_inflation_stress_test
-scipython3 -m cProfile -s cumtime quantum_pd.py 
-scipython3 -m cProfile -s cumtime quantum_pd.py -o ../solutions/profile.txt 
-scipython3 -m cProfile -s cumtime -o ../solutions/profile.txt quantum_pd.py
-scipython3 -m cProfile -s cumtime -o ../solutions/profile.csv quantum_pd.py
-scipython3 -m cProfile -s time quantum_pd.py
-ssh tcfraser@compute.pi.local
-ssh tcfraser@compute5.pi.local
-ssh tfraser@compute5.pi.local
-cd GitProjects/quantum_triangle_scenario/
-subl ,
-scipython3 rmt.py
-git go "rmt updates, seesaw sampling implemented"
-scipython3 probability.py
-scipython3 quantum_pd.py
-git go "updates"
-scipython3 measurements 
-scipython3 measurements.py
-scipython3 measurement.py 
-scipython3 quantum_pd.py 
-scipython3 triangle_entropy_minimizer.py
-scipython3 -m cProfile -s time marginal_equality_inflation.py 
-git commit -m "linprog"
-scipython3 marginal_equality_inflation.py 
-cd Google\ Drive/Academics/Quantum\ PI\ Research/TriangleScenario_cvx_trials/
-git go "print"
-cd OneDrive
-cd quan
-cd quantum_tools/
-git pull
-subl .
-scipython3 -m cProfile -s time -m quantum_tools.inflation.uniform_violator
-scipython3 -m quantum_tools.
-git commit -m "huge performance increase"
-scipython3 -m quantum_tools.inflation.positive_linear_Solve
-scipython3 -m quantum_tools.inflation.positive_linear_solve
-scipython3 -m quantum_tools.inflation.big_inflation_stress_test.py
-[A
-scipython3 -m quantum_tools.examples.prob_dist
-scipython3 -m quantum_tools.utilities.integer_map
-git go "scalability"
-scipython3 -m quantum_tools.inflation.fritz_inflation
-git commit -m "updates"
-cd OneDrive/quantum_tools/
-git go "compatibilirt"
-git go "cluster machines"
-git go "removing imports"
-git go "compatibility"
-scipython3 -m quantum_tools.inflation.big_inflation_stress_test
-cd code/
-git go "update"
-git go "again"
-scipython3 -m quantum_tools.examples.big_inflation_stress_test
-scipython3 -m quantum_tools.examples.big_inflation_stress_test -s 'small' -p True
-scipython3 -m quantum_tools.examples.big_inflation_stress_test -s 'small' -p 'True'
-scipython3 -m quantum_tools.examples.big_inflation_stress_test -s
-scipython3 -m quantum_tools.examples.big_inflation_stress_test -s -p
-scipython3 -m quantum_tools.examples.big_inflation_stress_test -s 'small'
-scipython3 -m quantum_tools.examples.big_inflation_stress_test -p 'true' -s 'small'
-scipython3 -m quantum_tools.examples.big_inflation_stress_test -p 0 -s 'small'
-git commit -m "command line options"
-git go "changes"
-git go "better pruning"
-git go "csr desired"
-git go "what"
-git go "coo is best here"
-git go "test"
-git go "final"
-scipython3 -m quantum_tools.examples.big_inflation_stress_test -p False -s small
-scipython3 -m quantum_tools.examples.big_inflation_stress_test -p True -s small
-git go "What"
-ls
-scipython3 -m quantum_tools.examples.thirty_eight
-git diff
-git commit -m "more work"
-git aa
-git commit -m "added solutions to the marginal problem"
-git push
-scipython3 -m quantum_tools.examples.prob_dists
-scipython3 -m quantum_tools.inflation.uniform_violator
-scipython3 -m quantum_tools.examples.bell_scenario_inflation
-scipython3 -m quantum_tools.examples.fritz_
-scipython3 -m quantum_tools.examples.fritz_inflation
-git st
-git go "end of day"
-ssh tfraser@compute5.pi.local
-scipython3 -m quantum_tools.utilities.integer_map
-git go "scalability"
-git aa
-git commit -m "updates"
-git push
-cd OneDrive/quantum_tools/
-cd code/
-subl .
-ls
-scipython3 -m quantum_tools.inflation.big_inflation_stress_test
-scipython3 -m quantum_tools.inflation.fritz_inflation
-scipython3 -m quantum_tools.examples.fritz_inflation
-git go "visualization"
-scipython3 -m quantum_tools.examples.big_inflation_stress_test
-git st
-ssh tfraser@compute5.pi.local
-ssh tfraser@compute5.pi.local
-scipython3 -m quantum_tools.utilities.integer_map
-git go "scalability"
-git aa
-git commit -m "updates"
-git push
-cd OneDrive/quantum_tools/
-cd code/
-subl .
-scipython3 -m quantum_tools.inflation.big_inflation_stress_test
-scipython3 -m quantum_tools.inflation.fritz_inflation
-scipython3 -m quantum_tools.examples.fritz_inflation
-git go "visualization"
-scipython3 -m quantum_tools.examples.big_inflation_stress_test
-git st
-ssh tfraser@compute5.pi.local
-cd dotfiles/
-cd mi
-cd misc_config/
-cd cygwinpackages/
-cygcheck -c -d | sed -e "1,2d" -e 's/ .*$//' > packagelist.csv
-which python
-which python3
-which easy_install-3.4
-easy_install-3.4 pip
-pip -list
-pip --list
-pip freeze
-which pip
-which pip3
-pip3 numpy
-python3
-which gcc
-which gfortran
-which mingw64
-which mingw64-i686-gcc-core
-which mingww-64
-which mingw-w64
-pip3 uninstall numpy
-pip3 install numpy
-pip3 install scipy
-cd /usr/lib
-ls
-which grep
-grep lapack
-grep . lapack
-which lapack
-which openblas
-grep lapack
-grep . lapack
-which openblas
-cd dotfiles/misc_config/
-cd cygwinpackages/
-cygcheck -c -d | sed -e "1,2d" -e 's/ .*$//' > packagelist.csv
-pip3 install scipy
-which gcc
-which g77
-pip3 install --upgrade pip
-cd /usr/lib
-find openblas
-find lapack
-which lapack
-which libm
-path
-cd ~/dotfiles/
 ls
 subl .
 gcc --version
@@ -498,3 +97,404 @@ subl .
 git st
 ./dotlink -h
 ./dotlink -m
+grep lapack
+grep . lapack
+which openblas
+cd dotfiles/misc_config/
+cd cygwinpackages/
+cygcheck -c -d | sed -e "1,2d" -e 's/ .*$//' > packagelist.csv
+pip3 install scipy
+which gcc
+which g77
+pip3 install --upgrade pip
+cd /usr/lib
+find openblas
+find lapack
+which libm
+gcc --version
+gcc
+gcc ==help
+gcc --help
+gcc ==help
+gcc --help
+cd dotfiles/
+cd misc_config/
+cd cygwinpackages/
+cygcheck -c -d | sed -e "1,2d" -e 's/ .*$//' > packagelist.csv
+gcc ==help
+gcc --help
+pip3 install scipy
+cd dotfiles/
+git aa
+git commit -m "updates, finally fortran"
+git push
+pip3 install --upgrade numpy
+pip uninstall numpy
+pip freeze
+pip3 install numpy
+pip3 install numpy==1.11
+pip3 install numpy==1.11
+pip3 install numpy
+cd dotfiles/
+cd misc_config/
+cd cygwinpackages/
+cygcheck -c -d | sed -e "1,2d" -e 's/ .*$//' > packagelist.csv
+gcc ==help
+gcc --help
+cd dotfiles/
+git aa
+git commit -m "updates, finally fortran"
+git push
+pip uninstall numpy
+pip freeze
+pip3 install numpy==1.11
+pip3 install numpy==1.11
+pip --version
+python --version
+python3 --version
+pip3 install numpy
+pip3 install scipy
+cd OneDrive/quantum_tools/
+python3 quantum_tools.examples.prob_dists
+python3 -m quantum_tools.examples.prob_dists
+pip3 install matplotlib
+pip3 uninstall numpy
+pip3 install --upgrade numpy
+scipython3
+scipython3 -i
+pip3 uninstall Cython
+pip3 install cython
+pip3 uninstall scipy
+pip3 install git+https://github.com/scipy/scipy.git
+which glpk
+which glpk
+cd 
+cd OneDrive/quantum_tools/
+pip3
+pip3 uninstall scipy
+pip3 install scipy
+cd OneDrive/quantum_tools/
+cd /usr/lib
+find openblas
+which openblas
+which glpk
+./dotlink -h
+path
+which lapack
+cd OneDrive/quantum_tools/code/
+pip3 uninstall
+pip3 install cvxopt
+python3 -m quantum_tools.examples.bell_scenario_inflation
+cd /usr/bin
+find libglpk
+cd /usr/lib/python3.4/distutils.py
+cd /usr/lib/python3.4/distutils
+cd site-packages/
+cd cvxopt
+cd cvxopt-1.1.8-py3.4.egg-info/
+which libglpk
+find glpk
+grep glpk
+which tar
+which liblapack
+which liblapack.a
+which libblas.a
+find libblas
+find lib
+find blas
+find '*blas*'
+pip3 uninstall cvxopt
+pip3 install git+https://github.com/tcfraser/cvxopt.git
+python3
+cd ~
+cd /
+cd cygdrive/t/
+
+cd OneDrive/
+cd code/
+scipython3 -m quantum_tools.examples.big_inflation_stress_test
+scipython3 -m quantum_tools.examples.bell_scenario_inflation
+mkdir cython_tests/
+cd cython_tests/
+subl .
+which cython
+python3 setup.py build_ext --inplace
+python3 run.py
+cd quantum_tools/
+python3 -m quantum_tools.examples.fritz_inflation
+git s
+git st
+git go "updates"
+cd --
+cd -1
+python3 -m quantum_tools.examples.quantum_cloud
+pip3 freeze
+which gunzip
+which patch
+cd /tmp/
+tar xvzf VTK-6.3.0.tar.gz 
+gunzip VTK-6.3.0-cygwin-patch-20160521.txt.gz 
+cd VTK-6.3.0/
+subl ../VTK-6.3.0-cygwin-patch-20160521.txt 
+patch -p1 < ../VTK-6.3.0-cygwin-patch-20160521.txt 
+mkdir /tmp/vtk_build
+cd /tmp/vtk
+cd /tmp/vtk_build/
+which cmake
+cmake -D CMAKE_BUILD_TYPE:STRING=RELEASE         -D BUILD_SHARED_LIBS:BOOL=OFF         -D VTK_USE_X:BOOL=ON         -D VTK_USE_SYSTEM_HDF5:BOOL=ON         -D VTK_USE_SYSTEM_JPEG:BOOL=ON         -D VTK_USE_SYSTEM_PNG:BOOL=ON         -D VTK_USE_SYSTEM_TIFF:BOOL=ON         -D VTK_USE_SYSTEM_ZLIB:BOOL=ON         -D CMAKE_INSTALL_PREFIX:STRING=/usr/local/vtk-6.3.0/         /tmp/VTK-6.3.0/
+cmake -D CMAKE_BUILD_TYPE:STRING=RELEASE         -D BUILD_SHARED_LIBS:BOOL=OFF         -D VTK_USE_X:BOOL=OFF         -D OPENGL_INCLUDE_DIR:STRING=/usr/include/w32api/         -D OPENGL_gl_LIBRARY:STRING=/usr/lib/w32api/libopengl32.a         -D OPENGL_glu_LIBRARY:STRING=/usr/lib/w32api/libglu32.a         -D VTK_USE_SYSTEM_HDF5:BOOL=ON         -D VTK_USE_SYSTEM_JPEG:BOOL=ON         -D VTK_USE_SYSTEM_PNG:BOOL=ON         -D VTK_USE_SYSTEM_TIFF:BOOL=ON         -D VTK_USE_SYSTEM_ZLIB:BOOL=ON         -D CMAKE_INSTALL_PREFIX:STRING=/usr/local/vtk-6.3.0/         /tmp/VTK-6.3.0/
+make -j ${NUMBER_OF_PROCESSORS} install
+which vtk
+pip3 install mayavi
+which pip3
+which python3
+pip3 install vtk
+which VTK
+which vtkWrapPython
+cd /usr/bin/
+find vtk
+cd local/
+ls ..
+cd cmake/
+;s
+cd include/
+grep Wrapping
+cd lib/
+cd share/
+cd vtk-6.3/
+cd vtkDomainsChemistry/
+cd bin/
+cd ..
+cd vtk-6.3.0/
+cd ~/dotfiles/
+ls
+./dotlink -m
+cd /usr/bin/
+find vtk
+cd local/
+ls ..
+cd cmake/
+;s
+cd include/
+grep Wrapping
+cd lib/
+cd share/
+cd vtk-6.3/
+cd vtkDomainsChemistry/
+cd bin/
+cd vtk-6.3.0/
+cd ~/dotfiles/
+./dotlink -m
+cd /usr/include/python3.4m/
+cd lib
+find libpython3.4.dll.a
+find libpython3.4m.dll.a
+pip3 install glumpy
+which cython
+pip3 uninstallglumpy
+pip3 uninstall glumpy
+pip3 install setuptools
+cd ~/Packages/
+git clone https://github.com/glumpy/glumpy.git
+cd glumpy/
+python3 setup.py install
+pip3 install pyrex
+pip3 install triangle
+pip3 freeze
+pip3 install --upgrade setuptools
+cd ~/OneDrive/quantum_tools/
+subl .
+python3 -m quantum_tools.visualization.plot_cloud
+cd ..
+cd quantum_tools/
+cd code/
+l
+python3 -c "import matplotlib; print matplotlib.get_backend()"
+cd /
+ls
+./setup-x86_64.exe 
+python3 -c "import matplotlib; print(matplotlib.get_backend())"
+which cmake
+cmake -D CMAKE_BUILD_TYPE:STRING=RELEASE         -D BUILD_SHARED_LIBS:BOOL=OFF         -D VTK_USE_X:BOOL=ON         -D VTK_USE_SYSTEM_HDF5:BOOL=ON         -D VTK_USE_SYSTEM_JPEG:BOOL=ON         -D VTK_USE_SYSTEM_PNG:BOOL=ON         -D VTK_USE_SYSTEM_TIFF:BOOL=ON         -D VTK_USE_SYSTEM_ZLIB:BOOL=ON         -D CMAKE_INSTALL_PREFIX:STRING=/usr/local/vtk-6.3.0/         /tmp/VTK-6.3.0/
+cmake -D CMAKE_BUILD_TYPE:STRING=RELEASE         -D BUILD_SHARED_LIBS:BOOL=OFF         -D VTK_USE_X:BOOL=OFF         -D OPENGL_INCLUDE_DIR:STRING=/usr/include/w32api/         -D OPENGL_gl_LIBRARY:STRING=/usr/lib/w32api/libopengl32.a         -D OPENGL_glu_LIBRARY:STRING=/usr/lib/w32api/libglu32.a         -D VTK_USE_SYSTEM_HDF5:BOOL=ON         -D VTK_USE_SYSTEM_JPEG:BOOL=ON         -D VTK_USE_SYSTEM_PNG:BOOL=ON         -D VTK_USE_SYSTEM_TIFF:BOOL=ON         -D VTK_USE_SYSTEM_ZLIB:BOOL=ON         -D CMAKE_INSTALL_PREFIX:STRING=/usr/local/vtk-6.3.0/         /tmp/VTK-6.3.0/
+make -j ${NUMBER_OF_PROCESSORS} install
+which vtk
+which pip3
+which python3
+pip3 install vtk
+which VTK
+which vtkWrapPython
+cd /usr/bin/
+find vtk
+cd local/
+ls ..
+cd cmake/
+;s
+cd include/
+grep Wrapping
+cd lib/
+cd share/
+cd vtk-6.3/
+cd vtkDomainsChemistry/
+cd bin/
+cd vtk-6.3.0/
+cd ~/dotfiles/
+./dotlink -m
+cd ~/Packages/
+rm -fr VTX-build
+mkdir VTX-build
+rm -rf VTX-build/
+cd VTK-build/
+ccmake ../VTK
+ ls
+rm -rf VTK-build
+mkdir VTK-build
+cd VTK
+cd ../VTK-build/
+ccmake ../VTK-7.0.0/
+make
+make -j4
+rm -rf VTK-build/
+ls
+cd ..
+pip3 install pyopengl
+pip3 install triangle
+pip3 uninstall glumpy
+pip3 install glumpy
+pip3 install mayavi
+mkdir VTK-build
+cd VTK
+cd ../VTK-build/
+ccmake ../VTK-7.0.0/
+make
+make -j4
+rm -rf VTK-build/
+pip3 install pyopengl
+pip3 install triangle
+pip3 uninstall glumpy
+pip3 install glumpy
+pip3 install mayavi
+cd OneDrive
+cd quantum_tools/code/
+python3 -m quantum_tools.visualizations.plot_cloud
+whictkinter
+which tkinter
+pip3 uninstall matplotlib
+pip3 install matplotlib
+pip3 install python3-setuptools
+which XWinServer
+$MATPLOTLIBRC
+cd $MATPLOTLIBRC
+la
+cd .matplotlib/
+cd OneDrive/quantum_tools/code/
+cd cython_tests/
+python run.py
+python3 run.py
+scipython3 run.py
+cd ..
+pip3 uninstall -y matplotlib
+pip3 --no-cache-dir install -U matplotlib
+python3
+cd /usr/lib/python3.4/site-packages/matplotlib/mpl-data/matplotlibrc
+cd /usr/lib/python3.4/site-packages/matplotlib/mpl-data/
+ls
+subl matplotlibrc 
+cd --
+cd -1
+python3 -m quantum_tools.visualization.plot_cloud
+subl matplotlibrc 
+cd --
+cd -1
+cd OneDrive/quantum_tools/
+ls
+cd code/
+echo $DISPLAY
+python3 -m quantum_tools.visualization.plot_cloud
+pip3 uninstall matplotlib
+pip3 uninstall matplotlib
+pip3 install matplotlib
+cd OneDrive/quantum_tools/code/
+ls
+python3 -m quantum_tools.visualization.plot_cloud
+cd cython_tests/
+scipython3 run.py
+ython3
+startxwin
+cd OneDrive/quantum_tools/
+ls
+cd code/
+python3 -m quantum_tools.visualization.plot_cloud
+python3 -m quantum_tools.examples.quantum_cloud
+which ffmpeg
+which python
+which conda
+which conda
+conda install numpy
+conda info
+conda install scipy
+conda install matplotlib
+conda install cvxopt
+conda install -c conda.anaconda.org/omnia cvxopt
+cd OneDrive/quantum_tools/code/
+python3 -m quantum_tools.visualization.plot_cloud
+python3 -m quantum_tools.examples.quantum_cloud
+which ffmpeg
+which easy_install3
+which easy_install
+easy_install --version
+pip3 uninstall matplotlib
+easy_install matplotlib
+which easy_install
+easy_install --version
+easy_install matplotlib
+cd OneDrive/quantum_tools/code/
+ls
+which zyppur
+which zypper
+pip3 install python-matplotlib-tk
+python3
+pip3 uninstall matplotlib
+pip3 install matplotlib
+python3 -m quantum_tools.visualization.plot_cloud
+pip3 install matplotlib
+cd OneDrive/quantum_tools/
+cd code/
+ls
+python3 -m quantum_tools.visualization.plot_cloud
+$DISPLAY
+cd ~/dotfiles/
+./dotlink 
+XWin
+pip3 install matplotlib
+XWin
+cd OneDrive/quantum_tools/
+cd code/
+$DISPLAY
+echo $DISPLAY
+locale -a
+LC_ALL=C
+python3 -m quantum_tools.visualization.plot_cloud
+cd ~/dotfiles/
+ls
+./dotlink 
+XWin
+startxwin
+xwin
+xterm
+dotlink
+./dotlink 
+path
+dotlink
+cd OneDrive/quantum_tools/code/
+xterm
+python3 -m quantum_tools.visualization.plot_cloud
+xterm
+cd OneDrive/quantum_tools/code/
+dotlink
+python3 -m quantum_tools.visualization.plot_cloud
+cd OneDrive/quantum_tools/code/
+python3 -m quantum_tools.visualization.plot_cloud
+python3 -m quantum_tools.examples.quantum_cloud
+dotlink
+xWin

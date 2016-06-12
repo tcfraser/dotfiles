@@ -21,3 +21,22 @@ Inconsolata.ttf seems to have less problems than inconsolata.otf.
 
 ### Python
 https://www.scipy.org/scipylib/building/windows.html
+
+## VTK Cygwin patch
+http://hvrl.ics.keio.ac.jp/kimura/vtk/vtk-6.3.0.html
+
+cmake -D CMAKE_BUILD_TYPE:STRING=RELEASE \
+        -D BUILD_SHARED_LIBS:BOOL=OFF \
+        -D VTK_USE_X:BOOL=OFF \
+        -D OPENGL_INCLUDE_DIR:STRING=/usr/include/w32api/ \
+        -D OPENGL_gl_LIBRARY:STRING=/usr/lib/w32api/libopengl32.a \
+        -D OPENGL_glu_LIBRARY:STRING=/usr/lib/w32api/libglu32.a \
+        -D VTK_USE_SYSTEM_HDF5:BOOL=ON \
+        -D VTK_USE_SYSTEM_JPEG:BOOL=ON \
+        -D VTK_USE_SYSTEM_PNG:BOOL=ON \
+        -D VTK_USE_SYSTEM_TIFF:BOOL=ON \
+        -D VTK_USE_SYSTEM_ZLIB:BOOL=ON \
+        -D VTK_WRAP_PYTHON:BOOL=ON \
+        -D VTK_PYTHON_VERSION:STRING=3.4 \
+        -D CMAKE_INSTALL_PREFIX:STRING=/usr/local/vtk-7.0.0/ \
+        /tmp/VTK-7.0.0/
