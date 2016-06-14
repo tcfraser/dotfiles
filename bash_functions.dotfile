@@ -75,9 +75,14 @@ function cl() {
   cd $1 && ls
 }
 
-# resource dotfiles
-function dotsource() {
-  if [ -f "${HOME}/.bashrc" ] ; then
-    source "${HOME}/.bashrc"
-  fi
+# emulate most of the behaviour of sudo
+function sudo_func() {
+  cygstart --action=runas "$@"
 }
+
+# resource dotfiles
+# function dotsource() {
+#   if [ -f "${HOME}/.bashrc" ] ; then
+#     source "${HOME}/.bashrc"
+#   fi
+# }

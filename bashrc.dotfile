@@ -54,3 +54,4 @@ if [ -f "${HOME}/.bash_functions" ] ; then
 fi
 
 alias cd=cd_func
+alias sudo=sudo_func

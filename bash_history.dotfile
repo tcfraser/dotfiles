@@ -1,34 +1,3 @@
-ls
-subl .
-gcc --version
-gcc
-gcc ==help
-gcc --help
-gcc ==help
-gcc --help
-cd dotfiles/
-cd misc_config/
-cd cygwinpackages/
-ls
-cygcheck -c -d | sed -e "1,2d" -e 's/ .*$//' > packagelist.csv
-gcc ==help
-gcc --help
-pip3 install scipy
-cd dotfiles/
-git st
-git aa
-git commit -m "updates, finally fortran"
-git push
-ls
-pip3 install --upgrade numpy
-pip uninstall numpy
-pip freeze
-pip3 install numpy
-pip3 install numpy==1.11
-pip3 install numpy==1.11
-which pip3
-pip3 install numpy
-cd dotfiles/
 cd misc_config/
 cd cygwinpackages/
 cygcheck -c -d | sed -e "1,2d" -e 's/ .*$//' > packagelist.csv
@@ -498,3 +467,34 @@ python3 -m quantum_tools.visualization.plot_cloud
 python3 -m quantum_tools.examples.quantum_cloud
 dotlink
 xWin
+cd dotfiles/
+subl .
+./dotlink 
+path
+cd OneDrive/quantum_tools/code/
+python3 -m quantum_tools.visualization.plot_cloud
+python3 -m quantum_tools.examples.quantum_cloud
+dotlink
+xWin
+cd dotfiles/
+subl .[B
+path
+cd Packages/Mosek/7/tools/examples/python/
+subl /usr/lib/python3.4/site-packages/mosek
+subl /usr/lib/python3.4/site-packages/mosek/__init
+cd --
+cd -0
+python3 lo1.py
+pip3 freeze
+pip3 uninstall Mosek
+pip3 install git+http://github.com/MOSEK/Mosek.pip
+cd ..
+cd ~/dotfiles/
+subl .
+./dotlink 
+ls
+sudo
+sudo cd ..
+./dotfiles/
+./dotlink
+dotlink 
