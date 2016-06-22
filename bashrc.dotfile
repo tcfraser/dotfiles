@@ -1,3 +1,9 @@
+# Fix broken permissions
+# umask u=rx,g=rwx,o=rwx
+
+# Allow commands like !(file.txt)
+shopt -s extglob
+
 # If not running interactively, don't do anything
 [[ "$-" != *i* ]] && return
 
@@ -55,3 +61,4 @@ fi
 
 alias cd=cd_func
 alias sudo=sudo_func
+alias explore=explore_func

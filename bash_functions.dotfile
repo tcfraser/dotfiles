@@ -80,6 +80,16 @@ function sudo_func() {
   cygstart --action=runas "$@"
 }
 
+# explorer here
+function explore_func() {
+  explorePath=$1
+  if [ $# -eq 0 ] ; then
+    echo "No path specified. Assumed '.' current directory."
+    explorePath="."
+  fi
+  explorer.exe /e,`cygpath -w "$explorePath"`
+}
+
 # resource dotfiles
 # function dotsource() {
 #   if [ -f "${HOME}/.bashrc" ] ; then

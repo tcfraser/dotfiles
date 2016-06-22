@@ -1,500 +1,500 @@
-cd misc_config/
-cd cygwinpackages/
-cygcheck -c -d | sed -e "1,2d" -e 's/ .*$//' > packagelist.csv
-gcc ==help
-gcc --help
-cd dotfiles/
-git aa
-git commit -m "updates, finally fortran"
-git push
-pip uninstall numpy
-pip freeze
-pip3 install numpy==1.11
-pip3 install numpy==1.11
-which pip3
-pip --version
-python --version
-python3 --version
-pip3 install numpy
-pip3 install scipy
-git st
-cd OneDrive/quantum_tools/
-cd code/
-subl .
-python3 quantum_tools.examples.prob_dists
-python3 -m quantum_tools.examples.prob_dists
+shopt -s extglob
+shopt -s extglob
+exho !(Makefile)
+echo !(Makefile)
+echo !(Makefile|bin)
 ls
-pip3 install cvxopt
-pip3 install matplotlib
-pip3 uninstall numpy
-python3
-pip3 install --upgrade numpy
-scipython3
-scipython3 -i
-pip3 uninstall Cython
-pip3 freeze
-pip3 install cython
-pip3 uninstall scipy
-pip3 install git+https://github.com/scipy/scipy.git
-python3 -m quantum_tools.examples.bell_scenario_inflation
-which glpk
+rm -rf !(Makefile|bin)
+make
+which traf
+dotlink
 path
-which glpk
+dotlink
 path
-cd 
-cd OneDrive/quantum_tools/
-cd code/
-pip3
-pip3 freeze
-pip3 uninstall scipy
-pip3 install scipy
-python3 -m quantum_tools.examples.bell_scenario_inflation
-cd --
-cd OneDrive/quantum_tools/
-cd code/
-python3 -m quantum_tools.examples.bell_scenario_inflation
-cd /usr/lib
+dotlink
+rm -rf !(Makefile|bin)
+make
+cd Packages/porta/
+cd porta-1.4.1/
+cd examples/
+ls
+which traf
+path
+dotlink
+explore
+cd examples/echo !(porta-1.4.1.tgz)
+echo !(porta-1.4.1.tgz)
+rm -rf !(porta-1.4.1.tgz)
 l
-ls
-path
-find openblas
-which openblas
-which glpk
-find glpk
+which shopt
+tar -xvzf porta-1.4.1.tgz 
 cd ~/dotfiles/
-subl .
-git st
-./dotlink -h
-./dotlink -m
-grep lapack
-grep . lapack
-which openblas
-cd dotfiles/misc_config/
-cd cygwinpackages/
-cygcheck -c -d | sed -e "1,2d" -e 's/ .*$//' > packagelist.csv
-pip3 install scipy
-which gcc
-which g77
-pip3 install --upgrade pip
-cd /usr/lib
-find openblas
-find lapack
-which libm
-gcc --version
-gcc
-gcc ==help
-gcc --help
-gcc ==help
-gcc --help
-cd dotfiles/
-cd misc_config/
-cd cygwinpackages/
-cygcheck -c -d | sed -e "1,2d" -e 's/ .*$//' > packagelist.csv
-gcc ==help
-gcc --help
-pip3 install scipy
-cd dotfiles/
-git aa
-git commit -m "updates, finally fortran"
-git push
-pip3 install --upgrade numpy
-pip uninstall numpy
-pip freeze
-pip3 install numpy
-pip3 install numpy==1.11
-pip3 install numpy==1.11
-pip3 install numpy
-cd dotfiles/
-cd misc_config/
-cd cygwinpackages/
-cygcheck -c -d | sed -e "1,2d" -e 's/ .*$//' > packagelist.csv
-gcc ==help
-gcc --help
-cd dotfiles/
-git aa
-git commit -m "updates, finally fortran"
-git push
-pip uninstall numpy
-pip freeze
-pip3 install numpy==1.11
-pip3 install numpy==1.11
-pip --version
-python --version
-python3 --version
-pip3 install numpy
-pip3 install scipy
-cd OneDrive/quantum_tools/
-python3 quantum_tools.examples.prob_dists
-python3 -m quantum_tools.examples.prob_dists
-pip3 install matplotlib
-pip3 uninstall numpy
-pip3 install --upgrade numpy
-scipython3
-scipython3 -i
-pip3 uninstall Cython
-pip3 install cython
-pip3 uninstall scipy
-pip3 install git+https://github.com/scipy/scipy.git
-which glpk
-which glpk
-cd 
-cd OneDrive/quantum_tools/
-pip3
-pip3 uninstall scipy
-pip3 install scipy
-cd OneDrive/quantum_tools/
-cd /usr/lib
-find openblas
-which openblas
-which glpk
-./dotlink -h
-path
-which lapack
-cd OneDrive/quantum_tools/code/
-pip3 uninstall
-pip3 install cvxopt
-python3 -m quantum_tools.examples.bell_scenario_inflation
-cd /usr/bin
-find libglpk
-cd /usr/lib/python3.4/distutils.py
-cd /usr/lib/python3.4/distutils
-cd site-packages/
-cd cvxopt
-cd cvxopt-1.1.8-py3.4.egg-info/
-which libglpk
-find glpk
-grep glpk
-which tar
-which liblapack
-which liblapack.a
-which libblas.a
-find libblas
-find lib
-find blas
-find '*blas*'
-pip3 uninstall cvxopt
-pip3 install git+https://github.com/tcfraser/cvxopt.git
-python3
-cd ~
-cd /
-cd cygdrive/t/
-
-cd OneDrive/
-cd code/
-scipython3 -m quantum_tools.examples.big_inflation_stress_test
-scipython3 -m quantum_tools.examples.bell_scenario_inflation
-mkdir cython_tests/
-cd cython_tests/
-subl .
-which cython
-python3 setup.py build_ext --inplace
-python3 run.py
-cd quantum_tools/
-python3 -m quantum_tools.examples.fritz_inflation
-git s
-git st
-git go "updates"
-cd --
 cd -1
-python3 -m quantum_tools.examples.quantum_cloud
-pip3 freeze
-which gunzip
-which patch
-cd /tmp/
-tar xvzf VTK-6.3.0.tar.gz 
-gunzip VTK-6.3.0-cygwin-patch-20160521.txt.gz 
-cd VTK-6.3.0/
-subl ../VTK-6.3.0-cygwin-patch-20160521.txt 
-patch -p1 < ../VTK-6.3.0-cygwin-patch-20160521.txt 
-mkdir /tmp/vtk_build
-cd /tmp/vtk
-cd /tmp/vtk_build/
-which cmake
-cmake -D CMAKE_BUILD_TYPE:STRING=RELEASE         -D BUILD_SHARED_LIBS:BOOL=OFF         -D VTK_USE_X:BOOL=ON         -D VTK_USE_SYSTEM_HDF5:BOOL=ON         -D VTK_USE_SYSTEM_JPEG:BOOL=ON         -D VTK_USE_SYSTEM_PNG:BOOL=ON         -D VTK_USE_SYSTEM_TIFF:BOOL=ON         -D VTK_USE_SYSTEM_ZLIB:BOOL=ON         -D CMAKE_INSTALL_PREFIX:STRING=/usr/local/vtk-6.3.0/         /tmp/VTK-6.3.0/
-cmake -D CMAKE_BUILD_TYPE:STRING=RELEASE         -D BUILD_SHARED_LIBS:BOOL=OFF         -D VTK_USE_X:BOOL=OFF         -D OPENGL_INCLUDE_DIR:STRING=/usr/include/w32api/         -D OPENGL_gl_LIBRARY:STRING=/usr/lib/w32api/libopengl32.a         -D OPENGL_glu_LIBRARY:STRING=/usr/lib/w32api/libglu32.a         -D VTK_USE_SYSTEM_HDF5:BOOL=ON         -D VTK_USE_SYSTEM_JPEG:BOOL=ON         -D VTK_USE_SYSTEM_PNG:BOOL=ON         -D VTK_USE_SYSTEM_TIFF:BOOL=ON         -D VTK_USE_SYSTEM_ZLIB:BOOL=ON         -D CMAKE_INSTALL_PREFIX:STRING=/usr/local/vtk-6.3.0/         /tmp/VTK-6.3.0/
-make -j ${NUMBER_OF_PROCESSORS} install
-which vtk
-pip3 install mayavi
-which pip3
-which python3
-pip3 install vtk
-which VTK
-which vtkWrapPython
-cd /usr/bin/
-find vtk
-cd local/
-ls ..
-cd cmake/
-;s
-cd include/
-grep Wrapping
-cd lib/
-cd share/
-cd vtk-6.3/
-cd vtkDomainsChemistry/
+cd Packages/
+traf example.ieq 
+make -f4
+cd porta/
+tar -xvf porta.1.3.2.tar 
+cd porta.1.3.2
+make -j4
+cd porta-1.4.1/
+shopt -s extglob
+shopt -s extglob
+exho !(Makefile)
+echo !(Makefile)
+echo !(Makefile|bin)
+rm -rf !(Makefile|bin)
+make
+dotlink
+dotlink
+dotlink
+rm -rf !(Makefile|bin)
+make
+cd Packages/porta/
+cd porta-1.4.1/
+dotlink
+cd Packages/porta/porta-1.4.1/examples/
+traf example.ieq
+ll
+traf
+./traf 
+bash traf 
+file traf
+file xporta
+xporta
+bash xporta
+which traf
+sudo traf
+xporta -T example.ieq 
+sudo traf -T example.ieq 
+traf -T example.ieq 
+sudo xporta -T example.ieq 
+cd porta-1.4.1
+path
+which xporta
+sudo xporta -T example.ieq.poi 
+cd gnu-make/
 cd bin/
+file xporta 
+sudo xporta
+cd ../../..
+cd --
+cd -4
 cd ..
-cd vtk-6.3.0/
-cd ~/dotfiles/
-ls
-./dotlink -m
-cd /usr/bin/
-find vtk
-cd local/
-ls ..
-cd cmake/
-;s
-cd include/
-grep Wrapping
-cd lib/
-cd share/
-cd vtk-6.3/
-cd vtkDomainsChemistry/
-cd bin/
-cd vtk-6.3.0/
-cd ~/dotfiles/
-./dotlink -m
-cd /usr/include/python3.4m/
-cd lib
-find libpython3.4.dll.a
-find libpython3.4m.dll.a
-pip3 install glumpy
-which cython
-pip3 uninstallglumpy
-pip3 uninstall glumpy
-pip3 install setuptools
-cd ~/Packages/
-git clone https://github.com/glumpy/glumpy.git
-cd glumpy/
-python3 setup.py install
-pip3 install pyrex
-pip3 install triangle
-pip3 freeze
-pip3 install --upgrade setuptools
-cd ~/OneDrive/quantum_tools/
 subl .
-python3 -m quantum_tools.visualization.plot_cloud
-cd ..
-cd quantum_tools/
-cd code/
+cd examples/
+sudo xporta -T example.ieq
+python3
+ls
+exho !(Makefile)
+echo !(Makefile)
+echo !(Makefile|bin)
+rm -rf !(Makefile|bin)
+dotlink
+path
+dotlink
+path
+dotlink
+rm -rf !(Makefile|bin)
+cd Packages/porta/
+cd porta-1.4.1/
+path
+dotlink
+cd examples/echo !(porta-1.4.1.tgz)
+echo !(porta-1.4.1.tgz)
+rm -rf !(porta-1.4.1.tgz)
 l
-python3 -c "import matplotlib; print matplotlib.get_backend()"
-cd /
-ls
-./setup-x86_64.exe 
-python3 -c "import matplotlib; print(matplotlib.get_backend())"
-which cmake
-cmake -D CMAKE_BUILD_TYPE:STRING=RELEASE         -D BUILD_SHARED_LIBS:BOOL=OFF         -D VTK_USE_X:BOOL=ON         -D VTK_USE_SYSTEM_HDF5:BOOL=ON         -D VTK_USE_SYSTEM_JPEG:BOOL=ON         -D VTK_USE_SYSTEM_PNG:BOOL=ON         -D VTK_USE_SYSTEM_TIFF:BOOL=ON         -D VTK_USE_SYSTEM_ZLIB:BOOL=ON         -D CMAKE_INSTALL_PREFIX:STRING=/usr/local/vtk-6.3.0/         /tmp/VTK-6.3.0/
-cmake -D CMAKE_BUILD_TYPE:STRING=RELEASE         -D BUILD_SHARED_LIBS:BOOL=OFF         -D VTK_USE_X:BOOL=OFF         -D OPENGL_INCLUDE_DIR:STRING=/usr/include/w32api/         -D OPENGL_gl_LIBRARY:STRING=/usr/lib/w32api/libopengl32.a         -D OPENGL_glu_LIBRARY:STRING=/usr/lib/w32api/libglu32.a         -D VTK_USE_SYSTEM_HDF5:BOOL=ON         -D VTK_USE_SYSTEM_JPEG:BOOL=ON         -D VTK_USE_SYSTEM_PNG:BOOL=ON         -D VTK_USE_SYSTEM_TIFF:BOOL=ON         -D VTK_USE_SYSTEM_ZLIB:BOOL=ON         -D CMAKE_INSTALL_PREFIX:STRING=/usr/local/vtk-6.3.0/         /tmp/VTK-6.3.0/
-make -j ${NUMBER_OF_PROCESSORS} install
-which vtk
-which pip3
-which python3
-pip3 install vtk
-which VTK
-which vtkWrapPython
-cd /usr/bin/
-find vtk
-cd local/
-ls ..
-cd cmake/
-;s
-cd include/
-grep Wrapping
-cd lib/
-cd share/
-cd vtk-6.3/
-cd vtkDomainsChemistry/
-cd bin/
-cd vtk-6.3.0/
-cd ~/dotfiles/
-./dotlink -m
-cd ~/Packages/
-rm -fr VTX-build
-mkdir VTX-build
-rm -rf VTX-build/
-cd VTK-build/
-ccmake ../VTK
- ls
-rm -rf VTK-build
-mkdir VTK-build
-cd VTK
-cd ../VTK-build/
-ccmake ../VTK-7.0.0/
-make
+which shopt
+tar -xvzf porta-1.4.1.tgz 
+cd Packages/
+traf example.ieq 
+make -f4
+tar -xvf porta.1.3.2.tar 
+cd porta.1.3.2
 make -j4
-rm -rf VTK-build/
-ls
+cd porta-1.4.1/
+shopt -s extglob
+shopt -s extglob
+exho !(Makefile)
+echo !(Makefile)
+echo !(Makefile|bin)
+rm -rf !(Makefile|bin)
+dotlink
+dotlink
+dotlink
+rm -rf !(Makefile|bin)
+cd Packages/porta/
+cd porta-1.4.1/
+dotlink
+cd Packages/porta/porta-1.4.1/examples/
+ll
+bash traf 
+file xporta
+bash xporta
+xporta -T example.ieq 
+sudo traf -T example.ieq 
+traf -T example.ieq 
+sudo xporta -T example.ieq 
+path
+which xporta
+file xporta 
+sudo xporta
+cd ../../..
+cd --
+cd -4
+sudo xporta -T example.ieq
+python3
+cd OneDrive/quantum_tools/
+git st
+git aa
+git go "cython tests"
+cd ~/Packages/porta/
+cd examples
+make
+traf example.ieq.poi 
+sudo traf example.ieq.poi 
+cd porta-1.4.1
+sudo xporta -T example.ieq.poi 
+sudo traf example.ieq
+file traf
+traf example.ieq
+cd gnu-make/bin/
+cd examples/
+sudo fmel example.ieq
+fmel example.ieq
+ cd ..
+git clone https://github.com/sbastrakov/qskeleton.git
+cd qskeleton/
+cd porta/
+cd porta-1.4.1_unmake/
+cd bin
+cmd.exe
+cmd.exe xporta
+which bash
+cmd xporta
+which cmd
+cygstart xporta
+cygstart -e
+cygstart -x
+explore
+cygstart --help
+cygstart -w xporta
+cmd /c xporta
+cmd /c ./traf
+xporta
+traf 9
+cd .
 cd ..
-pip3 install pyopengl
-pip3 install triangle
-pip3 uninstall glumpy
-pip3 install glumpy
-pip3 install mayavi
-mkdir VTK-build
-cd VTK
-cd ../VTK-build/
-ccmake ../VTK-7.0.0/
-make
-make -j4
-rm -rf VTK-build/
-pip3 install pyopengl
-pip3 install triangle
-pip3 uninstall glumpy
-pip3 install glumpy
-pip3 install mayavi
+cd porta/porta-1.4.1_unmake/
+cd gnu-make/
+cd bin/
+cmd /c traf
+sudo traf
+which traf
+traf
+./traf 
+subl ~/dotfiles/
+cd ~/dotfiles/
+subl .
+cd -1
+ls
+cygstart xporta
+cygstart -e
+cygstart -x
+explore
+cygstart --help
+cygstart -w xporta
+cmd /c ./traf
+traf 9
+cd .
+cd porta/porta-1.4.1_unmake/
+cd gnu-make/
+cmd /c traf
+sudo traf
+./traf 
+subl ~/dotfiles/
+cd ~/dotfiles/
+subl .
+cd -1
+cd --
+cd Packages/porta/porta-1.4.1_unmake/
+cd gnu-make/bin/
+./traf
+which traf
+which xport
+/exporta
+/xporta
+cd porta-1.4.1/gnu-make/bin/
+cmd /c xporta
+cmd.exe
+cd ..
+cd win32/
+cd bin/
+ls
+xporta
+./xporta
+dotlink
+which xporta
+traf
+explore
+cygstart --help
+cygstart -w xporta
+cmd /c xporta
+cmd /c ./traf
+xporta
+traf 9
+cd .
+cd porta/porta-1.4.1_unmake/
+cd gnu-make/
+cd bin/
+cmd /c traf
+sudo traf
+./traf 
+subl ~/dotfiles/
+cd -1
+cd --
+;s
+cd Packages/porta/
+which xporta
+cd examples/
+traf example.ieq '
+traf example.ieq
+which traf
+traf
+traf.bat
+cmd 
+cd..
+cd ..
+cd man/man1/
+which gzip
+gzip *
+which ungzip
+gunzip *
+cd ~/OneDrive/
+cd code/
+cd quantum_tools/
+cd porta/
+cd src/
+ls
+portabledevice
+cd porta-1.4.1/
+cd ~/dotfiles/
+subl .
+dotlink
+which gzip
+gzip *
+which ungzip
+gunzip *
+cd ~/OneDrive/
+cd porta/
+portabledevice
+dotlink
 cd OneDrive
-cd quantum_tools/code/
-python3 -m quantum_tools.visualizations.plot_cloud
-whictkinter
-which tkinter
-pip3 uninstall matplotlib
-pip3 install matplotlib
-pip3 install python3-setuptools
-which XWinServer
-$MATPLOTLIBRC
-cd $MATPLOTLIBRC
-la
-cd .matplotlib/
-cd OneDrive/quantum_tools/code/
-cd cython_tests/
-python run.py
-python3 run.py
-scipython3 run.py
-cd ..
-pip3 uninstall -y matplotlib
-pip3 --no-cache-dir install -U matplotlib
-python3
-cd /usr/lib/python3.4/site-packages/matplotlib/mpl-data/matplotlibrc
-cd /usr/lib/python3.4/site-packages/matplotlib/mpl-data/
-ls
-subl matplotlibrc 
-cd --
-cd -1
-python3 -m quantum_tools.visualization.plot_cloud
-subl matplotlibrc 
-cd --
-cd -1
-cd OneDrive/quantum_tools/
-ls
 cd code/
-echo $DISPLAY
-python3 -m quantum_tools.visualization.plot_cloud
-pip3 uninstall matplotlib
-pip3 uninstall matplotlib
-pip3 install matplotlib
-cd OneDrive/quantum_tools/code/
-ls
-python3 -m quantum_tools.visualization.plot_cloud
-cd cython_tests/
-scipython3 run.py
-ython3
-startxwin
-cd OneDrive/quantum_tools/
-ls
-cd code/
-python3 -m quantum_tools.visualization.plot_cloud
-python3 -m quantum_tools.examples.quantum_cloud
-which ffmpeg
-which python
-which conda
-which conda
-conda install numpy
-conda info
-conda install scipy
-conda install matplotlib
-conda install cvxopt
-conda install -c conda.anaconda.org/omnia cvxopt
-cd OneDrive/quantum_tools/code/
-python3 -m quantum_tools.visualization.plot_cloud
-python3 -m quantum_tools.examples.quantum_cloud
-which ffmpeg
-which easy_install3
-which easy_install
-easy_install --version
-pip3 uninstall matplotlib
-easy_install matplotlib
-which easy_install
-easy_install --version
-easy_install matplotlib
-cd OneDrive/quantum_tools/code/
-ls
-which zyppur
-which zypper
-pip3 install python-matplotlib-tk
-python3
-pip3 uninstall matplotlib
-pip3 install matplotlib
-python3 -m quantum_tools.visualization.plot_cloud
-pip3 install matplotlib
-cd OneDrive/quantum_tools/
-cd code/
-ls
-python3 -m quantum_tools.visualization.plot_cloud
-$DISPLAY
-cd ~/dotfiles/
-./dotlink 
-XWin
-pip3 install matplotlib
-XWin
-cd OneDrive/quantum_tools/
-cd code/
-$DISPLAY
-echo $DISPLAY
-locale -a
-LC_ALL=C
-python3 -m quantum_tools.visualization.plot_cloud
-cd ~/dotfiles/
-ls
-./dotlink 
-XWin
-startxwin
-xwin
-xterm
-dotlink
-./dotlink 
-path
-dotlink
-cd OneDrive/quantum_tools/code/
-xterm
-python3 -m quantum_tools.visualization.plot_cloud
-xterm
-cd OneDrive/quantum_tools/code/
-dotlink
-python3 -m quantum_tools.visualization.plot_cloud
-cd OneDrive/quantum_tools/code/
-python3 -m quantum_tools.visualization.plot_cloud
-python3 -m quantum_tools.examples.quantum_cloud
-dotlink
-xWin
-cd dotfiles/
-subl .
-./dotlink 
-path
-cd OneDrive/quantum_tools/code/
-python3 -m quantum_tools.visualization.plot_cloud
-python3 -m quantum_tools.examples.quantum_cloud
-dotlink
-xWin
-cd dotfiles/
-subl .[B
-path
-cd Packages/Mosek/7/tools/examples/python/
-subl /usr/lib/python3.4/site-packages/mosek
-subl /usr/lib/python3.4/site-packages/mosek/__init
-cd --
-cd -0
-python3 lo1.py
-pip3 freeze
-pip3 uninstall Mosek
-pip3 install git+http://github.com/MOSEK/Mosek.pip
+cd quantum_tools/
+cd porta/src/
+cd porta-1.4.1/
+cd src/
 cd ..
 cd ~/dotfiles/
 subl .
-./dotlink 
+cd -1
+cd examples/
 ls
-sudo
-sudo cd ..
-./dotfiles/
-./dotlink
 dotlink 
+path
+subl .
+which xporta
+traf
+path
+dotlink
+which ungzip
+gunzip *
+cd ~/OneDrive/
+cd porta/
+portabledevice
+dotlink
+cd OneDrive
+cd porta/src/
+cd src/
+cd ~/dotfiles/
+cd examples/
+dotlink 
+path
+which xporta
+traf
+path
+dotlink
+cd OneDrive/quantum_tools/
+cd quantum_tools/
+subl .
+python3 -m quantum_tools.inflation.bell_scenario_inflation
+cd ..
+cd code/
+cd quantum_tools/porta/test_files/
+which portsort.bat
+portsort.bat bell_scenario.ieq 
+cd -1
+python3 -m quantum_tools.examples.bell_scenario_inflation
+portsort.bat quantum_tools/porta/test_files/bell_scenario.ieq 
+cd quantum_tools/porta/src/
+cd porta-1.4.1/
+cd gnu-make/
+ls
+cd porta-1.4.1/
+cd gnu-make/
+cd OneDrive/quantum_tools/
+cd code/quantum_tools/porta/src/porta-1.4.1/gnu-make/
+echo !(bin|Makefile)
+rm -rf !(bin|Makefile)
+ls
+make 
+cd ~/dotfiles/
+subl .
+dotlink
+make 
+cd ~/dotfiles/
+subl .
+dotlink
+portsort.bat
+which portsort
+portsort
+make   ls
+ls
+cd OneDrive/quantum_tools/
+cd code/
+portsort quantum_tools/porta/test_files/bell_scenario.ieq
+which porta
+which porta.exe
+cd porta-1.4.1/
+cd gnu-make/
+cd OneDrive/quantum_tools/
+cd code/quantum_tools/porta/src/porta-1.4.1/gnu-make/
+echo !(bin|Makefile)
+cd ~/dotfiles/
+subl .
+dotlink
+cd OneDrive/quantum_tools/code/quantum_tools/porta/src/porta-1.4.1/gnu-make/
+ls
+path
+which traf
+which xporta
+which xporta.exe
+rm -rf !(bin|Makefile)
+make 
+traf
+path
+dotlink
+which ungzip
+gunzip *
+cd ~/OneDrive/
+cd porta/
+portabledevice
+dotlink
+cd porta/src/
+cd src/
+cd ~/dotfiles/
+cd examples/
+dotlink 
+path
+which xporta
+traf
+path
+dotlink
+python3 -m quantum_tools.inflation.bell_scenario_inflation
+cd quantum_tools/porta/test_files/
+which portsort.bat
+portsort.bat bell_scenario.ieq 
+cd -1
+python3 -m quantum_tools.examples.bell_scenario_inflation
+portsort.bat quantum_tools/porta/test_files/bell_scenario.ieq 
+cd quantum_tools/porta/src/
+cd porta-1.4.1/
+cd gnu-make/
+cd porta-1.4.1/
+cd gnu-make/
+cd code/quantum_tools/porta/src/porta-1.4.1/gnu-make/
+echo !(bin|Makefile)
+rm -rf !(bin|Makefile)
+make 
+cd ~/dotfiles/
+dotlink
+make 
+cd ~/dotfiles/
+dotlink
+portsort.bat
+which portsort
+portsort
+make   ls
+portsort quantum_tools/porta/test_files/bell_scenario.ieq
+which porta
+which porta.exe
+cd porta-1.4.1/
+cd gnu-make/
+cd code/quantum_tools/porta/src/porta-1.4.1/gnu-make/
+echo !(bin|Makefile)
+cd ~/dotfiles/
+dotlink
+cd OneDrive/quantum_tools/code/quantum_tools/porta/src/porta-1.4.1/gnu-make/
+path
+which traf
+which xporta
+which xporta.exe
+rm -rf !(bin|Makefile)
+make 
+cd OneDrive/quantum_tools/
+git commit -m "porta pipeline nearly complete"
+git push
+cd misc_notes/
+cd Random\ Variable\ Symmetries/
+cd ~/GitProjects/latex-packages/
+git go "script macro"
+mo.exe
+cd OneDrive
+rm -rf porta.log 
+cd quantum_tools/
+python3 -m quantum_tools.tests
+python3 quantum_tools/setup.py build_ext --inplace
+ll
+rm integer_map.cpython-34m.dll 
+pip3 freeze
+ls
+echo (find __pycache__)
+echo << find __pycache__
+find __pycache__
+find -r __pycache__
+python3
+python3 -m quantum_tools.statistics.variable
+python3 -m quantum_tools.sets.ordered_frozenset
+cd ..
+subl .
+cd code/
+git st
+git aa
+git commit -m "updates"
+python3 -m quantum_tools.symmetries.workspace
+which xporta
+which xporta.exe
+rm -rf !(bin|Makefile)
+make 
+xwin
+cd OneDrive/quantum_tools/
+subl .
+cd code/
+ls
+git sst
+python3
+python -m timeit '[hash(str((1,2,3,4,5,6,7,8))) for i in range(1000)]'
+python -m timeit '[hash((1,2,3,4,5,6,7,8)) for i in range()]'
+python3 -m quantum_tools.symmetries.workspace
+python -m timeit '[hash((1,2,3,4,5,6,7,8)) for i in range()]'
+cd OneDrive/quantum_tools/code/
+python3
+python3 -m quantum_tools.symmetries.workspace
+cd OneDrive/quantum_tools/code/
+python3
+cd OneDrive/quantum_tools/
+cd code/
+ls
+subl .
+python3 -m quantum_tools.symmetries.workspace
