@@ -1,260 +1,135 @@
-cd examples
-make
-traf example.ieq.poi 
-sudo traf example.ieq.poi 
-cd porta-1.4.1
-sudo xporta -T example.ieq.poi 
-sudo traf example.ieq
-file traf
-traf example.ieq
-cd gnu-make/bin/
-cd examples/
-sudo fmel example.ieq
-fmel example.ieq
- cd ..
-git clone https://github.com/sbastrakov/qskeleton.git
-cd qskeleton/
-cd porta/
-cd porta-1.4.1_unmake/
+git commit -m "c dll"
+git push
+ssh tfraser@compute.pi.local
+cd ~/dotfiles/
+subl .,
+which jupyter
+git go "jupyter install"
+cd t/
+cd OneDrive/quantum_tools/code/
+jupyter notebook
+cd OneDrive/quantum_tools/
+jupyter notebook
+unzip pyzmq-15.2.0.zip 
+cd pyzmq-15.2.0
+python setup.py build_ext --zmq=/usr --inplace
+python setup.py install --zmq=/usr --prefix
+python3 setup.py build_ext --zmq=/usr --inplace
+python3 setup.py install --zmq=/usr --prefix=/usr
+pip3 install ipython[all]
+python3
+cd code/
+cd OneDrive/quantum_tools/
+git commit -m "c dll"
+ssh tfraser@compute.pi.local
+subl .,
+which jupyter
+git go "jupyter install"
+cd t/
+jupyter notebook
+cd OneDrive/quantum_tools/code/
+pyhton3 -m quantum_tools.examples.bell_scenario_inflation
+python3 -m quantum_tools.examples.bell_scenario_inflation
+python3 -m quantum_tools.statistics.variable
+python3 quantum_tools
+python3 quantum_tools.py
+python3 -m quantum_tools.py
+python3 -m quantum_tools.quantum_tools
+python3 -m quantum_tools.wut
+python3 wut.py
+python3 -m quantum_tools.symmetries.workspace
+git commit -m "updates"
+git commit -m "ss"
+git commit -m "ds"
+git push
+cd ~/dotfiles/
+git go "remote ipython"
+/setup-x86_64.exe 
+which boost
+cd /tmp/
+mkdir sympol
+cd sympol
+explore
+rm -rf sympol
+tar -xvzf sympol-0.1.8.tar.gz 
+cd sympol-0.1.8
+mkdir build
+cd buil
+cd build
+ccmake
+cmake -DCMAKE_BUILD_TYPE=Release
+cd build/
+ccmake ../
+cd t/
+cd OneDrive/quantum_tools/code/
+jupyter notebook
+ssh -N -f -L localhost:8888:localhost:8889 tfraser@compute5.pi.local
+ssh -N -f -L localhost:8887:localhost:8889 tfraser@compute5.pi.local
+cd ~/dotfiles/
+dotlink 
+cd /usr/
+cd lib
+find . -name "*boost*"
+/setup-x86_64.exe 
+ssh tfraser@compute5.pi.local
+ssh tfraser@compute5.pi.local
+git go "updated things"
+cd ../GitProjects/latex-packages/
+cd tcfraser.github.io/
+jekyll
+jekyll --serve
+jekyll serve
+cd .
+git clone git@github.com:tcfraser/iota.git
+git go "beginning of iota"
+which python
+which python3
+pip3 install distutils
+python -m iota
+pip3
+pip3 freeze
+cd iota/
+cd st
 cd bin
-cmd.exe
-cmd.exe xporta
-which bash
-cmd xporta
-which cmd
-cygstart xporta
-cygstart -e
-cygstart -x
-explore
-cygstart --help
-cygstart -w xporta
-cmd /c xporta
-cmd /c ./traf
-xporta
-traf 9
-cd .
-cd ..
-cd porta/porta-1.4.1_unmake/
-cd gnu-make/
-cd bin/
-cmd /c traf
-sudo traf
-which traf
-traf
-./traf 
-subl ~/dotfiles/
-cd ~/dotfiles/
+ll
+python3 iota
+python3 -m iota
+./iota
+cd dotfiles/
 subl .
-cd -1
-ls
-cygstart xporta
-cygstart -e
-cygstart -x
-explore
-cygstart --help
-cygstart -w xporta
-cmd /c ./traf
-traf 9
-cd .
-cd porta/porta-1.4.1_unmake/
-cd gnu-make/
-cmd /c traf
-sudo traf
-./traf 
-subl ~/dotfiles/
-cd ~/dotfiles/
-subl .
-cd -1
+cd ../GitProjects/iota/
+python3 setup.py 
+python3 setup.py uninstall
+pip3 remove iota
+pip3 uninstall iota
+pip3 install setup.py 
+pip3
+cd src/
+git st
+git aa
+which iota
 cd --
-cd Packages/porta/porta-1.4.1_unmake/
-cd gnu-make/bin/
-./traf
-which traf
-which xport
-/exporta
-/xporta
-cd porta-1.4.1/gnu-make/bin/
-cmd /c xporta
-cmd.exe
-cd ..
-cd win32/
-cd bin/
-ls
-xporta
-./xporta
-dotlink
-which xporta
-traf
-explore
-cygstart --help
-cygstart -w xporta
-cmd /c xporta
-cmd /c ./traf
-xporta
-traf 9
-cd .
-cd porta/porta-1.4.1_unmake/
-cd gnu-make/
-cd bin/
-cmd /c traf
-sudo traf
-./traf 
-subl ~/dotfiles/
+cd ~
+python setup.py install
+pip uninstall iota
+python3 setup.py install
+iota cat dog
+cd -1 && python3 setup.py install && cd -1
+cd GitProjects/
 cd -1
-cd --
-;s
-cd Packages/porta/
-which xporta
-cd examples/
-traf example.ieq '
-traf example.ieq
-which traf
-traf
-traf.bat
-cmd 
 cd..
 cd ..
-cd man/man1/
-which gzip
-gzip *
-which ungzip
-gunzip *
-cd ~/OneDrive/
-cd code/
-cd quantum_tools/
-cd porta/
-cd src/
+cd demo/
 ls
-portabledevice
-cd porta-1.4.1/
-cd ~/dotfiles/
-subl .
-dotlink
-which gzip
-gzip *
-which ungzip
-gunzip *
-cd ~/OneDrive/
-cd porta/
-portabledevice
-dotlink
-cd OneDrive
-cd code/
-cd quantum_tools/
-cd porta/src/
-cd porta-1.4.1/
-cd src/
-cd ..
-cd ~/dotfiles/
-subl .
-cd -1
-cd examples/
-ls
-dotlink 
-path
-subl .
-which xporta
-traf
-path
-dotlink
-which ungzip
-gunzip *
-cd ~/OneDrive/
-cd porta/
-portabledevice
-dotlink
-cd OneDrive
-cd porta/src/
-cd src/
-cd ~/dotfiles/
-cd examples/
-dotlink 
-path
-which xporta
-traf
-path
-dotlink
-cd OneDrive/quantum_tools/
-cd quantum_tools/
-subl .
-python3 -m quantum_tools.inflation.bell_scenario_inflation
-cd ..
-cd code/
-cd quantum_tools/porta/test_files/
-which portsort.bat
-portsort.bat bell_scenario.ieq 
-cd -1
-python3 -m quantum_tools.examples.bell_scenario_inflation
-portsort.bat quantum_tools/porta/test_files/bell_scenario.ieq 
-cd quantum_tools/porta/src/
-cd porta-1.4.1/
-cd gnu-make/
-ls
-cd porta-1.4.1/
-cd gnu-make/
-cd OneDrive/quantum_tools/
-cd code/quantum_tools/porta/src/porta-1.4.1/gnu-make/
-echo !(bin|Makefile)
-rm -rf !(bin|Makefile)
-ls
-make 
-cd ~/dotfiles/
-subl .
-dotlink
-make 
-cd ~/dotfiles/
-subl .
-dotlink
-portsort.bat
-which portsort
-portsort
-make   ls
-ls
-cd OneDrive/quantum_tools/
-cd code/
-portsort quantum_tools/porta/test_files/bell_scenario.ieq
-which porta
-which porta.exe
-cd porta-1.4.1/
-cd gnu-make/
-cd OneDrive/quantum_tools/
-cd code/quantum_tools/porta/src/porta-1.4.1/gnu-make/
-echo !(bin|Makefile)
-cd ~/dotfiles/
-subl .
-dotlink
-cd OneDrive/quantum_tools/code/quantum_tools/porta/src/porta-1.4.1/gnu-make/
-ls
-path
-which traf
-which xporta
-which xporta.exe
-rm -rf !(bin|Makefile)
-make 
-traf
-path
-dotlink
-which ungzip
-gunzip *
-cd ~/OneDrive/
-cd porta/
-portabledevice
-dotlink
-cd porta/src/
-cd src/
-cd ~/dotfiles/
-cd examples/
-dotlink 
-path
-which xporta
-traf
+cd ~/GitProjects/iota/src/ && python3 setup.py install && cd -1
+iota
+texify.exe --run-viewer atoi/complied/full/compiled.tex 
 path
 dotlink
 python3 -m quantum_tools.inflation.bell_scenario_inflation
 cd quantum_tools/porta/test_files/
 which portsort.bat
 portsort.bat bell_scenario.ieq 
-cd -1
 python3 -m quantum_tools.examples.bell_scenario_inflation
 portsort.bat quantum_tools/porta/test_files/bell_scenario.ieq 
 cd quantum_tools/porta/src/
@@ -266,10 +141,8 @@ cd code/quantum_tools/porta/src/porta-1.4.1/gnu-make/
 echo !(bin|Makefile)
 rm -rf !(bin|Makefile)
 make 
-cd ~/dotfiles/
 dotlink
 make 
-cd ~/dotfiles/
 dotlink
 portsort.bat
 which portsort
@@ -282,7 +155,6 @@ cd porta-1.4.1/
 cd gnu-make/
 cd code/quantum_tools/porta/src/porta-1.4.1/gnu-make/
 echo !(bin|Makefile)
-cd ~/dotfiles/
 dotlink
 cd OneDrive/quantum_tools/code/quantum_tools/porta/src/porta-1.4.1/gnu-make/
 path
@@ -293,12 +165,10 @@ rm -rf !(bin|Makefile)
 make 
 cd OneDrive/quantum_tools/
 git commit -m "porta pipeline nearly complete"
-git push
 cd misc_notes/
 cd Random\ Variable\ Symmetries/
 cd ~/GitProjects/latex-packages/
 git go "script macro"
-mo.exe
 cd OneDrive
 rm -rf porta.log 
 cd quantum_tools/
@@ -307,7 +177,6 @@ python3 quantum_tools/setup.py build_ext --inplace
 ll
 rm integer_map.cpython-34m.dll 
 pip3 freeze
-ls
 echo (find __pycache__)
 echo << find __pycache__
 find __pycache__
@@ -315,11 +184,7 @@ find -r __pycache__
 python3
 python3 -m quantum_tools.statistics.variable
 python3 -m quantum_tools.sets.ordered_frozenset
-cd ..
-subl .
 cd code/
-git st
-git aa
 git commit -m "updates"
 python3 -m quantum_tools.symmetries.workspace
 which xporta
@@ -328,9 +193,7 @@ rm -rf !(bin|Makefile)
 make 
 xwin
 cd OneDrive/quantum_tools/
-subl .
 cd code/
-ls
 git sst
 python3
 python -m timeit '[hash(str((1,2,3,4,5,6,7,8))) for i in range(1000)]'
@@ -344,8 +207,6 @@ cd OneDrive/quantum_tools/code/
 python3
 cd OneDrive/quantum_tools/
 cd code/
-ls
-subl .
 python3 -m quantum_tools.symmetries.workspace
 git sst
 python3
@@ -368,11 +229,7 @@ cd ../OneDrive/quantum_tools/c
 cd ../OneDrive/quantum_tools/
 git a
 git go "parse"
-subl .
-git aa
 git commit -m "updated gitignore"
-git st
-git push
 /setup-x86_64.exe 
  pip3 install jupyter
 cd /tmp/zeromq/zeromq-4.1.5[A
@@ -392,12 +249,10 @@ install include/zmq.h  /usr/include
 install include/zmq_utils.h  /usr/include
 install cygzmq.dll /usr/bin
 install libzmq.dll.a /usr/lib
-cd ..
 pip3 download pyzmq
 which unzip
 unzip pyzmq-15.2.0.zip 
 cd pyzmq-15.2.0
-ls
 python setup.py build_ext --zmq=/usr --inplace
 python setup.py install --zmq=/usr --prefix
 which python
@@ -408,23 +263,15 @@ python3
 cd code/
 python3 -m quantum_tools.symmetries.workspace
 cd OneDrive/quantum_tools/
-git st
-git aa
 git commit -m "c dll"
-git push
 ssh tfraser@compute.pi.local
-cd ~/dotfiles/
 subl .,
-subl .
 which jupyter
 git go "jupyter install"
-cd ..
 cd t/
-ls
 cd OneDrive/quantum_tools/code/
 jupyter notebook
 cd OneDrive/quantum_tools/
-ls
 jupyter notebook
 unzip pyzmq-15.2.0.zip 
 cd pyzmq-15.2.0
@@ -457,19 +304,13 @@ python3 wut.py
 python3 -m quantum_tools.symmetries.workspace
 git commit -m "updates"
 git commit -m "ss"
-git aa
 git commit -m "ds"
-git push
-git st
-cd ~/dotfiles/
-subl .
 git go "remote ipython"
 /setup-x86_64.exe 
 which boost
 cd /tmp/
 mkdir sympol
 cd sympol
-explore
 rm -rf sympol
 tar -xvzf sympol-0.1.8.tar.gz 
 cd sympol-0.1.8
@@ -478,23 +319,182 @@ cd buil
 cd build
 ccmake
 cmake -DCMAKE_BUILD_TYPE=Release
-cd ..
 cd build/
-ls
 ccmake ../
 cd t/
 cd OneDrive/quantum_tools/code/
 jupyter notebook
 ssh -N -f -L localhost:8888:localhost:8889 tfraser@compute5.pi.local
 ssh -N -f -L localhost:8887:localhost:8889 tfraser@compute5.pi.local
-cd ~/dotfiles/
-subl .
 dotlink 
 cd /usr/
 cd lib
-ls
-cd ..
 find . -name "*boost*"
 /setup-x86_64.exe 
 ssh tfraser@compute5.pi.local
 ssh tfraser@compute5.pi.local
+cd /usr/lib/
+explore
+cd python3.4/site-packages/iota-1.0-py3.4.egg 
+cd python3.4/site-packages/ 
+cd iota-1.0-py3.4.egg 
+cd ~/GitProjects/iota/demo/
+which lsof
+texify -b -p --engine=pdftex --tex-option=\"--synctex=1\" /cygdrive/t/GitProjects/iota/demo/atoi/complied/full/compiled.tex
+texify -b -p --engine=pdftex --tex-option=\"--synctex=1\" /cygdrive/t/GitProjects/iota/demo/atoi/complied/full/compiled.tex 
+texify -b -p --engine=pdftex --tex-option=\"--synctex=1\" GitProjects/iota/demo/atoi/complied/full/compiled.tex 
+texify -b -p --engine=pdftex --tex-option=\"--synctex=1\" (cygpath -f /cygdrive/t/GitProjects/iota/demo/atoi/complied/full/compiled.tex)
+texify -b -p --engine=pdftex --tex-option=\"--synctex=1\" | cygpath -f /cygdrive/t/GitProjects/iota/demo/atoi/complied/full/compiled.tex
+cygpath -f /cygdrive/t/GitProjects/iota/demo/atoi/complied/full/compiled.tex
+texify -b -p --engine=pdftex --tex-option=\"--synctex=1\" | cygpath -w /cygdrive/t/GitProjects/iota/demo/atoi/complied/full/comp
+ cygpath -w /cygdrive/t/GitProjects/iota/demo/atoi/complied/full/compiled.tex
+cygpath -w /cygdrive/t/GitProjects/iota/demo/atoi/complied/full/compiled.tex | texify -b -p --engine=pdftex --tex-option=\"--synctex=1\"
+cygpath -w /cygdrive/t/GitProjects/iota/demo/atoi/complied/full/compiled.tex | echo "$1"
+cygpath -w /cygdrive/t/GitProjects/iota/demo/atoi/complied/full/compiled.tex | echo "$@"
+cygpath -w /cygdrive/t/GitProjects/iota/demo/atoi/complied/full/compiled.tex | echo $@
+cygpath -w /cygdrive/t/GitProjects/iota/demo/atoi/complied/full/compiled.tex | echo
+cygpath -w /cygdrive/t/GitProjects/iota/demo/atoi/complied/full/compiled.tex | $#
+cygpath -w /cygdrive/t/GitProjects/iota/demo/atoi/complied/full/compiled.tex | $0
+cygpath -w /cygdrive/t/GitProjects/iota/demo/atoi/complied/full/compiled.tex | $@
+cd ~/dotfiles/
+cd -1
+ttexify -b -p --engine=pdftex --tex-option=\"--synctex=1\" compiled.tex
+texify -b -p --engine=pdftex --tex-option=\"--synctex=1\" compiled.tex
+texify -b -p --engine=pdftex --tex-option=\"--synctex=1\" full/compiled.tex
+texify -b -p --engine=pdftex --tex-option=\"--synctex=1\" $PWD/compiled.tex
+texify -b -p --engine=pdftex --tex-option=\"--synctex=1\" "$PWD"/compiled.tex
+$PWD
+PWD
+texify -b -p --engine=pdftex --tex-option=\"--synctex=1\" "PWD"/compiled.tex
+texify -b -p --engine=pdftex --tex-option=\"--synctex=1\" PWD/full/compiled.tex
+texify -b -p --engine=pdftex --tex-option=\"--synctex=1\" "PWD"/full/compiled.tex
+texify -b -p --engine=pdftex --tex-option=\"--synctex=1\" "$PWD"/full/compiled.tex
+"$PWD"/full/compiled.tex
+echo "$PWD"/full/compiled.tex
+texify -b -p --engine=pdftex --tex-option=\"--synctex=1\" compiled.tex 
+texify -b -p --engine=pdftex --tex-option="--synctex=1" "cygpath -w /cygdrive/t/GitProjects/iota/demo/atoi/complied/full/compiled.tex"
+"cygpath -w /cygdrive/t/GitProjects/iota/demo/atoi/complied/full/compiled.tex"
+cygpath -w /cygdrive/t/GitProjects/iota/demo/atoi/complied/full/compiled.tex
+cd T:\GitProjects\iota\demo\atoi\complied\full\compiled.tex
+cd T:\\GitProjects\\iota\\demo\\atoi\\complied\\full\\compiled.tex
+texify -b -p --engine=pdftex --tex-option="--synctex=1" T:\GitProjects\iota\demo\atoi\complied\full\compiled.tex
+cmd
+ttexify -b -p --engine=pdftex --tex-option=\"--synctex=1\" compiled.tex 
+git commit -m "progress"
+../
+cd ../
+cd demo/
+cd atoi/complied/full/
+cmd /C texify --run-viewer complied.tex
+cmd /C texify --run-viewer `cygpath -w complied.tex`cd
+`cygpath -w ./complied.tex`
+`cygpath -w complied.tex`
+which sumatra
+bg
+fg
+cd ../src/ && python3 setup.py install && cd -1
+git commit -m "lots of work done"
+iota
+git go "updates"
+cd ../../
+cd latex-packages/
+mo.exe
+cd iota/
+mkdir personal
+ls
+cd personal/
+subl .
+git st
+git aa
+git commit -m "work in progress"
+git push
+cd ..
+cd GitProjects/latex-packages/
+git go "fds"
+cd OneDrive/quantum_tools/
+subl .
+pip3 install networkx
+pip3 install polytope
+jupyter notebook
+cd atoi/complied/full/
+cmd /C texify --run-viewer complied.tex
+cmd /C texify --run-viewer `cygpath -w complied.tex`cd
+`cygpath -w ./complied.tex`
+`cygpath -w complied.tex`
+which sumatra
+bg
+fg
+cd ../src/ && python3 setup.py install && cd -1
+git commit -m "lots of work done"
+iota
+git go "updates"
+cd ../../
+cd latex-packages/
+mo.exe
+cd iota/
+mkdir personal
+cd personal/
+git aa
+git commit -m "work in progress"
+cd GitProjects/latex-packages/
+git go "fds"
+subl /usr/lib/python3.4/site-packages/polytope/polytope.py
+cd /usr/lib/python3.4/site-packages/polytope/
+pip3 uninstall polytope
+cd ~/GitProjects/
+git clone https://github.com/tcfraser/polytope.git
+git st
+git go "exception statement foix"
+git push
+rm -rf polytope/
+git clone git@github.com:tcfraser/polytope.git
+cd polytope/
+pip3 setup.py install
+python setup.py install
+pip3 install git+git@github.com:tcfraser/polytope.git
+pip3 install git+https://github.com/tcfraser/polytope.git
+python3 setup.py install
+pip3 freeze
+pip3 install cvxopt
+pip3 install --upgrade cvxopt
+pip3 uninstall cvxopt
+pip3 install git+https://github.com/tcfraser/cvxopt.git
+python3
+cd ..
+cd Giq
+cd GitProjects/
+cd tcfraser.github.io/
+ls
+subl .
+jupyter notebook
+git st
+git aa
+git commit -m "work in progress"
+git push
+cd GitProjects/latex-packages/
+git go "fds"
+pip3 install networkx
+pip3 install polytope
+cd GitProjects/tcfraser.github.io/
+cd ..
+ls
+cd OneDrive/quantum_tools/
+cd code/
+subl .
+cygstart --hide jupyter notebok
+cygstart --hide jupyter notebook
+which hg
+hg
+cygstart jupyter notebook
+jupyter notebook
+fg
+jupyter notebook && bg
+bg
+jobs
+bg
+cd GitProjects/tcfraser.github.io/
+jupyter-notebook && bg
+fg
+jupyter notebook && bg
+jobs
+jupyter notebook 
