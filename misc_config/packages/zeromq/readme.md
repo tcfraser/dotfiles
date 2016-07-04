@@ -1,3 +1,6 @@
+# error
+bundled/zeromq/src/signaler.cpp:62:25: fatal error: sys/eventfd.h: No such file or directory
+
 # in zeromq directory
 export PKG_CONFIG_PATH=/usr/lib/pkgconfig
 ./configure --without-libsodium

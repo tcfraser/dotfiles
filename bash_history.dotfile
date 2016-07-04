@@ -1,176 +1,3 @@
-git commit -m "c dll"
-git push
-ssh tfraser@compute.pi.local
-cd ~/dotfiles/
-subl .,
-which jupyter
-git go "jupyter install"
-cd t/
-cd OneDrive/quantum_tools/code/
-jupyter notebook
-cd OneDrive/quantum_tools/
-jupyter notebook
-unzip pyzmq-15.2.0.zip 
-cd pyzmq-15.2.0
-python setup.py build_ext --zmq=/usr --inplace
-python setup.py install --zmq=/usr --prefix
-python3 setup.py build_ext --zmq=/usr --inplace
-python3 setup.py install --zmq=/usr --prefix=/usr
-pip3 install ipython[all]
-python3
-cd code/
-cd OneDrive/quantum_tools/
-git commit -m "c dll"
-ssh tfraser@compute.pi.local
-subl .,
-which jupyter
-git go "jupyter install"
-cd t/
-jupyter notebook
-cd OneDrive/quantum_tools/code/
-pyhton3 -m quantum_tools.examples.bell_scenario_inflation
-python3 -m quantum_tools.examples.bell_scenario_inflation
-python3 -m quantum_tools.statistics.variable
-python3 quantum_tools
-python3 quantum_tools.py
-python3 -m quantum_tools.py
-python3 -m quantum_tools.quantum_tools
-python3 -m quantum_tools.wut
-python3 wut.py
-python3 -m quantum_tools.symmetries.workspace
-git commit -m "updates"
-git commit -m "ss"
-git commit -m "ds"
-git push
-cd ~/dotfiles/
-git go "remote ipython"
-/setup-x86_64.exe 
-which boost
-cd /tmp/
-mkdir sympol
-cd sympol
-explore
-rm -rf sympol
-tar -xvzf sympol-0.1.8.tar.gz 
-cd sympol-0.1.8
-mkdir build
-cd buil
-cd build
-ccmake
-cmake -DCMAKE_BUILD_TYPE=Release
-cd build/
-ccmake ../
-cd t/
-cd OneDrive/quantum_tools/code/
-jupyter notebook
-ssh -N -f -L localhost:8888:localhost:8889 tfraser@compute5.pi.local
-ssh -N -f -L localhost:8887:localhost:8889 tfraser@compute5.pi.local
-cd ~/dotfiles/
-dotlink 
-cd /usr/
-cd lib
-find . -name "*boost*"
-/setup-x86_64.exe 
-ssh tfraser@compute5.pi.local
-ssh tfraser@compute5.pi.local
-git go "updated things"
-cd ../GitProjects/latex-packages/
-cd tcfraser.github.io/
-jekyll
-jekyll --serve
-jekyll serve
-cd .
-git clone git@github.com:tcfraser/iota.git
-git go "beginning of iota"
-which python
-which python3
-pip3 install distutils
-python -m iota
-pip3
-pip3 freeze
-cd iota/
-cd st
-cd bin
-ll
-python3 iota
-python3 -m iota
-./iota
-cd dotfiles/
-subl .
-cd ../GitProjects/iota/
-python3 setup.py 
-python3 setup.py uninstall
-pip3 remove iota
-pip3 uninstall iota
-pip3 install setup.py 
-pip3
-cd src/
-git st
-git aa
-which iota
-cd --
-cd ~
-python setup.py install
-pip uninstall iota
-python3 setup.py install
-iota cat dog
-cd -1 && python3 setup.py install && cd -1
-cd GitProjects/
-cd -1
-cd..
-cd ..
-cd demo/
-ls
-cd ~/GitProjects/iota/src/ && python3 setup.py install && cd -1
-iota
-texify.exe --run-viewer atoi/complied/full/compiled.tex 
-path
-dotlink
-python3 -m quantum_tools.inflation.bell_scenario_inflation
-cd quantum_tools/porta/test_files/
-which portsort.bat
-portsort.bat bell_scenario.ieq 
-python3 -m quantum_tools.examples.bell_scenario_inflation
-portsort.bat quantum_tools/porta/test_files/bell_scenario.ieq 
-cd quantum_tools/porta/src/
-cd porta-1.4.1/
-cd gnu-make/
-cd porta-1.4.1/
-cd gnu-make/
-cd code/quantum_tools/porta/src/porta-1.4.1/gnu-make/
-echo !(bin|Makefile)
-rm -rf !(bin|Makefile)
-make 
-dotlink
-make 
-dotlink
-portsort.bat
-which portsort
-portsort
-make   ls
-portsort quantum_tools/porta/test_files/bell_scenario.ieq
-which porta
-which porta.exe
-cd porta-1.4.1/
-cd gnu-make/
-cd code/quantum_tools/porta/src/porta-1.4.1/gnu-make/
-echo !(bin|Makefile)
-dotlink
-cd OneDrive/quantum_tools/code/quantum_tools/porta/src/porta-1.4.1/gnu-make/
-path
-which traf
-which xporta
-which xporta.exe
-rm -rf !(bin|Makefile)
-make 
-cd OneDrive/quantum_tools/
-git commit -m "porta pipeline nearly complete"
-cd misc_notes/
-cd Random\ Variable\ Symmetries/
-cd ~/GitProjects/latex-packages/
-git go "script macro"
-cd OneDrive
-rm -rf porta.log 
 cd quantum_tools/
 python3 -m quantum_tools.tests
 python3 quantum_tools/setup.py build_ext --inplace
@@ -498,3 +325,176 @@ fg
 jupyter notebook && bg
 jobs
 jupyter notebook 
+git push
+ls
+cd dotfiles/
+git s
+git checkout -- bash_history.dotfile 
+git pull
+git rm -rf misc_config/cygwinpackages/VTK-7.0.0.tar.gz 
+git rm -rf misc_config/cygwinpackages/VTK-6.3.0.tar.gz 
+git rm -rf misc_config/cygwinpackages/VTK-6.3.0-cygwin-patch-20160521.txt.gz 
+git st
+git go "VTK doesn't work"
+subl .
+echo $now
+now
+data
+date
+./dotlink 
+bg
+cd GitProjects/tcfraser.github.io/
+jupyter-notebook && bg
+fg
+jupyter notebook && bg
+jobs
+jupyter notebook 
+rm bootmgr 
+rm -rf BOOTNXT 
+rm -rf BOOTSECT.BAK 
+rm -rf Boot
+ls
+chmod +777 Boot/
+rm -rf Boot/
+ll
+ll
+l
+la
+backup_cygwin_packages 
+path
+dotlink
+ls
+cd dotfiles/
+./dotlink 
+cd dotfiles/
+./dotlink 
+dotlink 
+ls
+ll
+path
+./dotlink 
+cd dotfiles/
+./dotlink 
+dotlink 
+path
+ll
+la
+ls
+dotlink
+backup_cygwin_packages 
+path
+date
+$data
+$date
+"$date"
+"date"
+dotlink 
+backup_cygwin_packages 
+backup_cygwin_packages 
+which python
+which python3
+explore
+cd dotfiles/misc_config/packages/cygwin_package_lists/sorting_grounds/
+which sort
+sort packagelist_2016-06-30.csv packagelist_laptop.csv | uniq
+sort packagelist_2016-06-30.csv packagelist_laptop.csv | uniq > packagelist_sorted.csv
+upload_cygwin_package 
+cd /
+ls
+dotlink 
+backup_cygwin_packages 
+dotlink 
+upload_cygwin_package 
+upload_cygwin_package 
+upload_cygwin_package
+upload_cygwin_package 
+upload_cygwin_package 
+upload_cygwin_package
+la
+cd Boot/
+cd ..
+rm -rf Boot/
+ls
+rm -rf Boot/
+ls
+cd GitProjects/tcfraser.github.io/
+jekyll serve
+bundle exec jekyll build
+netstat -a -o
+bundle exec jekyll build --watch
+git st
+git go "steepest descent"
+git go "typo"
+git go "langstons ant"
+bundle exec jekyll serve --watch
+git go "stress test"
+$date
+"$date"
+"date"
+dotlink 
+backup_cygwin_packages 
+backup_cygwin_packages 
+cd dotfiles/misc_config/packages/cygwin_package_lists/sorting_grounds/
+which sort
+sort packagelist_2016-06-30.csv packagelist_laptop.csv | uniq
+sort packagelist_2016-06-30.csv packagelist_laptop.csv | uniq > packagelist_sorted.csv
+upload_cygwin_package 
+cd /
+dotlink 
+backup_cygwin_packages 
+dotlink 
+upload_cygwin_package 
+upload_cygwin_package 
+upload_cygwin_package
+upload_cygwin_package 
+upload_cygwin_package 
+upload_cygwin_package
+cd Boot/
+rm -rf Boot/
+which python
+which python3
+python3
+which pip
+which easy_install
+which easy_install3
+which easy_install-3.4
+easy_install-3.4 pip
+which pip3
+pip3 freeze
+pip3 install scipy
+pip3 install matplotlib
+cd dotfiles/
+subl .
+cd /tmp/
+tar -xvzf zeromq-4.1.5.tar.gz 
+cd zeromq-4.1.5
+export PKG_CONFIG_PATH=/usr/lib/pkgconfig
+./configure --without-libsodium
+make
+cd libs
+cd src/
+which gcc
+gcc -shared -o cygzmq.dll -Wl,--out-implib=libzmq.dll.a -Wl,--export-all-symbols -Wl,--enable-auto-import -Wl,--whole-archive .libs/libzmq.a -Wl,--no-whole-archive -lstdc++
+install include/zmq.h  /usr/include
+install include/zmq_utils.h  /usr/include
+install cygzmq.dll /usr/bin
+install libzmq.dll.a /usr/lib
+git clone git@github.com:tcfraser/pyzmq.git
+cd pyzmq/
+python3 setup.py build_ext --zmq=/usr --inplace
+python3 setup.py install --zmq=/usr --inplace
+python3 setup.py install --zmq=/usr --prefix=/use
+python3 setup.py install --zmq=/usr --prefix=/usr
+pip3 install ipython[all]
+cd ~/GitProjects/
+pip3 install mpmath
+cd tcfraser.github.io/
+git pul;l
+git pull
+git st
+cd ..
+la
+explore
+ls
+cd GitProjects/tcfraser.github.io/
+jupyter notebook

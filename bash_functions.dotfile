@@ -90,6 +90,24 @@ function explore_func() {
   explorer.exe /e,`cygpath -w "$explorePath"`
 }
 
+CYGWIN_PACKAGE_DIR="$HOME/dotfiles/misc_config/packages/cygwin_package_lists"
+
+# backup and save cygwin package lists
+function backup_cygwin_packages() {
+  cygcheck -c -d | sed -e "1,2d" -e 's/ .*$//' > "$CYGWIN_PACKAGE_DIR/packagelist_`date +%Y-%m-%d`.csv"
+  cygcheck -c -d | sed -e "1,2d" -e 's/ .*$//' > "$CYGWIN_PACKAGE_DIR/packagelist_active.csv"
+}
+
+# recover cygwin package lists
+function upload_cygwin_package() {
+  /setup-x86_64 -P `awk 'NR==1{printf $1}{printf ",%s", $1}' $CYGWIN_PACKAGE_DIR/packagelist_active.csv`
+}
+
+# Aliass for functions
+alias cd=cd_func
+alias sudo=sudo_func
+alias explore=explore_func
+
 # resource dotfiles
 # function dotsource() {
 #   if [ -f "${HOME}/.bashrc" ] ; then
