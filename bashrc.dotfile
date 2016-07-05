@@ -58,7 +58,3 @@ alias path='echo $PATH | tr ":" "\n"'
 if [ -f "${HOME}/.bash_functions" ] ; then
   source "${HOME}/.bash_functions"
 fi
-
-alias cd=cd_func
-alias sudo=sudo_func
-alias explore=explore_func

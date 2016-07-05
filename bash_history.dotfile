@@ -1,50 +1,3 @@
-cd quantum_tools/
-python3 -m quantum_tools.tests
-python3 quantum_tools/setup.py build_ext --inplace
-ll
-rm integer_map.cpython-34m.dll 
-pip3 freeze
-echo (find __pycache__)
-echo << find __pycache__
-find __pycache__
-find -r __pycache__
-python3
-python3 -m quantum_tools.statistics.variable
-python3 -m quantum_tools.sets.ordered_frozenset
-cd code/
-git commit -m "updates"
-python3 -m quantum_tools.symmetries.workspace
-which xporta
-which xporta.exe
-rm -rf !(bin|Makefile)
-make 
-xwin
-cd OneDrive/quantum_tools/
-cd code/
-git sst
-python3
-python -m timeit '[hash(str((1,2,3,4,5,6,7,8))) for i in range(1000)]'
-python -m timeit '[hash((1,2,3,4,5,6,7,8)) for i in range()]'
-python3 -m quantum_tools.symmetries.workspace
-python -m timeit '[hash((1,2,3,4,5,6,7,8)) for i in range()]'
-cd OneDrive/quantum_tools/code/
-python3
-python3 -m quantum_tools.symmetries.workspace
-cd OneDrive/quantum_tools/code/
-python3
-cd OneDrive/quantum_tools/
-cd code/
-python3 -m quantum_tools.symmetries.workspace
-git sst
-python3
-python -m timeit '[hash(str((1,2,3,4,5,6,7,8))) for i in range(1000)]'
-python -m timeit '[hash((1,2,3,4,5,6,7,8)) for i in range()]'
-python3 -m quantum_tools.symmetries.workspace
-python -m timeit '[hash((1,2,3,4,5,6,7,8)) for i in range()]'
-cd OneDrive/quantum_tools/code/
-python3
-python3 -m quantum_tools.symmetries.workspace
-cd OneDrive/quantum_tools/code/
 python3
 cd OneDrive/quantum_tools/
 cd code/
@@ -498,3 +451,50 @@ explore
 ls
 cd GitProjects/tcfraser.github.io/
 jupyter notebook
+jupyter notebook && bg
+jobs
+jupyter notebook 
+jupyter notebook 
+l
+cd GitProjects/tcfraser.github.io/
+git go "ipynb added"
+cd OneDrive/quantum_tools/
+git go "transpose refactor"
+git diff
+git checkout -- code/hypergraph_transversals.ipynb 
+cd code/
+which rebaseall
+rebaseall -v
+python3 -m quantum_tools.hypergraph.hypergraph_transversals
+git aa
+git commit -m "updates"
+git push
+cd ~/
+cd dotfiles/
+subl .
+cd ../OneDrive/quantum_tools/
+subl `cygpath -w ~/dotfiles/`
+cd ~/dotfiles/
+git checkout -- bash_history.dotfile 
+ls
+git st
+git pull
+dotlink 
+jupyter notebook
+cd dotfiles/
+explore
+dotlink
+jupyter notebook
+cd dotfiles/
+explore
+cygpath -w 
+cygpath -w .
+cygpath -w OneDrive
+cygpath -w ~/OneDrive/
+cygpath -w /OneDrive/
+cygpath -w OneDrive/
+dotlink
+smrtpath
+dotlink
+smrtpath
+dotlink
