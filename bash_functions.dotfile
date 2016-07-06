@@ -115,11 +115,11 @@ function edit_func() {
 
 # Mintty titler
 function settitle() {
-      export PS1="\[\e[32m\]\u@\h \[\e[33m\]\w\[\e[0m\]\n$ "
-      echo -ne "\e]0;$1\a"
+  export PS1="\[\e[32m\]\u@\h \[\e[33m\]\w\[\e[0m\]\n$ "
+  echo -ne "\e]0;$@\a"
 }
-function settitlepath() {
-      export PS1="\[\e]0;\w\a\]\n\[\e[32m\]\u@\h \[\e[33m\]\w\[\e[0m\]\n$ "
+function cleartitle() {
+  export PS1="\[\e]0;\w\a\]\n\[\e[32m\]\u@\h \[\e[33m\]\w\[\e[0m\]\n$ "
 }
 
 # Aliass for functions

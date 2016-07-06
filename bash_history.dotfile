@@ -1,1 +1,24 @@
-Empty history
+Empty historyjupyter notebook
+bg
+jobs
+fg
+dotlink
+cd dotfiles/
+subl .
+git commit -m "updates"
+git pull
+git aa
+git commit -m "no more history merges hurray"
+git push
+dotlink 
+git st
+ls
+dotlink 
+git st
+ls
+settitle running notebook
+cd GitProjects/quantum_tools/
+echo
+cleartitle
+settitle running_notebook
+settitle main

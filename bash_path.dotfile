@@ -1,5 +1,6 @@
-# Extra path locations added on top of windows and cygwin
+# Note: Make sure that the windows HOME environment variable is set to 'T:' exactly.
 
+# Extra path locations added on top of windows and cygwin
 export PATH=$HOME"/Programs/Sublime Text 3/":$PATH # For subl.exe
 export PATH="/usr/lib/":$PATH
 export PATH="/bin/rubygems/bin":$PATH # For ruby gems like jekyll
