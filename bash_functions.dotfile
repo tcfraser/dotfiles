@@ -82,7 +82,7 @@ function sudo_func() {
 
 # explorer here
 function explore_func() {
-  explorer.exe /e, `smrtpath $1`
+  explorer.exe /e, $(smrtpath $1)
 }
 
 CYGWIN_PACKAGE_DIR="$HOME/dotfiles/misc_config/packages/cygwin_package_lists"
@@ -110,7 +110,16 @@ function smrtpath() {
 
 # Text editor
 function edit_func() {
-  "$HOME/Programs/Sublime Text 3/subl" `smrtpath $1`
+  subl $(smrtpath $1) --command toggle_full_screen
+}
+
+# Mintty titler
+function settitle() {
+      export PS1="\[\e[32m\]\u@\h \[\e[33m\]\w\[\e[0m\]\n$ "
+      echo -ne "\e]0;$1\a"
+}
+function settitlepath() {
+      export PS1="\[\e]0;\w\a\]\n\[\e[32m\]\u@\h \[\e[33m\]\w\[\e[0m\]\n$ "
 }
 
 # Aliass for functions
