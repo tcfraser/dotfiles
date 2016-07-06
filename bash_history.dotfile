@@ -35,10 +35,10 @@ cd ../OneDrive/quantum_tools/
 git a
 git go "parse"
 git commit -m "updated gitignore"
-/setup-x86_64.exe 
+/setup-x86_64.exe
  pip3 install jupyter
 cd /tmp/zeromq/zeromq-4.1.5[A
-tar -xvzf zeromq-4.1.5.tar.gz 
+tar -xvzf zeromq-4.1.5.tar.gz
 cd zeromq-4.1.5
 export PKG_CONFIG_PATH=/usr/lib/pkgconfig
 ./configure --without-libsodium
@@ -56,7 +56,7 @@ install cygzmq.dll /usr/bin
 install libzmq.dll.a /usr/lib
 pip3 download pyzmq
 which unzip
-unzip pyzmq-15.2.0.zip 
+unzip pyzmq-15.2.0.zip
 cd pyzmq-15.2.0
 python setup.py build_ext --zmq=/usr --inplace
 python setup.py install --zmq=/usr --prefix
@@ -78,7 +78,7 @@ cd OneDrive/quantum_tools/code/
 jupyter notebook
 cd OneDrive/quantum_tools/
 jupyter notebook
-unzip pyzmq-15.2.0.zip 
+unzip pyzmq-15.2.0.zip
 cd pyzmq-15.2.0
 python setup.py build_ext --zmq=/usr --inplace
 python setup.py install --zmq=/usr --prefix
@@ -111,13 +111,13 @@ git commit -m "updates"
 git commit -m "ss"
 git commit -m "ds"
 git go "remote ipython"
-/setup-x86_64.exe 
+/setup-x86_64.exe
 which boost
 cd /tmp/
 mkdir sympol
 cd sympol
 rm -rf sympol
-tar -xvzf sympol-0.1.8.tar.gz 
+tar -xvzf sympol-0.1.8.tar.gz
 cd sympol-0.1.8
 mkdir build
 cd buil
@@ -131,23 +131,23 @@ cd OneDrive/quantum_tools/code/
 jupyter notebook
 ssh -N -f -L localhost:8888:localhost:8889 tfraser@compute5.pi.local
 ssh -N -f -L localhost:8887:localhost:8889 tfraser@compute5.pi.local
-dotlink 
+dotlink
 cd /usr/
 cd lib
 find . -name "*boost*"
-/setup-x86_64.exe 
+/setup-x86_64.exe
 ssh tfraser@compute5.pi.local
 ssh tfraser@compute5.pi.local
 cd /usr/lib/
 explore
-cd python3.4/site-packages/iota-1.0-py3.4.egg 
-cd python3.4/site-packages/ 
-cd iota-1.0-py3.4.egg 
+cd python3.4/site-packages/iota-1.0-py3.4.egg
+cd python3.4/site-packages/
+cd iota-1.0-py3.4.egg
 cd ~/GitProjects/iota/demo/
 which lsof
 texify -b -p --engine=pdftex --tex-option=\"--synctex=1\" /cygdrive/t/GitProjects/iota/demo/atoi/complied/full/compiled.tex
-texify -b -p --engine=pdftex --tex-option=\"--synctex=1\" /cygdrive/t/GitProjects/iota/demo/atoi/complied/full/compiled.tex 
-texify -b -p --engine=pdftex --tex-option=\"--synctex=1\" GitProjects/iota/demo/atoi/complied/full/compiled.tex 
+texify -b -p --engine=pdftex --tex-option=\"--synctex=1\" /cygdrive/t/GitProjects/iota/demo/atoi/complied/full/compiled.tex
+texify -b -p --engine=pdftex --tex-option=\"--synctex=1\" GitProjects/iota/demo/atoi/complied/full/compiled.tex
 texify -b -p --engine=pdftex --tex-option=\"--synctex=1\" (cygpath -f /cygdrive/t/GitProjects/iota/demo/atoi/complied/full/compiled.tex)
 texify -b -p --engine=pdftex --tex-option=\"--synctex=1\" | cygpath -f /cygdrive/t/GitProjects/iota/demo/atoi/complied/full/compiled.tex
 cygpath -f /cygdrive/t/GitProjects/iota/demo/atoi/complied/full/compiled.tex
@@ -176,7 +176,7 @@ texify -b -p --engine=pdftex --tex-option=\"--synctex=1\" "PWD"/full/compiled.te
 texify -b -p --engine=pdftex --tex-option=\"--synctex=1\" "$PWD"/full/compiled.tex
 "$PWD"/full/compiled.tex
 echo "$PWD"/full/compiled.tex
-texify -b -p --engine=pdftex --tex-option=\"--synctex=1\" compiled.tex 
+texify -b -p --engine=pdftex --tex-option=\"--synctex=1\" compiled.tex
 texify -b -p --engine=pdftex --tex-option="--synctex=1" "cygpath -w /cygdrive/t/GitProjects/iota/demo/atoi/complied/full/compiled.tex"
 "cygpath -w /cygdrive/t/GitProjects/iota/demo/atoi/complied/full/compiled.tex"
 cygpath -w /cygdrive/t/GitProjects/iota/demo/atoi/complied/full/compiled.tex
@@ -184,7 +184,7 @@ cd T:\GitProjects\iota\demo\atoi\complied\full\compiled.tex
 cd T:\\GitProjects\\iota\\demo\\atoi\\complied\\full\\compiled.tex
 texify -b -p --engine=pdftex --tex-option="--synctex=1" T:\GitProjects\iota\demo\atoi\complied\full\compiled.tex
 cmd
-ttexify -b -p --engine=pdftex --tex-option=\"--synctex=1\" compiled.tex 
+ttexify -b -p --engine=pdftex --tex-option=\"--synctex=1\" compiled.tex
 git commit -m "progress"
 ../
 cd ../
@@ -302,16 +302,16 @@ jupyter-notebook && bg
 fg
 jupyter notebook && bg
 jobs
-jupyter notebook 
+jupyter notebook
 git push
 ls
 cd dotfiles/
 git s
-git checkout -- bash_history.dotfile 
+git checkout -- bash_history.dotfile
 git pull
-git rm -rf misc_config/cygwinpackages/VTK-7.0.0.tar.gz 
-git rm -rf misc_config/cygwinpackages/VTK-6.3.0.tar.gz 
-git rm -rf misc_config/cygwinpackages/VTK-6.3.0-cygwin-patch-20160521.txt.gz 
+git rm -rf misc_config/cygwinpackages/VTK-7.0.0.tar.gz
+git rm -rf misc_config/cygwinpackages/VTK-6.3.0.tar.gz
+git rm -rf misc_config/cygwinpackages/VTK-6.3.0-cygwin-patch-20160521.txt.gz
 git st
 git go "VTK doesn't work"
 subl .
@@ -319,17 +319,17 @@ echo $now
 now
 data
 date
-./dotlink 
+./dotlink
 bg
 cd GitProjects/tcfraser.github.io/
 jupyter-notebook && bg
 fg
 jupyter notebook && bg
 jobs
-jupyter notebook 
-rm bootmgr 
-rm -rf BOOTNXT 
-rm -rf BOOTSECT.BAK 
+jupyter notebook
+rm bootmgr
+rm -rf BOOTNXT
+rm -rf BOOTSECT.BAK
 rm -rf Boot
 ls
 chmod +777 Boot/
@@ -338,37 +338,37 @@ ll
 ll
 l
 la
-backup_cygwin_packages 
+backup_cygwin_packages
 path
 dotlink
 ls
 cd dotfiles/
-./dotlink 
+./dotlink
 cd dotfiles/
-./dotlink 
-dotlink 
+./dotlink
+dotlink
 ls
 ll
 path
-./dotlink 
+./dotlink
 cd dotfiles/
-./dotlink 
-dotlink 
+./dotlink
+dotlink
 path
 ll
 la
 ls
 dotlink
-backup_cygwin_packages 
+backup_cygwin_packages
 path
 date
 $data
 $date
 "$date"
 "date"
-dotlink 
-backup_cygwin_packages 
-backup_cygwin_packages 
+dotlink
+backup_cygwin_packages
+backup_cygwin_packages
 which python
 which python3
 explore
@@ -376,17 +376,17 @@ cd dotfiles/misc_config/packages/cygwin_package_lists/sorting_grounds/
 which sort
 sort packagelist_2016-06-30.csv packagelist_laptop.csv | uniq
 sort packagelist_2016-06-30.csv packagelist_laptop.csv | uniq > packagelist_sorted.csv
-upload_cygwin_package 
+upload_cygwin_package
 cd /
 ls
-dotlink 
-backup_cygwin_packages 
-dotlink 
-upload_cygwin_package 
-upload_cygwin_package 
+dotlink
+backup_cygwin_packages
+dotlink
 upload_cygwin_package
-upload_cygwin_package 
-upload_cygwin_package 
+upload_cygwin_package
+upload_cygwin_package
+upload_cygwin_package
+upload_cygwin_package
 upload_cygwin_package
 la
 cd Boot/
@@ -409,23 +409,23 @@ git go "stress test"
 $date
 "$date"
 "date"
-dotlink 
-backup_cygwin_packages 
-backup_cygwin_packages 
+dotlink
+backup_cygwin_packages
+backup_cygwin_packages
 cd dotfiles/misc_config/packages/cygwin_package_lists/sorting_grounds/
 which sort
 sort packagelist_2016-06-30.csv packagelist_laptop.csv | uniq
 sort packagelist_2016-06-30.csv packagelist_laptop.csv | uniq > packagelist_sorted.csv
-upload_cygwin_package 
-cd /
-dotlink 
-backup_cygwin_packages 
-dotlink 
-upload_cygwin_package 
-upload_cygwin_package 
 upload_cygwin_package
-upload_cygwin_package 
-upload_cygwin_package 
+cd /
+dotlink
+backup_cygwin_packages
+dotlink
+upload_cygwin_package
+upload_cygwin_package
+upload_cygwin_package
+upload_cygwin_package
+upload_cygwin_package
 upload_cygwin_package
 cd Boot/
 rm -rf Boot/
@@ -444,7 +444,7 @@ pip3 install matplotlib
 cd dotfiles/
 subl .
 cd /tmp/
-tar -xvzf zeromq-4.1.5.tar.gz 
+tar -xvzf zeromq-4.1.5.tar.gz
 cd zeromq-4.1.5
 export PKG_CONFIG_PATH=/usr/lib/pkgconfig
 ./configure --without-libsodium
@@ -498,3 +498,50 @@ cd ..
 cd dotfiles/
 git st
 git go "cygwin package manager"
+jupyter notebook && bg
+jobs
+jupyter notebook
+jupyter notebook
+l
+cd GitProjects/tcfraser.github.io/
+git go "ipynb added"
+cd OneDrive/quantum_tools/
+git go "transpose refactor"
+git diff
+git checkout -- code/hypergraph_transversals.ipynb
+cd code/
+which rebaseall
+rebaseall -v
+python3 -m quantum_tools.hypergraph.hypergraph_transversals
+git aa
+git commit -m "updates"
+git push
+cd ~/
+cd dotfiles/
+subl .
+cd ../OneDrive/quantum_tools/
+subl `cygpath -w ~/dotfiles/`
+cd ~/dotfiles/
+git checkout -- bash_history.dotfile
+ls
+git st
+git pull
+dotlink
+jupyter notebook
+cd dotfiles/
+explore
+dotlink
+jupyter notebook
+cd dotfiles/
+explore
+cygpath -w
+cygpath -w .
+cygpath -w OneDrive
+cygpath -w ~/OneDrive/
+cygpath -w /OneDrive/
+cygpath -w OneDrive/
+dotlink
+smrtpath
+dotlink
+smrtpath
+dotlink
