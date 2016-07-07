@@ -22,3 +22,57 @@ echo
 cleartitle
 settitle running_notebook
 settitle main
+settitle main
+edit The\ Delete\ Folder/Google\ Chrome\ Downloads/Website
+edit ~/The\ Delete\ Folder/Google\ Chrome\ Downloads/Website
+edit dotfiles/
+smrtpath ~The\ Delete\ Folder/Google\ Chrome\ Downloads/Website
+smrtpath ~/The\ Delete\ Folder/Google\ Chrome\ Downloads/Website
+smrtpath The\ Delete\ Folder/Google\ Chrome\ Downloads/Website
+subl The\ Delete\ Folder/Google\ Chrome\ Downloads/Website --command toggle-fullscreen
+explore The\ Delete\ Folder/Google\ Chrome\ Downloads/Website
+smrtpath The\ Delete\ Folder/Google\ Chrome\ Downloads/Website
+subl dotfiles/
+cypath The\ Delete\ Folder/Google\ Chrome\ Downloads/Website
+cygpath The\ Delete\ Folder/Google\ Chrome\ Downloads/Website
+cygpath -w The\ Delete\ Folder/Google\ Chrome\ Downloads/Website
+cygpath -w -a The\ Delete\ Folder/Google\ Chrome\ Downloads/Website
+cygpath -w -l The\ Delete\ Folder/Google\ Chrome\ Downloads/Website
+cygpath -w -l -a The\ Delete\ Folder/Google\ Chrome\ Downloads/Website
+cygpath -w -l -a .
+cygpath -w -l -a The\ Delete\ Folder/Google\ Chrome\ Downloads/Website
+cypath The\ Delete\ Folder/Google\ Chrome\ Downloads/Website
+cygpath -w -l -a The\ Delete\ Folder/Google\ Chrome\ Downloads/Website
+explore The\ Delete\ Folder/Google\ Chrome\ Downloads/Website
+smrtpath The\ Delete\ Folder/Google\ Chrome\ Downloads/Website
+cygpath -w -a The\ Delete\ Folder/Google\ Chrome\ Downloads/Website
+smrtpath The\ Delete\ Folder/Google\ Chrome\ Downloads/Website
+smrtpath ~/The\ Delete\ Folder/Google\ Chrome\ Downloads/Website
+smrtpath ~ .
+smrtpath ~/ .
+smrtpath ~/ ./
+smrtpath ~/ /
+smrtpath ~/
+smrtpath ~/ dotfiles/
+smrtpath ~/ ~dotfiles/
+smrtpath ~/ ~/dotfiles/
+explore
+smrtpath 
+explore
+explore .
+dotlink
+explore
+explore_func
+explore
+edit dotfiles/
+explore
+explore dotfiles/
+explore dotfiles/
+explore ..
+explore ../..
+edit The\ Delete\ Folder/Google\ Chrome\ Downloads/Website
+smrtpath The\ Delete\ Folder/Google\ Chrome\ Downloads/Website
+edit dotfiles/
+edit The\ Delete\ Folder/Google\ Chrome\ Downloads/Website
+explore The\ Delete\ Folder/Google\ Chrome\ Downloads/Website
+edit The\ Delete\ Folder/Google\ Chrome\ Downloads/Website

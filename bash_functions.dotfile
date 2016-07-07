@@ -82,7 +82,7 @@ function sudo_func() {
 
 # explorer here
 function explore_func() {
-  explorer.exe /e, $(smrtpath $1)
+  explorer.exe /e, "$(smrtpath "$@")"
 }
 
 CYGWIN_PACKAGE_DIR="$HOME/dotfiles/misc_config/packages/cygwin_package_lists"
@@ -100,17 +100,18 @@ function upload_cygwin_package() {
 
 # smarter path conversion
 function smrtpath() {
-  local input=$1
+  local input="$@"
   if [ $# -eq 0 ] ; then
+    # echo "Assuming current directory"
     local input="."
   fi
-  local ret=`cygpath -w $input`
+  local ret=$(cygpath -w -a "$input")
   echo $ret
 }
 
 # Text editor
 function edit_func() {
-  subl $(smrtpath $1) --command toggle_full_screen
+  subl "$(smrtpath "$@")" --command toggle_full_screen
 }
 
 # Mintty titler
