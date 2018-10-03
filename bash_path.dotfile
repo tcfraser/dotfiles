@@ -3,7 +3,14 @@
 # Extra path locations added on top of windows and cygwin
 export PATH=$HOME"/Programs/Sublime Text 3/":$PATH # For subl.exe
 export PATH="/usr/lib/":$PATH
+# export PATH="/usr/local/lib/":$PATH
+
+# Added for possibilistic_causality project
+export PATH=$HOME"/GitProjects/possibilistic_causality/prefix/bin/":$PATH
+export PATH=$HOME"/GitProjects/possibilistic_causality/prefix/lib/":$PATH
+
 export PATH="/bin/rubygems/bin":$PATH # For ruby gems like jekyll
+# export PATH=$HOME"/Packages/Anaconda3/Scripts":$PATH # For Anaconda3
 export PYTHONIOENCODING="utf-8"
 # export PATH="~/Packages/Mosek/7/tools/platform/win64x86/bin":$PATH
 export PATH=$HOME"/dotfiles/":$PATH # For here
