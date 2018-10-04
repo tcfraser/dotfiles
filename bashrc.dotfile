@@ -51,7 +51,6 @@ do
 done
 
 # Custom aliases
-# alias jekyll='jekyll.bat'
 alias path='echo $PATH | tr ":" "\n"'
 
 # source the bash functions if it exists

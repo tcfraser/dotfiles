@@ -95,7 +95,7 @@ function backup_cygwin_packages() {
 
 # recover cygwin package lists
 function upload_cygwin_package() {
-  /setup-x86_64 -P `awk 'NR==1{printf $1}{printf ",%s", $1}' $CYGWIN_PACKAGE_DIR/packagelist_active.csv`
+  ${HOME}/setup-x86_64.exe -P `awk 'NR==1{printf $1}{printf ",%s", $1}' $CYGWIN_PACKAGE_DIR/packagelist_active.csv`
 }
 
 # smarter path conversion
