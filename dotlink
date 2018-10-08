@@ -1,4 +1,7 @@
 #!/bin/bash
+
+PATH_TO_HERE="$HOME/dotfiles/"
+
 if [ $# -eq 0 ] ; then
     echo "No arguments detected. Assuming 'dotlink -r -m -l'"
     isRemoving=true
@@ -25,6 +28,7 @@ esac
 done
 
 export CYGWIN="winsymlinks:native"
+
 # DOT_FILE_SELECTOR=.[^.]* # starts with a '.' and then is followed by something that is not '.' and then anything else.
 
 FILE_SELECTOR=".bashrc
@@ -38,21 +42,33 @@ FILE_SELECTOR=".bashrc
 .minttyrc
 .vimrc"
 
+FOLDER_SELECTOR=".vim"
+
 if [ "$isRemoving" = true ] ; then
     echo "[ Removing old links ]"
-    for filename in $FILE_SELECTOR
+    for file in $FILE_SELECTOR
     do
-        rm -f "$HOME/"$filename
-        echo -e "Removed ~/"$filename" <- ( symlink to /dotfiles/"$filename" )"
+        rm -f "$HOME/$file"
+        echo -e "Removed ~/$file <- ( symlink to /dotfiles/$file )"
+    done
+    for folder in $FOLDER_SELECTOR
+    do
+        rm -rf "$HOME/$folder"
+        echo -e "Removed ~/$folder <- ( symlink to /dotfiles/$folder )"
     done
 fi
 
 if [ "$isMaking" = true ] ; then
     echo "[ Creating Symbolic Links ]"
-    for filename in $FILE_SELECTOR
+    for file in $FILE_SELECTOR
     do
-        ln -s "./"$filename "$HOME/"$linkname
-        echo -e "Created ~/"$filename" <- ( symlink to /dotfiles/"$filename" )"
+        ln -sf "$PATH_TO_HERE$file" "$HOME/$file"
+        echo -e "Created ~/$file <- ( symlink to /dotfiles/$file )"
+    done
+    for folder in $FOLDER_SELECTOR
+    do
+        ln -s "$PATH_TO_HERE$folder" "$HOME/$folder"
+        echo -e "Created ~/$folder <- ( symlink to /dotfiles/$folder )"
     done
 fi
 
