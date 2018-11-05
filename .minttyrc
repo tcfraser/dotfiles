@@ -1,7 +1,7 @@
 Columns=211
 Rows=53
 Transparency=off
-CursorType=line
+CursorType=block
 Font=Consolas
 FontHeight=12
 FontSmoothing=full
@@ -32,3 +32,6 @@ Locale=C
 Charset=UTF-8
 FontWeight=400
 FontIsBold=no
+BellType=0
+BellTaskbar=no
+ZoomShortcuts=no
