@@ -14,6 +14,10 @@ shopt -s histappend
 # DISPLAY
 export DISPLAY=:0.0
 
+# Text Editor (https://stackoverflow.com/a/2596835)
+export VISUAL=vim
+export EDITOR="$VISUAL"
+
 # Interactive operation...
 alias rm='rm -i'
 alias cp='cp -i'
