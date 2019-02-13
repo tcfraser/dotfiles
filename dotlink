@@ -1,4 +1,7 @@
 #!/bin/bash
+
+PATH_TO_HERE="$HOME/dotfiles/"
+
 if [ $# -eq 0 ] ; then
     echo "No arguments detected. Assuming 'dotlink -r -m -l'"
     isRemoving=true
@@ -25,36 +28,52 @@ esac
 done
 
 export CYGWIN="winsymlinks:native"
-DOT_FILES=${HOME}/dotfiles/*.dotfile
+
+# DOT_FILE_SELECTOR=.[^.]* # starts with a '.' and then is followed by something that is not '.' and then anything else.
+
+FILE_SELECTOR=".bashrc
+.bash_functions
+.bash_history
+.bash_path
+.bash_profile
+.dircolors
+.gitconfig
+.inputrc
+.minttyrc
+.vimrc"
+
+FOLDER_SELECTOR=".vim"
 
 if [ "$isRemoving" = true ] ; then
-    echo "----- Removing old links -----"
-    for filename in $DOT_FILES
+    echo "[ Removing old links ]"
+    for file in $FILE_SELECTOR
     do
-        noext=${filename%.*}    # Removes extension
-        basename=${noext##*/}   # Removes path
-        targetdotfile=$filename
-        linkname=${HOME}/.$basename
-        rm -f $linkname
-        echo "Removing alias /."$basename "from /dotfiles/"$basename".dotfile"
+        rm -f "$HOME/$file"
+        echo -e "Removed ~/$file <- ( symlink to /dotfiles/$file )"
+    done
+    for folder in $FOLDER_SELECTOR
+    do
+        rm -rf "$HOME/$folder"
+        echo -e "Removed ~/$folder <- ( symlink to /dotfiles/$folder )"
     done
 fi
 
 if [ "$isMaking" = true ] ; then
-    echo "----- Making new links -------"
-    for filename in $DOT_FILES
+    echo "[ Creating Symbolic Links ]"
+    for file in $FILE_SELECTOR
     do
-        noext=${filename%.*}    # Removes extension
-        basename=${noext##*/}   # Removes path
-        targetdotfile=$filename
-        linkname=${HOME}/.$basename
-        ln -sf $targetdotfile $linkname
-        echo "Gave /dotfiles/"$basename".dotfile the alias /."$basename
+        ln -sf "$PATH_TO_HERE$file" "$HOME/$file"
+        echo -e "Created ~/$file <- ( symlink to /dotfiles/$file )"
+    done
+    for folder in $FOLDER_SELECTOR
+    do
+        ln -s "$PATH_TO_HERE$folder" "$HOME/$folder"
+        echo -e "Created ~/$folder <- ( symlink to /dotfiles/$folder )"
     done
 fi
 
 if [ "$isLoading" = true ] ; then
-    echo "----- Loading new links ------"
-    source "${HOME}/.bash_profile"
+    echo "[ Loading new links ]"
+    source "$HOME/.bash_profile"
     echo "Sourced .bash_profile"
 fi

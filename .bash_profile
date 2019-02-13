@@ -7,3 +7,8 @@ fi
 if [ -f "${HOME}/.bash_path" ] ; then
   source "${HOME}/.bash_path"
 fi
+
+# source the bash functions if it exists
+if [ -f "${HOME}/.bash_functions" ] ; then
+  source "${HOME}/.bash_functions"
+fi

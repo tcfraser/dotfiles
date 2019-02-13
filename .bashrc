@@ -14,6 +14,10 @@ shopt -s histappend
 # DISPLAY
 export DISPLAY=:0.0
 
+# Text Editor (https://stackoverflow.com/a/2596835)
+export VISUAL=vim
+export EDITOR="$VISUAL"
+
 # Interactive operation...
 alias rm='rm -i'
 alias cp='cp -i'
@@ -30,11 +34,9 @@ alias fgrep='fgrep --color=auto'              # show differences in colour
 
 # Some shortcuts for different directory listings
 alias ls='ls -hF --color=auto'
-alias dir='ls --color=auto --format=vertical'
-alias vdir='ls --color=auto --format=long'
-alias ll='ls -l'                              # long list
+alias ll='ls -al'                             # long list
 alias la='ls -A'                              # all but . and ..
-alias l='ls -CF'                              #
+
 
 # Custom Colors
 eval `dircolors ~/.dircolors`
@@ -51,10 +53,4 @@ do
 done
 
 # Custom aliases
-# alias jekyll='jekyll.bat'
 alias path='echo $PATH | tr ":" "\n"'
-
-# source the bash functions if it exists
-if [ -f "${HOME}/.bash_functions" ] ; then
-  source "${HOME}/.bash_functions"
-fi
