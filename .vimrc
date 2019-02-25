@@ -1,7 +1,7 @@
 "" General
 set number                      " Show line numbers
 " set linebreak                 " Break lines at word (requires Wrap lines)
-set showbreak=+++               " Wrap-broken line prefix
+set showbreak=--->              " Wrap-broken line prefix
 set textwidth=0                 " Line wrap (number of cols)
 set showmatch                   " Highlight matching brace
  
@@ -36,6 +36,10 @@ ino <down> <Nop>
 ino <left> <Nop>
 ino <right> <Nop>
 
+"" Easier way to leave insert mode
+imap jj <Esc>
+set timeoutlen=500 "Reduced delay for checking multi-keystrokes
+
 "" Advanced
 set ruler                       " Show row and column ruler information
 
@@ -51,3 +55,5 @@ augroup numbertoggle
   autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
 augroup END
 
+let g:netrw_dirhistmax = 0 "in order to stop generating a .netrwhist file.
+"" https://stackoverflow.com/questions/9850360/what-is-netrwhist
