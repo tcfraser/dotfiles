@@ -47,13 +47,13 @@ set undolevels=1000             " Number of undo levels
 
 
 "" Hybrid line numbering by https://github.com/jeffkreeftmeijer/vim-numbertoggle
-set number relativenumber
-
-augroup numbertoggle
-  autocmd!
-  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
-  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
-augroup END
+" set number relativenumber
+" 
+" augroup numbertoggle
+"   autocmd!
+"   autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+"   autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+" augroup END
 
 let g:netrw_dirhistmax = 0 "in order to stop generating a .netrwhist file.
 "" https://stackoverflow.com/questions/9850360/what-is-netrwhist
