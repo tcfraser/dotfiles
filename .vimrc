@@ -37,7 +37,7 @@ ino <left> <Nop>
 ino <right> <Nop>
 
 "" Easier way to leave insert mode
-imap jj <Esc>
+" imap jj <Esc>
 set timeoutlen=500 "Reduced delay for checking multi-keystrokes
 
 "" Advanced
@@ -45,10 +45,8 @@ set ruler                       " Show row and column ruler information
 
 set undolevels=1000             " Number of undo levels
 
-
 "" Hybrid line numbering by https://github.com/jeffkreeftmeijer/vim-numbertoggle
 " set number relativenumber
-" 
 " augroup numbertoggle
 "   autocmd!
 "   autocmd BufEnter,FocusGained,InsertLeave * set relativenumber

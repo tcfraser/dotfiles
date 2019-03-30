@@ -1,3 +1,4 @@
 # Extra Path Locations
-export PATH="/cygdrive/c/Program Files/Sublime Text 3/":$PATH # For subl.exe
 export PATH="/usr/lib/":$PATH
+export PATH="/cygdrive/c/Program Files/Sublime Text 3/":$PATH # For subl.exe
+export PATH="/cygdrive/c/Users/TC/AppData/Local/Programs/MiKTeX 2.9/miktex/bin/x64":$PATH # Ensure miktek is used over texlive 
