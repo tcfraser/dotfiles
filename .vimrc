@@ -9,6 +9,8 @@ call plug#begin('~/.vim/plugged')
 " Allows certain plugin commands to be faithfully repeated using .
 Plug 'tpope/vim-repeat'
 Plug 'vim-airline/vim-airline'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'easymotion/vim-easymotion'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
@@ -16,14 +18,27 @@ call plug#end()
 
 "" General
 set number                      " Show line numbers
-" set linebreak                 " Break lines at word (requires Wrap lines)
-set showbreak=--->              " Wrap-broken line prefix
+set linebreak                   " Break lines at word
+set breakindent                 " Break lines with leading indentations
+set showbreak=⤷             " Wrap-broken line prefix
 set textwidth=0                 " Line wrap (number of cols)
 set showmatch                   " Highlight matching brace
- 
+
+" Move visually through wrapped lines
+nnoremap k gk
+nnoremap j gj
+nnoremap 0 g0
+nnoremap ^ g^
+nnoremap $ g$
+vnoremap k gk
+vnoremap j gj
+vnoremap 0 g0
+vnoremap ^ g^
+vnoremap $ g$
+
 set hlsearch                    " Highlight all search results
 set incsearch                   " Searches for strings incrementally
- 
+
 set autoindent                  " Auto-indent new lines
 set expandtab                   " Use spaces instead of tabs
 set shiftwidth=4                " Number of auto-indent spaces
@@ -35,7 +50,7 @@ set background=dark             " Ensure dark colorscheme is used.
 colorscheme gruvbox             " Colorscheme selection
 
 set showmode                    " Show current mode in command-line
-set scrolloff=999               " Ensures that the cursor is always in middle of screen
+set scrolloff=5                 " Ensures that the cursor is always in middle of screen
 set listchars=eol:$,tab:>-,trail:~,extends:»,precedes:« " Show certain hidden characters
 set list                        " Activates the listchars, set nolist to deactivate
 
@@ -52,10 +67,21 @@ ino <down> <Nop>
 ino <left> <Nop>
 ino <right> <Nop>
 
+"" Custom latex commands
+" See ':help map_bar' for information about the usage of '<bar>'
+" compile the .tex document
+nnoremap <leader>c :w <CR> :!pdflatex % <CR>
+" compile the .tex document and biber bibliography
+nnoremap <leader>C :w <CR> :!pdflatex % && biber %:r && pdflatex % && pdflatex % <CR>
+" view the compiled .pdf
+nnoremap <leader>v :!SumatraPDF %:r.pdf & <CR><CR>
+
 "" airline font characters
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}
 endif
+
+""
 
 " unicode symbols
 let g:airline_left_sep = '»'
@@ -86,7 +112,6 @@ let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = '☰'
 let g:airline_symbols.maxlinenr = ''
-
 
 "" Easier way to leave insert mode
 " imap jj <Esc>
