@@ -1,3 +1,19 @@
+"" [vim-plug] declared list of plugins
+" Plugins will be downloaded under the specified directory.
+call plug#begin('~/.vim/plugged')
+
+" Declare the list of plugins.
+" Plug 'tpope/vim-sensible'
+" Plug 'junegunn/seoul256.vim'
+
+" Allows certain plugin commands to be faithfully repeated using .
+Plug 'tpope/vim-repeat'
+Plug 'vim-airline/vim-airline'
+
+" List ends here. Plugins become visible to Vim after this call.
+call plug#end()
+
+
 "" General
 set number                      " Show line numbers
 " set linebreak                 " Break lines at word (requires Wrap lines)
@@ -36,9 +52,45 @@ ino <down> <Nop>
 ino <left> <Nop>
 ino <right> <Nop>
 
+"" airline font characters
+if !exists('g:airline_symbols')
+  let g:airline_symbols = {}
+endif
+
+" unicode symbols
+let g:airline_left_sep = '»'
+let g:airline_left_sep = '▶'
+let g:airline_right_sep = '«'
+let g:airline_right_sep = '◀'
+let g:airline_symbols.crypt = '🔒'
+let g:airline_symbols.linenr = '☰'
+let g:airline_symbols.linenr = '␊'
+let g:airline_symbols.linenr = '␤'
+let g:airline_symbols.linenr = '¶'
+let g:airline_symbols.maxlinenr = ''
+let g:airline_symbols.maxlinenr = '㏑'
+let g:airline_symbols.branch = '⎇'
+let g:airline_symbols.paste = 'ρ'
+let g:airline_symbols.paste = 'Þ'
+let g:airline_symbols.paste = '∥'
+let g:airline_symbols.spell = 'Ꞩ'
+let g:airline_symbols.notexists = 'Ɇ'
+let g:airline_symbols.whitespace = 'Ξ'
+
+" powerline symbols
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
+let g:airline_symbols.branch = ''
+let g:airline_symbols.readonly = ''
+let g:airline_symbols.linenr = '☰'
+let g:airline_symbols.maxlinenr = ''
+
+
 "" Easier way to leave insert mode
 " imap jj <Esc>
-set timeoutlen=500 "Reduced delay for checking multi-keystrokes
+set timeoutlen=500 ttimeoutlen=0 "Reduced delay for checking multi-keystrokes
 
 "" Advanced
 set ruler                       " Show row and column ruler information
