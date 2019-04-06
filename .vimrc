@@ -47,7 +47,6 @@ set undolevels=1000             " Number of undo levels
 
 "" Hybrid line numbering by https://github.com/jeffkreeftmeijer/vim-numbertoggle
 " set number relativenumber
-
 " augroup numbertoggle
 "   autocmd!
 "   autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
