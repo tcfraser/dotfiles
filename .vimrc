@@ -1,6 +1,7 @@
 " turns filetype detection ON (see ~/.vim/ftplugin)
 " https://www.gilesorr.com/blog/vim-ftplugin.html
 filetype plugin indent on 
+syntax on
 
 "" [vim-plug] declared list of plugins
 " Plugins will be downloaded under the specified directory.
@@ -15,6 +16,7 @@ Plug 'tpope/vim-repeat'
 Plug 'vim-airline/vim-airline'
 " Plug 'terryma/vim-multiple-cursors'
 Plug 'easymotion/vim-easymotion'
+Plug 'lervag/vimtex'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
@@ -54,7 +56,7 @@ set background=dark             " Ensure dark colorscheme is used.
 colorscheme gruvbox             " Colorscheme selection
 
 set showmode                    " Show current mode in command-line
-set scrolloff=5                 " Ensures that the cursor is always in middle of screen
+set scrolloff=99                " Ensures that the cursor is always in middle of screen
 set listchars=eol:$,tab:>-,trail:~,extends:»,precedes:« " Show certain hidden characters
 set list                        " Activates the listchars, set nolist to deactivate
 
@@ -127,3 +129,26 @@ set undolevels=1000             " Number of undo levels
 
 let g:netrw_dirhistmax = 0 "in order to stop generating a .netrwhist file.
 "" https://stackoverflow.com/questions/9850360/what-is-netrwhist
+
+"" Options for vimtex
+let g:vimtex_view_general_viewer = 'SumatraPDF'
+let g:vimtex_compiler_method = 'latexmk'
+let g:vimtex_compiler_latexmk = {
+    \ 'backend' : 'process',
+    \ 'background' : 1,
+    \ 'build_dir' : '',
+    \ 'callback' : 1,
+    \ 'continuous' : 0,
+    \ 'executable' : 'latexmk',
+    \ 'hooks' : [],
+    \ 'options' : [
+    \   '-verbose',
+    \   '-file-line-error',
+    \   '-interaction=nonstopmode',
+    \   '-synctex=1',
+    \   '-pdf',
+    \ ],
+    \}
+" let g:vimtex_compiler_latexmk = 1
+"let g:vimtex_view_general_options = '-reuse-instance -forward-search @tex @line @pdf'
+" let g:vimtex_view_general_options_latexmk = '-pdf'

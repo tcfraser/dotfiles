@@ -1,53 +1,3 @@
-mv higher_categories_zx_calculus/ feb_2019/higher_categories_zx_calculus
-mv incompleteness_of_shaded_tangles/ jan_2019/incompleteness_of_shaded_tangles
-mv trace_identities.pdf jan_2019/incompleteness_of_shaded_tangles/trace_identities.pdf
-mv test_tangle.svg jan_2019/incompleteness_of_shaded_tangles/test_tangle.svg
-rm figure_default.svg 
-:w
-git add .
-git st
-git commit -m "moving files around"
-vim iota.tex
-cd nov_2018/graphical_calculus_for_polynomial_algebra/
-ll
-cd main.tex
-vim main.tex
-git st
-git commit -m "moving files around"
-vim iota.tex
-cd nov_2018/graphical_calculus_for_polynomial_algebra/
-cd main.tex
-vim main.tex
-cd ~/git_projects/replab/+replab/
-cd ..
-jobs
-fg
-ll
-cd tc_temp/
-octave
-startxwin
-run startxwin
-which xinit
-which gnuplot
-cd ~
-explroe
-explore
-cd .minttyrc 
-vim .minttyrc 
-mintty -o Font="Roboto Mono for Powerline"
-gg
-cd .vimrc
-vim .vimrc
-vim ~/.minttyrc 
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-vim plug.vim
-cd .vim
-cd dotfiles/.vim
-cd autoload/
-vim ~/.vimrc 
-vim ./vimrc
-cd dotfiles/.vim
-cd autoload/
 vim ~/.vimrc 
 cd dotfiles/
 vim .vimrc
@@ -498,3 +448,53 @@ apt-cyg
 which apt-cyg
 which python3
 python3 --version
+cd ~/git_projects/eliminations_and_optimizations/
+ll
+vim main.tex
+python3 --version
+cd ~/Google\ Drive/PhD\ Research/advisory_committee_reports/
+cd july_2_2019/
+ll
+rm main.*
+which python
+python3 -m pip
+python3 -m ensurepip
+which pip3
+pip3 install --upgrade pip3
+pip3 install --upgrade pip
+python3 generate_data.py 
+pip3 install numpy
+~/setup-x86_64.exe 
+apt-cyg
+which apt-cyg
+which python3
+python3 --version
+cd ~/git_projects/eliminations_and_optimizations/
+cd ~/Google\ Drive/PhD\ Research/resource_theory_of_correlation/
+cd ..
+cd PhD\ Research/
+ld
+cd advisory_committee_reports/
+cd july_2_2019/
+vim main.tex
+fg
+cd ~/.vim
+cd ftplugin/
+vim tex.vim 
+cd --
+cd -2
+vim references.bib
+ll
+cd ftplugin/
+vim tex.vim 
+cd --
+cd -2
+vim references.bib
+cd Google\ Drive/
+mkdir iotas
+mkdir july_10_2019
+cd ..
+cd iotas/
+rm -rf july_10_2019/
+ll
+vim july_10_2019
