@@ -63,6 +63,10 @@ set list                        " Activates the listchars, set nolist to deactiv
 "" Status Line
 set laststatus=2                " Permanently enables the statusline
 
+"" Folding option
+set foldmethod=indent
+set foldlevel=10
+
 "" Unmap the arrow keys
 no <up> <Nop>
 no <down> <Nop>
@@ -148,7 +152,7 @@ let g:vimtex_compiler_latexmk = {
     \   '-synctex=1',
     \   '-pdf',
     \ ],
-    \}
+\}
 " let g:vimtex_compiler_latexmk = 1
 "let g:vimtex_view_general_options = '-reuse-instance -forward-search @tex @line @pdf'
 " let g:vimtex_view_general_options_latexmk = '-pdf'
