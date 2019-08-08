@@ -67,6 +67,10 @@ set laststatus=2                " Permanently enables the statusline
 set foldmethod=indent
 set foldlevel=10
 
+"" Completion options
+" https://vi.stackexchange.com/questions/11349/ctrl-n-completion-takes-a-long-time-for-scanning-included-file
+set complete-=i                 " Removes included files from the default completion sources
+
 "" Unmap the arrow keys
 no <up> <Nop>
 no <down> <Nop>
