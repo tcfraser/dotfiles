@@ -17,6 +17,7 @@ Plug 'vim-airline/vim-airline'
 " Plug 'terryma/vim-multiple-cursors'
 Plug 'easymotion/vim-easymotion'
 Plug 'lervag/vimtex'
+Plug 'andymass/vim-matchup'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
@@ -29,6 +30,8 @@ set breakindent                 " Break lines with leading indentations
 set showbreak=⤷                 " Wrap-broken line prefix
 set textwidth=0                 " Line wrap (number of cols)
 set showmatch                   " Highlight matching brace
+let g:matchup_override_vimtex = 1
+let g:matchup_matchparen_deferred = 1 " vimtex option to speed up matches while navigating
 
 " Move visually through wrapped lines
 nnoremap k gk
