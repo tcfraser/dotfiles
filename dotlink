@@ -36,6 +36,7 @@ FILE_SELECTOR=".bashrc
 .bash_history
 .bash_path
 .bash_profile
+.bash_locations
 .dircolors
 .gitconfig
 .inputrc

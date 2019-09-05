@@ -123,7 +123,7 @@ function cleartitle() {
   export PS1="\[\e]0;\w\a\]\n\[\e[32m\]\u@\h \[\e[33m\]\w\[\e[0m\]\n$ "
 }
 
-# Aliass for functions
+# Aliases for functions
 alias cd=cd_func
 alias sudo=sudo_func
 alias explore=explore_func

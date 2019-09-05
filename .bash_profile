@@ -12,3 +12,8 @@ fi
 if [ -f "${HOME}/.bash_functions" ] ; then
   source "${HOME}/.bash_functions"
 fi
+
+# source the bash locations if it exists
+if [ -f "${HOME}/.bash_locations" ] ; then
+  source "${HOME}/.bash_locations"
+fi

@@ -32,6 +32,7 @@ set textwidth=0                 " Line wrap (number of cols)
 set showmatch                   " Highlight matching brace
 let g:matchup_override_vimtex = 1
 let g:matchup_matchparen_deferred = 1 " vimtex option to speed up matches while navigating
+let g:vimtex_indent_on_ampersands = 0 " disables auto alignment of apersands
 
 " Move visually through wrapped lines
 nnoremap k gk
