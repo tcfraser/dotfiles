@@ -1,6 +1,6 @@
 " turns filetype detection ON (see ~/.vim/ftplugin)
 " https://www.gilesorr.com/blog/vim-ftplugin.html
-filetype plugin indent on 
+filetype plugin indent on
 syntax on
 
 "" [vim-plug] declared list of plugins
@@ -90,7 +90,7 @@ if !exists('g:airline_symbols')
   let g:airline_symbols = {}
 endif
 
-""
+let g:airline#extensions#tabline#enabled = 1
 
 " unicode symbols
 let g:airline_left_sep = '»'
@@ -124,6 +124,7 @@ let g:airline_symbols.maxlinenr = ''
 
 "" Easier way to leave insert mode
 " imap jj <Esc>
+"
 set timeoutlen=500 ttimeoutlen=0 "Reduced delay for checking multi-keystrokes
 
 "" Advanced
