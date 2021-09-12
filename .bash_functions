@@ -76,9 +76,9 @@ function cl() {
 }
 
 # emulate most of the behaviour of sudo
-function sudo_func() {
-  cygstart --action=runas "$@"
-}
+# function sudo_func() {
+#   cygstart --action=runas "$@"
+# }
 
 # explorer here
 function explore_func() {
@@ -110,9 +110,9 @@ function smrtpath() {
 }
 
 # Text editor
-function edit_func() {
-  subl "$(smrtpath "$@")" --command toggle_full_screen
-}
+#function edit_func() {
+#  subl "$(smrtpath "$@")" --command toggle_full_screen
+#}
 
 # Mintty titler
 function settitle() {
@@ -125,9 +125,9 @@ function cleartitle() {
 
 # Aliases for functions
 alias cd=cd_func
-alias sudo=sudo_func
+#alias sudo=sudo_func
 alias explore=explore_func
-alias edit=edit_func
+#alias edit=edit_func
 
 # resource dotfiles
 # function dotsource() {

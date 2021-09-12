@@ -140,28 +140,49 @@ set undolevels=1000             " Number of undo levels
 "   autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
 " augroup END
 
-let g:netrw_dirhistmax = 0 "in order to stop generating a .netrwhist file.
 "" https://stackoverflow.com/questions/9850360/what-is-netrwhist
+let g:netrw_dirhistmax = 0 "in order to stop generating a .netrwhist file.
+
+"" https://vi.stackexchange.com/questions/454/whats-the-simplest-way-to-strip-trailing-whitespace-from-all-lines-in-a-file
+"Remove all trailing whitespace by pressing F5
+nnoremap <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
+
+noremap <F6> :/<C-r>+<CR>n
 
 "" Options for vimtex
 let g:vimtex_view_general_viewer = 'SumatraPDF'
-let g:vimtex_compiler_method = 'latexmk'
+let g:vimtex_view_general_options = '-reuse-instance -forward-search @tex @line @pdf'
+let g:vimtex_view_general_options_latexmk = '-reuse-instance'
+let g:vimtex_syntax_enabled = 0
+let g:vimtex_view_automatic = 0
 let g:vimtex_compiler_latexmk = {
-    \ 'backend' : 'process',
-    \ 'background' : 1,
-    \ 'build_dir' : '',
-    \ 'callback' : 1,
-    \ 'continuous' : 0,
-    \ 'executable' : 'latexmk',
-    \ 'hooks' : [],
-    \ 'options' : [
-    \   '-verbose',
-    \   '-file-line-error',
-    \   '-interaction=nonstopmode',
-    \   '-synctex=1',
-    \   '-pdf',
-    \ ],
-\}
+        \ 'build_dir' : '',
+        \ 'callback' : 1,
+        \ 'continuous' : 0,
+        \ 'executable' : 'latexmk',
+        \ 'hooks' : [],
+        \ 'options' : [
+        \   '-verbose',
+        \   '-file-line-error',
+        \   '-synctex=0',
+        \   '-interaction=nonstopmode',
+        \ ],
+        \}
+
+"let g:vimtex_compiler_latexmk = {
+"    \ 'backend' : 'process',
+"    \ 'background' : 1,
+"    \ 'build_dir' : '',
+"    \ 'callback' : 1,
+"    \ 'continuous' : 0,
+"    \ 'executable' : 'latexmk',
+"    \ 'hooks' : [],
+"    \ 'options' : [
+"    \   '-verbose',
+"    \   '-file-line-error',
+"    \   '-interaction=nonstopmode',
+"    \   '-synctex=1',
+"    \   '-pdf',
+"    \ ],
+"\}
 " let g:vimtex_compiler_latexmk = 1
-"let g:vimtex_view_general_options = '-reuse-instance -forward-search @tex @line @pdf'
-" let g:vimtex_view_general_options_latexmk = '-pdf'
