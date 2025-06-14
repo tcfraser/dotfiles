@@ -1,14 +1,16 @@
 #!/bin/bash
 
-PATH_TO_HERE="$HOME/dotfiles/"
+# resolves the full path to here the dotfiles repo was cloned
+DOTFILE_PATH=$(dirname "$(readlink -f "$0")")
 
+# parsing the options (either verbose or terse)
 if [ $# -eq 0 ] ; then
-    echo "No arguments detected. Assuming 'dotlink -r -m -l'"
-    isRemoving=true
-    isMaking=true
-    isLoading=true
+    echo "Error: no input options detected."
+    echo "  -r|--remove    Removes any existing symlinks."
+    echo "  -c|--create    Creates symlinks from the dotfiles folder to the home directory."
+    echo "  -l|--load      Loads the .bash_profile."
+    exit 1
 fi
-
 for key in "$@"
 do
 case $key in
@@ -16,8 +18,8 @@ case $key in
     isRemoving=true
     shift
     ;;
-    -m|--make)
-    isMaking=true
+    -c|--create)
+    isCreating=true
     shift
     ;;
     -l|--load)
@@ -27,19 +29,16 @@ case $key in
 esac
 done
 
-export CYGWIN="winsymlinks:native"
-
 # DOT_FILE_SELECTOR=.[^.]* # starts with a '.' and then is followed by something that is not '.' and then anything else.
 
-FILE_SELECTOR=".bashrc
+FILE_SELECTOR=".bash_profile
 .bash_functions
 .bash_path
-.bash_profile
-.dircolors
+.bashrc
 .gitconfig
-.inputrc
-.minttyrc
-.vimrc"
+.vimrc
+.dircolors
+"
 
 FOLDER_SELECTOR=".vim"
 
@@ -48,26 +47,26 @@ if [ "$isRemoving" = true ] ; then
     for file in $FILE_SELECTOR
     do
         rm -f "$HOME/$file"
-        echo -e "Removed ~/$file <- ( symlink to /dotfiles/$file )"
+        echo -e "Removed $HOME/$file"
     done
     for folder in $FOLDER_SELECTOR
     do
         rm -rf "$HOME/$folder"
-        echo -e "Removed ~/$folder <- ( symlink to /dotfiles/$folder )"
+        echo -e "Removed $HOME/$folder"
     done
 fi
 
-if [ "$isMaking" = true ] ; then
+if [ "$isCreating" = true ] ; then
     echo "[ Creating Symbolic Links ]"
     for file in $FILE_SELECTOR
     do
-        ln -sf "$PATH_TO_HERE$file" "$HOME/$file"
-        echo -e "Created ~/$file <- ( symlink to /dotfiles/$file )"
+        ln -sfv "$DOTFILE_PATH/$file" "$HOME/$file"
+        echo -e "Created symlink $HOME/$file -> $DOTFILE_PATH/$file"
     done
     for folder in $FOLDER_SELECTOR
     do
-        ln -s "$PATH_TO_HERE$folder" "$HOME/$folder"
-        echo -e "Created ~/$folder <- ( symlink to /dotfiles/$folder )"
+        ln -sv "$DOTFILE_PATH/$folder" "$HOME/$folder"
+        echo -e "Created symlink $HOME/$folder -> $DOTFILE_PATH/$folder"
     done
 fi
 
