@@ -5,19 +5,16 @@ syntax on
 
 "" [vim-plug] declared list of plugins
 " Plugins will be downloaded under the specified directory.
-call plug#begin('~/.vim/plugged')
-
-" Declare the list of plugins.
-" Plug 'tpope/vim-sensible'
-" Plug 'junegunn/seoul256.vim'
+call plug#begin()
 
 " Allows certain plugin commands to be faithfully repeated using .
 Plug 'tpope/vim-repeat'
 Plug 'vim-airline/vim-airline'
-" Plug 'terryma/vim-multiple-cursors'
 Plug 'easymotion/vim-easymotion'
 Plug 'lervag/vimtex'
 Plug 'andymass/vim-matchup'
+Plug 'bfrg/vim-c-cpp-modern'
+Plug 'tikhomirov/vim-glsl'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
@@ -121,24 +118,12 @@ let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = '☰'
 let g:airline_symbols.maxlinenr = ''
-
-"" Easier way to leave insert mode
-" imap jj <Esc>
 "
 set timeoutlen=500 ttimeoutlen=0 "Reduced delay for checking multi-keystrokes
 
 "" Advanced
 set ruler                       " Show row and column ruler information
-
 set undolevels=1000             " Number of undo levels
-
-"" Hybrid line numbering by https://github.com/jeffkreeftmeijer/vim-numbertoggle
-" set number relativenumber
-" augroup numbertoggle
-"   autocmd!
-"   autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
-"   autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
-" augroup END
 
 "" https://stackoverflow.com/questions/9850360/what-is-netrwhist
 let g:netrw_dirhistmax = 0 "in order to stop generating a .netrwhist file.
@@ -168,21 +153,3 @@ let g:vimtex_compiler_latexmk = {
         \   '-interaction=nonstopmode',
         \ ],
         \}
-
-"let g:vimtex_compiler_latexmk = {
-"    \ 'backend' : 'process',
-"    \ 'background' : 1,
-"    \ 'build_dir' : '',
-"    \ 'callback' : 1,
-"    \ 'continuous' : 0,
-"    \ 'executable' : 'latexmk',
-"    \ 'hooks' : [],
-"    \ 'options' : [
-"    \   '-verbose',
-"    \   '-file-line-error',
-"    \   '-interaction=nonstopmode',
-"    \   '-synctex=1',
-"    \   '-pdf',
-"    \ ],
-"\}
-" let g:vimtex_compiler_latexmk = 1
