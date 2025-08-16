@@ -15,6 +15,7 @@ Plug 'lervag/vimtex'
 Plug 'andymass/vim-matchup'
 Plug 'bfrg/vim-c-cpp-modern'
 Plug 'tikhomirov/vim-glsl'
+Plug 'romainl/vim-cool' " removes search highlights after searching
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
