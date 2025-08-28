@@ -38,6 +38,7 @@ FILE_SELECTOR=".bash_profile
 .gitconfig
 .vimrc
 .dircolors
+.hushlogin
 "
 
 FOLDER_SELECTOR=".vim"
@@ -73,5 +74,5 @@ fi
 if [ "$isLoading" = true ] ; then
     echo "[ Loading new links ]"
     source "$HOME/.bash_profile"
-    echo "Sourced .bash_profile"
+    echo "sourced $HOME/.bash_profile"
 fi
