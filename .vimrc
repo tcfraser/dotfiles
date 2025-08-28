@@ -78,6 +78,8 @@ set complete-=i                 " Removes included files from the default comple
 "" Better substitute: handles literal search and replace
 " change next literal occurrence of the selection, then use '.' to repeat
 xnoremap <silent> <leader>c "zy:let @/ = '\V' . escape(@z, '\\/')<CR>cgn
+" change all literal occurrences of the selection
+xnoremap <silent> <leader>C "zy:let @/ = '\V' . escape(@z, '\\/')<CR>:execute '%s/' . '/' . escape(input('Replace with: '), '/\&~') . '/g'<CR>
 " next literal occurrence (no change)
 xnoremap <silent> <leader>n "zy:let @/ = '\V' . escape(@z, '\\/')<CR>ngn
 " previous literal occurrence (no change)
