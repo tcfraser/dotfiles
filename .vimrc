@@ -49,6 +49,10 @@ vnoremap $ g$
 "set hlsearch                   " Highlight all search results
 set incsearch                   " Searches for strings incrementally
 
+if has('clipboard')             " sudo apt install vim-gtk3
+    set clipboard+=unnamedplus  " the register + for clipboard on windows inside wsl
+endif
+
 set autoindent                  " Auto-indent new lines
 set expandtab                   " Use spaces instead of tabs
 set shiftwidth=4                " Number of auto-indent spaces
