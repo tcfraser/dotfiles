@@ -30,6 +30,7 @@ set breakindent                 " Break lines with leading indentations
 set showbreak=⤷                 " Wrap-broken line prefix
 set textwidth=0                 " Line wrap (number of cols)
 set showmatch                   " Highlight matching brace
+set lazyredraw                  " Don't redraw will executing macros
 let g:matchup_override_vimtex = 1
 let g:matchup_matchparen_deferred = 1 " vimtex option to speed up matches while navigating
 let g:vimtex_indent_on_ampersands = 0 " disables auto alignment of apersands
@@ -144,7 +145,7 @@ let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = '☰'
 let g:airline_symbols.maxlinenr = ''
 "
-set timeoutlen=500 ttimeoutlen=0 "Reduced delay for checking multi-keystrokes
+set timeoutlen=1000 ttimeoutlen=10 "Reduced delay for checking multi-keystrokes
 
 "" Advanced
 set ruler                       " Show row and column ruler information
