@@ -13,5 +13,16 @@ return {
         "lua_ls",
       },
     },
+
+    config = function(_, opts)
+      vim.lsp.config("clangd", {
+        cmd = {
+          "clangd",
+          "--query-driver=/usr/bin/g++,/usr/bin/gcc",
+        },
+      })
+
+      require("mason-lspconfig").setup(opts)
+    end,
   },
 }
