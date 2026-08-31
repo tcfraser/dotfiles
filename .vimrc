@@ -94,7 +94,10 @@ xnoremap <silent> <leader>N "zy:let @/ = '\V' . escape(@z, '\\/')<CR>NgN
 nnoremap <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
 
 "quickly use fzf pluggin features with ctrl-p
-nnoremap <C-p> :GFiles<CR>
+nnoremap <C-p> :GFiles --cached --others --exclude-standard<CR>
+" -c, --cached (Show cached files in the output (default))
+" -o, --others (Show other (i.e. untracked) files in the output)
+" --exclude-standard (Add the standard Git exclusions: .git/info/exclude, .gitignore in each directory, and the user's global exclusion file.)
 
 
 "" Unmap the arrow keys

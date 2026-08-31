@@ -54,3 +54,10 @@ done
 
 # Custom aliases
 alias path='echo $PATH | tr ":" "\n"'
+
+# expose homebrew installs
+if [ -x /home/linuxbrew/.linuxbrew/bin/brew ]; then
+    eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+fi
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

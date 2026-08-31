@@ -41,7 +41,8 @@ FILE_SELECTOR=".bash_profile
 .hushlogin
 "
 
-FOLDER_SELECTOR=".vim"
+FOLDER_SELECTOR=".vim
+.config"
 
 if [ "$isRemoving" = true ] ; then
     echo "[ Removing old links ]"

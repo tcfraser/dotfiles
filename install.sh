@@ -1,0 +1,79 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+echo "==> Setting up development environment"
+
+# ------------------------------------------------------------
+# Detect Linux package manager and install bootstrap dependencies
+# ------------------------------------------------------------
+
+if command -v apt-get >/dev/null 2>&1; then
+    echo "==> Detected Debian/Ubuntu"
+
+    sudo apt-get update
+    sudo apt-get install -y \
+        build-essential \
+        procps \
+        curl \
+        file \
+        git
+
+elif command -v dnf >/dev/null 2>&1; then
+    echo "==> Detected Fedora/RHEL"
+
+    sudo dnf group install -y development-tools
+    sudo dnf install -y \
+        procps-ng \
+        curl \
+        file \
+        git
+
+elif command -v pacman >/dev/null 2>&1; then
+    echo "==> Detected Arch Linux"
+
+    sudo pacman -Sy --needed --noconfirm \
+        base-devel \
+        procps-ng \
+        curl \
+        file \
+        git
+
+else
+    echo "Unsupported Linux distribution."
+    exit 1
+fi
+
+# ------------------------------------------------------------
+# Install Homebrew
+# ------------------------------------------------------------
+
+if ! command -v brew >/dev/null 2>&1; then
+    echo "==> Installing Homebrew"
+
+    /bin/bash -c \
+        "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
+
+# Homebrew's normal Linux location
+if [ -x /home/linuxbrew/.linuxbrew/bin/brew ]; then
+    eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+fi
+
+# ------------------------------------------------------------
+# Install/update development tools
+# ------------------------------------------------------------
+
+echo "==> Updating Homebrew"
+brew update
+
+echo "==> Installing packages from ~/dotfiles/brewfile"
+brew bundle --file="~/dotfiles/brewfile"
+
+echo "==> Setup complete"
+echo "Installed versions:"
+git --version
+curl --version | head -n 1
+vim --version | head -n 1
+nvim --version | head -n 1
+fzf --version
