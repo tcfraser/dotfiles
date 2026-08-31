@@ -37,7 +37,6 @@ FILE_SELECTOR=".bash_profile
 .bashrc
 .gitconfig
 .vimrc
-.dircolors
 .hushlogin
 "
 

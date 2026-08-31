@@ -1,6 +1,6 @@
 -- Line numbers
 vim.opt.number = true
-vim.opt.relativenumber = false
+vim.opt.relativenumber = true
 
 -- Wrapped lines
 vim.opt.wrap = true
@@ -44,3 +44,6 @@ vim.opt.splitbelow = true
 
 -- Use system clipboard
 vim.opt.clipboard = "unnamedplus"
+
+-- Do not hide characters when italizing for example
+vim.opt.conceallevel = 0

@@ -33,13 +33,15 @@ alias egrep='egrep --color=auto'              # show differences in colour
 alias fgrep='fgrep --color=auto'              # show differences in colour
 
 # Some shortcuts for different directory listings
-alias ls='ls -hF --color=auto'
-alias ll='ls -al'                             # long list
-alias la='ls -A'                              # all but . and ..
-
-
-# Custom Colors
-eval `dircolors ~/.dircolors`
+if command -v eza >/dev/null 2>&1; then
+    alias ls='eza -hF --color=auto'
+    alias ll='eza -lah --header'
+    alias la='eza -la --header'
+else
+    alias ls='ls -hF --color=auto'
+    alias ll='ls -lah'
+    alias la='ls -la'
+fi
 
 # Quicker Navigation 10 levels deep
 for ((i=1; i <= 10; i++))
