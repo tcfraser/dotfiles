@@ -21,7 +21,7 @@ map("n", "<Esc>", "<cmd>nohlsearch<CR>")
 -- Convenient save
 map("n", "<leader>w", "<cmd>write<CR>")
 
-map("n", "]b", "<cmd>BufferLineCycleNext<CR>", { desc = "Next buffer" })
-map("n", "[b", "<cmd>BufferLineCyclePrev<CR>", { desc = "Previous buffer" })
+map("n", "<S-l>", "<cmd>BufferLineCycleNext<CR>", { desc = "Next buffer" })
+map("n", "<S-h>", "<cmd>BufferLineCyclePrev<CR>", { desc = "Previous buffer" })
 
 map("n", "<leader>bd", "<cmd>bdelete<CR>", { desc = "Delete buffer" })
