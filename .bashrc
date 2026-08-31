@@ -61,3 +61,6 @@ if [ -x /home/linuxbrew/.linuxbrew/bin/brew ]; then
 fi
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+# adding local binaries to path
+export PATH="$HOME/.local/bin:$PATH"

@@ -25,3 +25,16 @@ map("n", "<S-l>", "<cmd>BufferLineCycleNext<CR>", { desc = "Next buffer" })
 map("n", "<S-h>", "<cmd>BufferLineCyclePrev<CR>", { desc = "Previous buffer" })
 
 map("n", "<leader>bd", "<cmd>bdelete<CR>", { desc = "Delete buffer" })
+
+
+
+map("n", "gd", vim.lsp.buf.definition)
+map("n", "gD", vim.lsp.buf.declaration)
+map("n", "gr", vim.lsp.buf.references)
+map("n", "K", vim.lsp.buf.hover)
+
+map("n", "<leader>rn", vim.lsp.buf.rename)
+map("n", "<leader>ca", vim.lsp.buf.code_action)
+
+map("n", "]d", vim.diagnostic.goto_next)
+map("n", "[d", vim.diagnostic.goto_prev)

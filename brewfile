@@ -1,3 +1,5 @@
+brew "unzip"
 brew "vim"
 brew "neovim"
 brew "fzf"
+brew "python"
