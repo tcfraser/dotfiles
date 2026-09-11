@@ -43,6 +43,22 @@ vim.opt.splitright = true
 vim.opt.splitbelow = true
 
 -- Use system clipboard
+if vim.fn.has("wsl") == 1 then
+    local paste = [[powershell.exe -NoLogo -NoProfile -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))]]
+
+    vim.g.clipboard = {
+        name = "WslClipboard",
+        copy = {
+            ["+"] = "clip.exe",
+            ["*"] = "clip.exe",
+        },
+        paste = {
+            ["+"] = paste,
+            ["*"] = paste,
+        },
+        cache_enabled = 0,
+    }
+end
 vim.opt.clipboard = "unnamedplus"
 
 -- Do not hide characters when italizing for example

@@ -80,24 +80,3 @@ fzf --version
 unzip -v | head -n 1
 python --version
 
-# ------------------------------------------------------------
-# Ensuring clipboard functionality with windows
-# ------------------------------------------------------------
-if grep -qi microsoft /proc/version; then
-    echo "==> WSL detected — ensuring win32yank is installed"
-    mkdir -p "$HOME/.local/bin"
-    if ! command -v win32yank.exe >/dev/null 2>&1; then
-        tmp="$(mktemp -d)"
-
-        curl -L \
-          https://github.com/equalsraf/win32yank/releases/download/v0.1.1/win32yank-x64.zip \
-          -o "$tmp/win32yank.zip"
-
-        unzip -p "$tmp/win32yank.zip" win32yank.exe > "$HOME/.local/bin/win32yank.exe"
-        chmod +x "$HOME/.local/bin/win32yank.exe"
-
-        rm -rf "$tmp"
-    fi
-fi
-
-
