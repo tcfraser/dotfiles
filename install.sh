@@ -2,6 +2,8 @@
 
 set -euo pipefail
 
+DOTFILE_PATH=$(dirname "$(readlink -f "$0")")
+
 echo "==> Setting up development environment"
 
 # ------------------------------------------------------------
@@ -17,6 +19,7 @@ if command -v apt-get >/dev/null 2>&1; then
         procps \
         curl \
         file \
+        fontconfig \
         git
 
 elif command -v dnf >/dev/null 2>&1; then
@@ -27,6 +30,7 @@ elif command -v dnf >/dev/null 2>&1; then
         procps-ng \
         curl \
         file \
+        fontconfig \
         git
 
 elif command -v pacman >/dev/null 2>&1; then
@@ -37,6 +41,7 @@ elif command -v pacman >/dev/null 2>&1; then
         procps-ng \
         curl \
         file \
+        fontconfig \
         git
 
 else
@@ -66,10 +71,22 @@ fi
 echo "==> Updating Homebrew"
 brew update
 
-echo "==> Installing packages from $HOME/dotfiles/brewfile"
-brew bundle --file="$HOME/dotfiles/brewfile"
+echo "==> Installing packages from $DOTFILE_PATH/brewfile"
+brew bundle --file="$DOTFILE_PATH/brewfile"
 
-echo "==> Setup complete"
+echo "==> Installing JetBrains Mono Nerd Font"
+FONT_DIR="$HOME/.local/share/fonts/JetBrainsMono"
+mkdir -p "$FONT_DIR"
+cp "$DOTFILE_PATH"/fonts/JetBrainsMono/JetBrainsMonoNerdFontMono-*.ttf "$FONT_DIR/"
+fc-cache -f "$FONT_DIR"
+echo "Select 'JetBrainsMono Nerd Font Mono' in your terminal's font settings."
+
+# Install/update Codex without prompting to launch it
+curl -fsSL https://chatgpt.com/codex/install.sh | CODEX_NON_INTERACTIVE=1 sh
+
+echo "==> Setting up dotfile symlinks"
+bash "$DOTFILE_PATH/dotlink.sh" --create
+
 echo "Installed versions:"
 git --version
 curl --version | head -n 1
@@ -80,9 +97,10 @@ unzip -v | head -n 1
 python3 --version
 eza --version
 gh --version | head -n 1
+starship --version
 
 # ------------------------------------------------------------
-# Setting up github authenticataion
+# Set up GitHub authentication after linking .gitconfig
 # ------------------------------------------------------------
 echo "==> Setting up Github Authentication using a browser"
 if ! gh auth status --hostname github.com >/dev/null 2>&1; then
@@ -91,7 +109,6 @@ fi
 
 gh auth setup-git --hostname github.com
 
-# ------------------------------------------------------------
-# Setting up AI
-# ------------------------------------------------------------
-curl -fsSL https://chatgpt.com/codex/install.sh | sh
+echo "==> Setup complete"
+
+echo "Run 'source ~/.bashrc' to load your updated configuration."

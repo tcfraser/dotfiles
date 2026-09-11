@@ -1,78 +1,72 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-# resolves the full path to here the dotfiles repo was cloned
-DOTFILE_PATH=$(dirname "$(readlink -f "$0")")
+# Link only repo-managed files; preserve unrelated machine configuration.
+DOTFILE_PATH=$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")
+CONFIG_HOME="$HOME/.config"
+isRemoving=false
+isCreating=false
+isLoading=false
 
-# parsing the options (either verbose or terse)
-if [ $# -eq 0 ] ; then
-    echo "Error: no input options detected."
-    echo "  -r|--remove    Removes any existing symlinks."
-    echo "  -c|--create    Creates symlinks from the dotfiles folder to the home directory."
-    echo "  -l|--load      Loads the .bash_profile."
+if [ $# -eq 0 ]; then
+    echo "Usage: $0 [-r|--remove] [-c|--create] [-l|--load]"
     exit 1
 fi
-for key in "$@"
-do
-case $key in
-    -r|--remove)
-    isRemoving=true
-    shift
-    ;;
-    -c|--create)
-    isCreating=true
-    shift
-    ;;
-    -l|--load)
-    isLoading=true
-    shift
-    ;;
-esac
+for key in "$@"; do
+    case "$key" in
+        -r|--remove) isRemoving=true ;;
+        -c|--create) isCreating=true ;;
+        -l|--load) isLoading=true ;;
+        *) echo "Unknown option: $key" >&2; exit 1 ;;
+    esac
 done
 
-# DOT_FILE_SELECTOR=.[^.]* # starts with a '.' and then is followed by something that is not '.' and then anything else.
+manage_link() {
+    local source_path="$1" target_path="$2" backup_path
+    if [ -L "$target_path" ] && [ "$(readlink "$target_path")" = "$source_path" ]; then
+        if [ "$isRemoving" = true ]; then
+            unlink "$target_path" || return
+        else
+            return 0
+        fi
+    fi
+    if [ "$isCreating" = true ]; then
+        mkdir -p "$(dirname "$target_path")" || return
+        if [ -e "$target_path" ] || [ -L "$target_path" ]; then
+            backup_path="${target_path}.backup.$(date +%Y%m%d%H%M%S).$$"
+            mv "$target_path" "$backup_path" || return
+            echo "Backed up $target_path to $backup_path"
+        fi
+        ln -s "$source_path" "$target_path" || return
+        echo "Linked $target_path -> $source_path"
+    fi
+}
 
-FILE_SELECTOR=".bash_profile
-.bash_functions
-.bash_path
-.bashrc
-.gitconfig
-.vimrc
-.hushlogin
-"
+# Remove obsolete links from before the Bash configuration was consolidated.
+# Leave any independently maintained files at these paths alone.
+for file in .bash_functions .bash_path; do
+    if [ -L "$HOME/$file" ] && [ "$(readlink "$HOME/$file")" = "$DOTFILE_PATH/$file" ]; then
+        unlink "$HOME/$file" || exit 1
+    fi
+done
 
-FOLDER_SELECTOR=".vim
-.config"
+for file in .bash_profile .bashrc .gitconfig .vimrc .hushlogin .vim; do
+    manage_link "$DOTFILE_PATH/$file" "$HOME/$file" || exit 1
+done
 
-if [ "$isRemoving" = true ] ; then
-    echo "[ Removing old links ]"
-    for file in $FILE_SELECTOR
-    do
-        rm -f "$HOME/$file"
-        echo -e "Removed $HOME/$file"
-    done
-    for folder in $FOLDER_SELECTOR
-    do
-        rm -rf "$HOME/$folder"
-        echo -e "Removed $HOME/$folder"
+# Existing installations may already link the entire .config directory.
+# Keep that working layout; otherwise link individual entries into .config.
+if [ -L "$CONFIG_HOME" ] && [ "$(readlink -f "$CONFIG_HOME")" = "$DOTFILE_PATH/.config" ]; then
+    if [ "$isRemoving" = true ]; then
+        unlink "$CONFIG_HOME" || exit 1
+    fi
+fi
+if [ ! -L "$CONFIG_HOME" ] || [ "$(readlink -f "$CONFIG_HOME")" != "$DOTFILE_PATH/.config" ]; then
+    for config in "$DOTFILE_PATH"/.config/*; do
+        manage_link "$config" "$CONFIG_HOME/$(basename "$config")" || exit 1
     done
 fi
 
-if [ "$isCreating" = true ] ; then
-    echo "[ Creating Symbolic Links ]"
-    for file in $FILE_SELECTOR
-    do
-        ln -sfv "$DOTFILE_PATH/$file" "$HOME/$file"
-        echo -e "Created symlink $HOME/$file -> $DOTFILE_PATH/$file"
-    done
-    for folder in $FOLDER_SELECTOR
-    do
-        ln -sv "$DOTFILE_PATH/$folder" "$HOME/$folder"
-        echo -e "Created symlink $HOME/$folder -> $DOTFILE_PATH/$folder"
-    done
-fi
-
-if [ "$isLoading" = true ] ; then
-    echo "[ Loading new links ]"
+if [ "$isLoading" = true ]; then
     source "$HOME/.bash_profile"
-    echo "sourced $HOME/.bash_profile"
+    echo "Open a new terminal or run 'source ~/.bashrc' to update your current shell."
 fi

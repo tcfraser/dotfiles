@@ -7,6 +7,15 @@ shopt -s extglob
 # If not running interactively, don't do anything
 [[ "$-" != *i* ]] && return
 
+# Expose Homebrew installs before checking for commands used by aliases
+if [ -x /home/linuxbrew/.linuxbrew/bin/brew ]; then
+    eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+fi
+
+# Add local binaries to PATH
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+
 # Don't put duplicate lines in the history.
 export HISTCONTROL=ignoredups:erasedups
 shopt -s histappend
@@ -57,13 +66,146 @@ done
 # Custom aliases
 alias path='echo $PATH | tr ":" "\n"'
 
-# expose homebrew installs
-if [ -x /home/linuxbrew/.linuxbrew/bin/brew ]; then
-    eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-fi
-
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
-# adding local binaries to path
-export PATH="$HOME/.local/bin:$PATH"
-export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+# Shell functions and their aliases
+# Petar Marinov, http:/geocities.com/h2428, this is public domain
+# Modified to allow up to 20 stored entires
+function cd_func ()
+{
+  local x2 the_new_dir adir index
+  local -i cnt
+
+  if [[ $1 ==  "--" ]]; then
+    dirs -v
+    return 0
+  fi
+
+  the_new_dir=$1
+  [[ -z $1 ]] && the_new_dir=$HOME
+
+  if [[ ${the_new_dir:0:1} == '-' ]]; then
+    #
+    # Extract dir N from dirs
+    index=${the_new_dir:1}
+    [[ -z $index ]] && index=1
+    adir=$(dirs +$index)
+    [[ -z $adir ]] && return 1
+    the_new_dir=$adir
+  fi
+
+  #
+  # '~' has to be substituted by ${HOME}
+  [[ ${the_new_dir:0:1} == '~' ]] && the_new_dir="${HOME}${the_new_dir:1}"
+
+  #
+  # Now change to the new dir and add to the top of the stack
+  pushd "${the_new_dir}" > /dev/null
+  [[ $? -ne 0 ]] && return 1
+  the_new_dir=$(pwd)
+
+  #
+  # Trim down everything beyond 11th entry
+  popd -n +21 2>/dev/null 1>/dev/null
+
+  #
+  # Remove any other occurence of this dir, skipping the top of the stack
+  for ((cnt=1; cnt <= 20; cnt++)); do
+    x2=$(dirs +${cnt} 2>/dev/null)
+    [[ $? -ne 0 ]] && return 0
+    [[ ${x2:0:1} == '~' ]] && x2="${HOME}${x2:1}"
+    if [[ "${x2}" == "${the_new_dir}" ]]; then
+      popd -n +$cnt 2>/dev/null 1>/dev/null
+      cnt=cnt-1
+    fi
+  done
+
+  return 0
+}
+
+# Opens the github page for the current git repository in your browser
+function github() {
+  giturl=$(git config --get remote.origin.url)
+  if [ "$giturl" == "" ]
+    then
+     echo "Not a git repository or no remote.origin.url set"
+     exit 1;
+  fi
+
+  giturl=${giturl/git\@github\.com\:/https://github.com/}
+  giturl=${giturl/\.git/\/tree/}
+  branch="$(git symbolic-ref HEAD 2>/dev/null)" ||
+  branch="(unnamed branch)"     # detached HEAD
+  branch=${branch##refs/heads/}
+  giturl=$giturl/$branch
+  cygstart $giturl
+}
+
+# cd and list contends
+function cl() {
+  cd $1 && ls
+}
+
+# emulate most of the behaviour of sudo
+# function sudo_func() {
+#   cygstart --action=runas "$@"
+# }
+
+# explorer here
+function explore_func() {
+  explorer.exe /e, "$(smrtpath "$@")"
+}
+
+CYGWIN_PACKAGE_DIR="$HOME/dotfiles/misc_config/packages/cygwin_package_lists"
+
+# backup and save cygwin package lists
+function backup_cygwin_packages() {
+  cygcheck -c -d | sed -e "1,2d" -e 's/ .*$//' > "$CYGWIN_PACKAGE_DIR/packagelist_`date +%Y-%m-%d`.csv"
+  cygcheck -c -d | sed -e "1,2d" -e 's/ .*$//' > "$CYGWIN_PACKAGE_DIR/packagelist_active.csv"
+}
+
+# recover cygwin package lists
+function upload_cygwin_package() {
+  ${HOME}/setup-x86_64.exe -P `awk 'NR==1{printf $1}{printf ",%s", $1}' $CYGWIN_PACKAGE_DIR/packagelist_active.csv`
+}
+
+# smarter path conversion
+function smrtpath() {
+  local input="$@"
+  if [ $# -eq 0 ] ; then
+    # echo "Assuming current directory"
+    local input="."
+  fi
+  local ret=$(cygpath -w -a "$input")
+  echo $ret
+}
+
+# Text editor
+#function edit_func() {
+#  subl "$(smrtpath "$@")" --command toggle_full_screen
+#}
+
+# Mintty titler
+function settitle() {
+  export PS1="\[\e[32m\]\u@\h \[\e[33m\]\w\[\e[0m\]\n$ "
+  echo -ne "\e]0;$@\a"
+}
+function cleartitle() {
+  export PS1="\[\e]0;\w\a\]\n\[\e[32m\]\u@\h \[\e[33m\]\w\[\e[0m\]\n$ "
+}
+
+# Aliases for functions
+alias cd=cd_func
+#alias sudo=sudo_func
+alias explore=explore_func
+#alias edit=edit_func
+
+# Optional machine-specific directory shortcuts
+if [ -f "$HOME/.bash_locations" ]; then
+    source "$HOME/.bash_locations"
+fi
+
+# Initialize the Starship prompt when installed
+if command -v starship >/dev/null 2>&1; then
+    eval "$(starship init bash)"
+fi
