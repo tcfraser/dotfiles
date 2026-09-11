@@ -47,7 +47,6 @@ fi
 # ------------------------------------------------------------
 # Install Homebrew
 # ------------------------------------------------------------
-
 if ! command -v brew >/dev/null 2>&1; then
     echo "==> Installing Homebrew"
 
@@ -85,6 +84,7 @@ gh --version | head -n 1
 # ------------------------------------------------------------
 # Setting up github authenticataion
 # ------------------------------------------------------------
+echo "==> Setting up Github Authentication using a browser"
 if ! gh auth status --hostname github.com >/dev/null 2>&1; then
     gh auth login --hostname github.com --git-protocol https --web
 fi
