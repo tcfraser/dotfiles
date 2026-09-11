@@ -59,7 +59,7 @@ if vim.fn.has("wsl") == 1 then
         cache_enabled = 0,
     }
 end
-vim.opt.clipboard = "unnamedplus"
+vim.opt.clipboard = ""
 
 -- Do not hide characters when italizing for example
 vim.opt.conceallevel = 0
