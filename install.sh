@@ -90,3 +90,8 @@ if ! gh auth status --hostname github.com >/dev/null 2>&1; then
 fi
 
 gh auth setup-git --hostname github.com
+
+# ------------------------------------------------------------
+# Setting up AI
+# ------------------------------------------------------------
+curl -fsSL https://chatgpt.com/codex/install.sh | sh
