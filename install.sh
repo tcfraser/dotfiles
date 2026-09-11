@@ -78,5 +78,15 @@ vim --version | head -n 1
 nvim --version | head -n 1
 fzf --version
 unzip -v | head -n 1
-python --version
+python3 --version
+eza --version
+gh --version | head -n 1
 
+# ------------------------------------------------------------
+# Setting up github authenticataion
+# ------------------------------------------------------------
+if ! gh auth status --hostname github.com >/dev/null 2>&1; then
+    gh auth login --hostname github.com --git-protocol https --web
+fi
+
+gh auth setup-git --hostname github.com

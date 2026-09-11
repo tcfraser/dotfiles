@@ -10,14 +10,15 @@
     br = branch
     df = diff
     ad = add
-    aa = !git add -u && git add . && git status
 
     go = "!f() { git add -u . && git add . && git commit -m \"$1\" && git pull && git push; }; f"
-
-    undo-commit = reset --soft HEAD^
 [color]
     ui = auto
 [help]
     autocorrect = 1
 [init]
     defaultBranch = main
+[credential "https://github.com"]
+    helper = !/home/linuxbrew/.linuxbrew/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+    helper = !/home/linuxbrew/.linuxbrew/bin/gh auth git-credential
