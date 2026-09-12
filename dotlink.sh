@@ -49,7 +49,7 @@ for file in .bash_functions .bash_path; do
     fi
 done
 
-for file in .bash_profile .bashrc .gitconfig .vimrc .hushlogin .vim; do
+for file in .bash_profile .bashrc .gitconfig .vimrc .hushlogin .vim .tmux.conf; do
     manage_link "$DOTFILE_PATH/$file" "$HOME/$file" || exit 1
 done
 

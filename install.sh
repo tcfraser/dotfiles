@@ -98,6 +98,7 @@ python3 --version
 eza --version
 gh --version | head -n 1
 starship --version
+tmux -V
 
 # ------------------------------------------------------------
 # Set up GitHub authentication after linking .gitconfig

@@ -25,6 +25,33 @@ backed up beside their originals. Repeating the command is safe. Older setups
 that link the whole `.config` directory continue to work.
 `--remove` removes only matching repository symlinks; it does not restore backups.
 
+## tmux
+
+tmux provides terminal multiplexing.
+
+Start a named session with `tmux new -s work`. The prefix is **Ctrl+Space**:
+press those keys together, release them, then press the command key below.
+
+| Keys after Ctrl+Space | Action |
+| --- | --- |
+| `c` | Create a window |
+| `n` / `p` | Next / previous window |
+| `w` | Choose a window |
+| `%` | Split into left/right panes |
+| `"` | Split into top/bottom panes |
+| Arrow key | Move between panes |
+| `z` | Toggle zoom for the current pane |
+| `[` | Enter scroll mode; use arrows/Page Up/Page Down, then `q` to leave |
+| `d` | Detach, leaving programs running |
+| `?` | Show key bindings; press `q` to leave |
+
+Outside tmux, use `tmux ls` to list sessions and `tmux attach -t work` to
+rejoin one. Type `exit` in a pane to close its shell; closing the last pane
+closes its window, and closing the last window ends the session.
+
+Press Ctrl+Space twice to send a literal
+Ctrl+Space to the program inside tmux. 
+
 ## Prompt
 
 All Bash settings, aliases, and functions live in `.bashrc`. `.bash_profile`
