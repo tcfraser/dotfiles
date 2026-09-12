@@ -38,3 +38,19 @@ map("n", "<leader>ca", vim.lsp.buf.code_action)
 
 map("n", "]d", vim.diagnostic.goto_next)
 map("n", "[d", vim.diagnostic.goto_prev)
+
+-- Space d toggles diagnostic displays in all buffers without stopping the LSP.
+vim.diagnostic.enable(false)
+map("n", "<leader>d", function()
+  vim.diagnostic.enable(not vim.diagnostic.is_enabled())
+end, { desc = "Toggle diagnostics" })
+
+-- Clear leftover decorations when switching buffers or displaying them in a split.
+vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
+  group = vim.api.nvim_create_augroup("HiddenDiagnostics", { clear = true }),
+  callback = function(event)
+    if not vim.diagnostic.is_enabled({ bufnr = event.buf }) then
+      vim.diagnostic.hide(nil, event.buf)
+    end
+  end,
+})

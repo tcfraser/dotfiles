@@ -1,4 +1,5 @@
 brew "unzip"
+brew "bubblewrap"
 brew "vim"
 brew "neovim"
 brew "fzf"
