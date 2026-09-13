@@ -5,7 +5,7 @@
     "centerOnLaunch": true,
     "copyFormatting": "none",
     "copyOnSelect": true,
-    "defaultProfile": "{f5371e8c-936e-5e4b-9c64-f1e5ddf017e9}",
+    "defaultProfile": "{3c98716b-3514-4e18-b0f5-1b978f9017ec}",
     "initialPosition": ",",
     "keybindings": 
     [
@@ -62,6 +62,7 @@
             {
                 "bellStyle": "none",
                 "colorScheme": "Dark+",
+                "commandline": "wsl.exe ~ -d Ubuntu",
                 "elevate": false,
                 "experimental.retroTerminalEffect": false,
                 "font": 
@@ -70,13 +71,12 @@
                     "size": 12,
                     "weight": "normal"
                 },
-                "guid": "{f5371e8c-936e-5e4b-9c64-f1e5ddf017e9}",
+                "guid": "{3c98716b-3514-4e18-b0f5-1b978f9017ec}",
                 "hidden": false,
                 "icon": "\ud83e\udda5",
                 "name": "TC - Terminal",
                 "opacity": 95,
                 "padding": "2",
-                "source": "Microsoft.WSL",
                 "useAcrylic": true
             }
         ]
