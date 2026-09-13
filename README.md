@@ -16,6 +16,12 @@ It can be run regardless of where the repository was cloned.
 After installation, run `source ~/.bashrc` to load the updated configuration
 in your current shell.
 
+On WSL, Bash and the installer set `BROWSER` to Windows' built-in
+`rundll32.exe url.dll,FileProtocolHandler` when the executable is available.
+This opens web links in Windows' default browser (for example, Chrome). 
+Windows executable interop and Windows directories in `PATH` must be enabled. 
+Try `xdg-open https://example.com` after loading your Bash configuration.
+
 Select **JetBrainsMono Nerd Font Mono** in your terminal's font settings.
 For SSH sessions, select/install the font on the machine running the terminal.
 

@@ -16,6 +16,11 @@ fi
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 
+# Use Windows' built-in URL handler on WSL.
+if [[ -n "${WSL_DISTRO_NAME:-}" ]] && command -v rundll32.exe >/dev/null 2>&1; then
+    export BROWSER='rundll32.exe url.dll,FileProtocolHandler'
+fi
+
 # Don't put duplicate lines in the history.
 export HISTCONTROL=ignoredups:erasedups
 shopt -s histappend

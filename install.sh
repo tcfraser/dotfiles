@@ -20,6 +20,7 @@ if command -v apt-get >/dev/null 2>&1; then
         curl \
         file \
         fontconfig \
+        xdg-utils \
         git
 
 elif command -v dnf >/dev/null 2>&1; then
@@ -31,6 +32,7 @@ elif command -v dnf >/dev/null 2>&1; then
         curl \
         file \
         fontconfig \
+        xdg-utils \
         git
 
 elif command -v pacman >/dev/null 2>&1; then
@@ -42,11 +44,20 @@ elif command -v pacman >/dev/null 2>&1; then
         curl \
         file \
         fontconfig \
+        xdg-utils \
         git
 
 else
     echo "Unsupported Linux distribution."
     exit 1
+fi
+
+# ------------------------------------------------------------
+# Optional Windows browser integration for WSL
+# ------------------------------------------------------------
+if [[ -n "${WSL_DISTRO_NAME:-}" ]] && command -v rundll32.exe >/dev/null 2>&1; then
+    export BROWSER='rundll32.exe url.dll,FileProtocolHandler'
+    echo '==> Configured Windows default browser integration.'
 fi
 
 # ------------------------------------------------------------
