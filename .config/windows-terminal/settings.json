@@ -76,12 +76,36 @@
                 "icon": "\ud83e\udda5",
                 "name": "TC - Terminal",
                 "opacity": 95,
-                "padding": "2",
+                "padding": "8",
                 "useAcrylic": true
             }
         ]
     },
-    "schemes": [],
+    "schemes": [
+    {
+      "name": "Gruvbox Dark",
+      "background": "#282828",
+      "foreground": "#EBDBB2",
+      "cursorColor": "#EBDBB2",
+      "selectionBackground": "#504945",
+      "black": "#282828",
+      "red": "#CC241D",
+      "green": "#98971A",
+      "yellow": "#D79921",
+      "blue": "#458588",
+      "purple": "#B16286",
+      "cyan": "#689D6A",
+      "white": "#A89984",
+      "brightBlack": "#928374",
+      "brightRed": "#FB4934",
+      "brightGreen": "#B8BB26",
+      "brightYellow": "#FABD2F",
+      "brightBlue": "#83A598",
+      "brightPurple": "#D3869B",
+      "brightCyan": "#8EC07C",
+      "brightWhite": "#EBDBB2"
+    }
+    ],
     "themes": [],
     "windowingBehavior": "useAnyExisting"
 }

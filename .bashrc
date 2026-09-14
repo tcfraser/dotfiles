@@ -49,7 +49,8 @@ alias fgrep='fgrep --color=auto'              # show differences in colour
 # Some shortcuts for different directory listings
 if command -v eza >/dev/null 2>&1; then
     alias ls='eza -hF --color=auto'
-    alias ll='eza -lah --header'
+    alias ll='eza -lah --header --icons=auto --git --group-directories-first'
+    alias lt='eza --tree --all --level=2 --icons=auto --group-directories-first'
     alias la='eza -la --header'
 else
     alias ls='ls -hF --color=auto'
