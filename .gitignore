@@ -1,6 +1,6 @@
 .bash_history
 .vim/plugged/*
 .config/gh/
-
+nvim.log
 # Backups created by dotlink.sh, anywhere in the repository
 *.backup.*
