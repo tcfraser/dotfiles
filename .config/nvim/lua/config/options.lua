@@ -42,6 +42,9 @@ vim.opt.showmode = false
 vim.opt.splitright = true
 vim.opt.splitbelow = true
 
+-- Reload external changes when the buffer has no unsaved edits.
+vim.opt.autoread = true
+
 -- Use system clipboard
 if vim.fn.has("wsl") == 1 then
     local paste = [[powershell.exe -NoLogo -NoProfile -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))]]
