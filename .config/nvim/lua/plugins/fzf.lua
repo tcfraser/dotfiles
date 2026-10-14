@@ -5,6 +5,13 @@ return {
         "nvim-tree/nvim-web-devicons",
     },
 
+    opts = {
+        files = {
+            -- Requires fd or ripgrep; the find fallback cannot read .gitignore.
+            no_ignore = false,
+        },
+    },
+
     keys = {
         {
             "<leader>f",
